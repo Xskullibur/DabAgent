@@ -38,22 +38,22 @@
             System.Windows.Forms.Label bookingDateLabel;
             this.TabControl = new System.Windows.Forms.TabControl();
             this.PersonalTab = new System.Windows.Forms.TabPage();
+            this.bookingDateDateTimePicker = new System.Windows.Forms.DateTimePicker();
             this.nRICTextBox = new System.Windows.Forms.TextBox();
-            this.bsBooking = new System.Windows.Forms.BindingSource(this.components);
-            this.ds = new DabAgent.DabAgencyDataSet();
             this.travelDateDateTimePicker = new System.Windows.Forms.DateTimePicker();
             this.paxTextBox = new System.Windows.Forms.TextBox();
             this.FlightTab = new System.Windows.Forms.TabPage();
+            this.CalBtn = new System.Windows.Forms.Button();
+            this.DistTxt = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.ArrivalCombo = new System.Windows.Forms.ComboBox();
+            this.DepartureCombo = new System.Windows.Forms.ComboBox();
             this.costPxTextBox = new System.Windows.Forms.TextBox();
+            this.SaveBtn = new System.Windows.Forms.Button();
+            this.bsBooking = new System.Windows.Forms.BindingSource(this.components);
+            this.ds = new DabAgent.DabAgencyDataSet();
             this.taBooking = new DabAgent.DabAgencyDataSetTableAdapters.BookingTBTableAdapter();
             this.tam = new DabAgent.DabAgencyDataSetTableAdapters.TableAdapterManager();
-            this.SaveBtn = new System.Windows.Forms.Button();
-            this.bookingDateDateTimePicker = new System.Windows.Forms.DateTimePicker();
-            this.DepartureCombo = new System.Windows.Forms.ComboBox();
-            this.ArrivalCombo = new System.Windows.Forms.ComboBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.DistTxt = new System.Windows.Forms.TextBox();
-            this.CalBtn = new System.Windows.Forms.Button();
             nRICLabel = new System.Windows.Forms.Label();
             travelDateLabel = new System.Windows.Forms.Label();
             paxLabel = new System.Windows.Forms.Label();
@@ -63,9 +63,9 @@
             bookingDateLabel = new System.Windows.Forms.Label();
             this.TabControl.SuspendLayout();
             this.PersonalTab.SuspendLayout();
+            this.FlightTab.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bsBooking)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ds)).BeginInit();
-            this.FlightTab.SuspendLayout();
             this.SuspendLayout();
             // 
             // nRICLabel
@@ -122,6 +122,16 @@
             arrivalLabel.TabIndex = 20;
             arrivalLabel.Text = "Arrival:";
             // 
+            // bookingDateLabel
+            // 
+            bookingDateLabel.AutoSize = true;
+            bookingDateLabel.Location = new System.Drawing.Point(21, 120);
+            bookingDateLabel.Name = "bookingDateLabel";
+            bookingDateLabel.Size = new System.Drawing.Size(110, 20);
+            bookingDateLabel.TabIndex = 9;
+            bookingDateLabel.Text = "Booking Date:";
+            bookingDateLabel.Visible = false;
+            // 
             // TabControl
             // 
             this.TabControl.Controls.Add(this.PersonalTab);
@@ -129,7 +139,7 @@
             this.TabControl.Location = new System.Drawing.Point(12, 12);
             this.TabControl.Name = "TabControl";
             this.TabControl.SelectedIndex = 0;
-            this.TabControl.Size = new System.Drawing.Size(373, 237);
+            this.TabControl.Size = new System.Drawing.Size(464, 237);
             this.TabControl.TabIndex = 0;
             // 
             // PersonalTab
@@ -146,10 +156,21 @@
             this.PersonalTab.Location = new System.Drawing.Point(4, 29);
             this.PersonalTab.Name = "PersonalTab";
             this.PersonalTab.Padding = new System.Windows.Forms.Padding(3);
-            this.PersonalTab.Size = new System.Drawing.Size(475, 204);
+            this.PersonalTab.Size = new System.Drawing.Size(456, 204);
             this.PersonalTab.TabIndex = 0;
             this.PersonalTab.Text = "Personal Details";
             this.PersonalTab.UseVisualStyleBackColor = true;
+            // 
+            // bookingDateDateTimePicker
+            // 
+            this.bookingDateDateTimePicker.DataBindings.Add(new System.Windows.Forms.Binding("Value", this.bsBooking, "BookingDate", true));
+            this.bookingDateDateTimePicker.Enabled = false;
+            this.bookingDateDateTimePicker.Location = new System.Drawing.Point(137, 116);
+            this.bookingDateDateTimePicker.Name = "bookingDateDateTimePicker";
+            this.bookingDateDateTimePicker.Size = new System.Drawing.Size(294, 26);
+            this.bookingDateDateTimePicker.TabIndex = 10;
+            this.bookingDateDateTimePicker.Value = new System.DateTime(2018, 2, 1, 23, 24, 17, 0);
+            this.bookingDateDateTimePicker.Visible = false;
             // 
             // nRICTextBox
             // 
@@ -159,16 +180,6 @@
             this.nRICTextBox.Size = new System.Drawing.Size(294, 26);
             this.nRICTextBox.TabIndex = 5;
             // 
-            // bsBooking
-            // 
-            this.bsBooking.DataMember = "BookingTB";
-            this.bsBooking.DataSource = this.ds;
-            // 
-            // ds
-            // 
-            this.ds.DataSetName = "DabAgencyDataSet";
-            this.ds.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
             // travelDateDateTimePicker
             // 
             this.travelDateDateTimePicker.DataBindings.Add(new System.Windows.Forms.Binding("Value", this.bsBooking, "TravelDate", true));
@@ -176,6 +187,7 @@
             this.travelDateDateTimePicker.Name = "travelDateDateTimePicker";
             this.travelDateDateTimePicker.Size = new System.Drawing.Size(294, 26);
             this.travelDateDateTimePicker.TabIndex = 7;
+            this.travelDateDateTimePicker.ValueChanged += new System.EventHandler(this.travelDateDateTimePicker_ValueChanged);
             // 
             // paxTextBox
             // 
@@ -199,94 +211,38 @@
             this.FlightTab.Location = new System.Drawing.Point(4, 29);
             this.FlightTab.Name = "FlightTab";
             this.FlightTab.Padding = new System.Windows.Forms.Padding(3);
-            this.FlightTab.Size = new System.Drawing.Size(365, 204);
+            this.FlightTab.Size = new System.Drawing.Size(456, 204);
             this.FlightTab.TabIndex = 1;
             this.FlightTab.Text = "Flight Details";
             this.FlightTab.UseVisualStyleBackColor = true;
             // 
-            // costPxTextBox
+            // CalBtn
             // 
-            this.costPxTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bsBooking, "CostPx", true));
-            this.costPxTextBox.Enabled = false;
-            this.costPxTextBox.Location = new System.Drawing.Point(134, 81);
-            this.costPxTextBox.Name = "costPxTextBox";
-            this.costPxTextBox.Size = new System.Drawing.Size(200, 26);
-            this.costPxTextBox.TabIndex = 17;
+            this.CalBtn.Location = new System.Drawing.Point(207, 145);
+            this.CalBtn.Name = "CalBtn";
+            this.CalBtn.Size = new System.Drawing.Size(126, 30);
+            this.CalBtn.TabIndex = 25;
+            this.CalBtn.Text = "Calculate Cost";
+            this.CalBtn.UseVisualStyleBackColor = true;
+            this.CalBtn.Click += new System.EventHandler(this.CalBtn_Click);
             // 
-            // taBooking
+            // DistTxt
             // 
-            this.taBooking.ClearBeforeFill = true;
+            this.DistTxt.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bsBooking, "CostPx", true));
+            this.DistTxt.Enabled = false;
+            this.DistTxt.Location = new System.Drawing.Point(134, 112);
+            this.DistTxt.Name = "DistTxt";
+            this.DistTxt.Size = new System.Drawing.Size(200, 26);
+            this.DistTxt.TabIndex = 24;
             // 
-            // tam
+            // label1
             // 
-            this.tam.BackupDataSetBeforeUpdate = false;
-            this.tam.BookingTBTableAdapter = this.taBooking;
-            this.tam.CustomerTBTableAdapter = null;
-            this.tam.HolidayTBTableAdapter = null;
-            this.tam.UpdateOrder = DabAgent.DabAgencyDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
-            // 
-            // SaveBtn
-            // 
-            this.SaveBtn.Location = new System.Drawing.Point(277, 255);
-            this.SaveBtn.Name = "SaveBtn";
-            this.SaveBtn.Size = new System.Drawing.Size(104, 42);
-            this.SaveBtn.TabIndex = 1;
-            this.SaveBtn.Text = "Save";
-            this.SaveBtn.UseVisualStyleBackColor = true;
-            this.SaveBtn.Click += new System.EventHandler(this.SaveBtn_Click);
-            // 
-            // bookingDateLabel
-            // 
-            bookingDateLabel.AutoSize = true;
-            bookingDateLabel.Location = new System.Drawing.Point(21, 120);
-            bookingDateLabel.Name = "bookingDateLabel";
-            bookingDateLabel.Size = new System.Drawing.Size(110, 20);
-            bookingDateLabel.TabIndex = 9;
-            bookingDateLabel.Text = "Booking Date:";
-            bookingDateLabel.Visible = false;
-            // 
-            // bookingDateDateTimePicker
-            // 
-            this.bookingDateDateTimePicker.DataBindings.Add(new System.Windows.Forms.Binding("Value", this.bsBooking, "BookingDate", true));
-            this.bookingDateDateTimePicker.Enabled = false;
-            this.bookingDateDateTimePicker.Location = new System.Drawing.Point(137, 116);
-            this.bookingDateDateTimePicker.Name = "bookingDateDateTimePicker";
-            this.bookingDateDateTimePicker.Size = new System.Drawing.Size(294, 26);
-            this.bookingDateDateTimePicker.TabIndex = 10;
-            this.bookingDateDateTimePicker.Value = new System.DateTime(2018, 2, 1, 23, 24, 17, 0);
-            this.bookingDateDateTimePicker.Visible = false;
-            // 
-            // DepartureCombo
-            // 
-            this.DepartureCombo.Enabled = false;
-            this.DepartureCombo.FormattingEnabled = true;
-            this.DepartureCombo.Items.AddRange(new object[] {
-            "",
-            "Singapore",
-            "Italy",
-            "France",
-            "Spain",
-            "America",
-            "Greece",
-            "Australia",
-            "New Zealand",
-            "Thailand",
-            "Turkey",
-            "India",
-            "South Africa",
-            "Vietnam",
-            "Sri Lanka",
-            "Netherlands",
-            "Mexico",
-            "Portugal",
-            "Ireland",
-            "Japan",
-            "Canada",
-            "Morocco"});
-            this.DepartureCombo.Location = new System.Drawing.Point(134, 17);
-            this.DepartureCombo.Name = "DepartureCombo";
-            this.DepartureCombo.Size = new System.Drawing.Size(200, 28);
-            this.DepartureCombo.TabIndex = 21;
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(18, 115);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(72, 20);
+            this.label1.TabIndex = 23;
+            this.label1.Text = "Distance";
             // 
             // ArrivalCombo
             // 
@@ -320,50 +276,96 @@
             this.ArrivalCombo.Size = new System.Drawing.Size(200, 28);
             this.ArrivalCombo.TabIndex = 22;
             // 
-            // label1
+            // DepartureCombo
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(18, 115);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(72, 20);
-            this.label1.TabIndex = 23;
-            this.label1.Text = "Distance";
+            this.DepartureCombo.Enabled = false;
+            this.DepartureCombo.FormattingEnabled = true;
+            this.DepartureCombo.Items.AddRange(new object[] {
+            "",
+            "Singapore",
+            "Italy",
+            "France",
+            "Spain",
+            "America",
+            "Greece",
+            "Australia",
+            "New Zealand",
+            "Thailand",
+            "Turkey",
+            "India",
+            "South Africa",
+            "Vietnam",
+            "Sri Lanka",
+            "Netherlands",
+            "Mexico",
+            "Portugal",
+            "Ireland",
+            "Japan",
+            "Canada",
+            "Morocco"});
+            this.DepartureCombo.Location = new System.Drawing.Point(134, 17);
+            this.DepartureCombo.Name = "DepartureCombo";
+            this.DepartureCombo.Size = new System.Drawing.Size(200, 28);
+            this.DepartureCombo.TabIndex = 21;
             // 
-            // DistTxt
+            // costPxTextBox
             // 
-            this.DistTxt.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bsBooking, "CostPx", true));
-            this.DistTxt.Enabled = false;
-            this.DistTxt.Location = new System.Drawing.Point(134, 112);
-            this.DistTxt.Name = "DistTxt";
-            this.DistTxt.Size = new System.Drawing.Size(200, 26);
-            this.DistTxt.TabIndex = 24;
+            this.costPxTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bsBooking, "CostPx", true));
+            this.costPxTextBox.Enabled = false;
+            this.costPxTextBox.Location = new System.Drawing.Point(134, 81);
+            this.costPxTextBox.Name = "costPxTextBox";
+            this.costPxTextBox.Size = new System.Drawing.Size(200, 26);
+            this.costPxTextBox.TabIndex = 17;
             // 
-            // CalBtn
+            // SaveBtn
             // 
-            this.CalBtn.Location = new System.Drawing.Point(207, 145);
-            this.CalBtn.Name = "CalBtn";
-            this.CalBtn.Size = new System.Drawing.Size(126, 30);
-            this.CalBtn.TabIndex = 25;
-            this.CalBtn.Text = "Calculate Cost";
-            this.CalBtn.UseVisualStyleBackColor = true;
-            this.CalBtn.Click += new System.EventHandler(this.CalBtn_Click);
+            this.SaveBtn.Location = new System.Drawing.Point(368, 255);
+            this.SaveBtn.Name = "SaveBtn";
+            this.SaveBtn.Size = new System.Drawing.Size(104, 42);
+            this.SaveBtn.TabIndex = 1;
+            this.SaveBtn.Text = "Save";
+            this.SaveBtn.UseVisualStyleBackColor = true;
+            this.SaveBtn.Click += new System.EventHandler(this.SaveBtn_Click);
+            // 
+            // bsBooking
+            // 
+            this.bsBooking.DataMember = "BookingTB";
+            this.bsBooking.DataSource = this.ds;
+            // 
+            // ds
+            // 
+            this.ds.DataSetName = "DabAgencyDataSet";
+            this.ds.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // taBooking
+            // 
+            this.taBooking.ClearBeforeFill = true;
+            // 
+            // tam
+            // 
+            this.tam.BackupDataSetBeforeUpdate = false;
+            this.tam.BookingTBTableAdapter = this.taBooking;
+            this.tam.CustomerTBTableAdapter = null;
+            this.tam.HolidayTBTableAdapter = null;
+            this.tam.UpdateOrder = DabAgent.DabAgencyDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
             // 
             // AddBooking
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(400, 305);
+            this.ClientSize = new System.Drawing.Size(483, 305);
             this.Controls.Add(this.SaveBtn);
             this.Controls.Add(this.TabControl);
             this.Name = "AddBooking";
             this.Text = "AddBooking";
+            this.Load += new System.EventHandler(this.AddBooking_Load);
             this.TabControl.ResumeLayout(false);
             this.PersonalTab.ResumeLayout(false);
             this.PersonalTab.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.bsBooking)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ds)).EndInit();
             this.FlightTab.ResumeLayout(false);
             this.FlightTab.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.bsBooking)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ds)).EndInit();
             this.ResumeLayout(false);
 
         }

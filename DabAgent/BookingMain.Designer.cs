@@ -102,6 +102,7 @@
             this.bookingTBDataGridView.Name = "bookingTBDataGridView";
             this.bookingTBDataGridView.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             this.bookingTBDataGridView.RowTemplate.Height = 28;
+            this.bookingTBDataGridView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.bookingTBDataGridView.Size = new System.Drawing.Size(1067, 220);
             this.bookingTBDataGridView.TabIndex = 1;
             // 
