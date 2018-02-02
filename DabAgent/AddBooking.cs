@@ -56,12 +56,22 @@ namespace DabAgent
 
         private void SaveBtn_Click(object sender, EventArgs e)
         {
-
         }
 
         private void CalBtn_Click(object sender, EventArgs e)
         {
             
+        }
+
+        private void AddBooking_Load(object sender, EventArgs e)
+        {
+            travelDateDateTimePicker.Format = DateTimePickerFormat.Custom;
+            travelDateDateTimePicker.CustomFormat = " ";
+        }
+
+        private void travelDateDateTimePicker_ValueChanged(object sender, EventArgs e)
+        {
+            travelDateDateTimePicker.CustomFormat = "dd MMMM yyyy";
         }
     }
 }
