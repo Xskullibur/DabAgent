@@ -73,11 +73,47 @@
     <Compile Include="BookingMain.Designer.cs">
       <DependentUpon>BookingMain.cs</DependentUpon>
     </Compile>
+    <Compile Include="CustAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CustAdd.designer.cs">
+      <DependentUpon>CustAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CustEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CustEdit.designer.cs">
+      <DependentUpon>CustEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CustForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CustForm.designer.cs">
+      <DependentUpon>CustForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Customer.cs" />
     <Compile Include="DabAgencyDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>DabAgencyDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="HolidayDest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HolidayDest.designer.cs">
+      <DependentUpon>HolidayDest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Info.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Info.designer.cs">
+      <DependentUpon>Info.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginForm.designer.cs">
+      <DependentUpon>LoginForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -86,6 +122,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="BookingMain.resx">
       <DependentUpon>BookingMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustForm.resx">
+      <DependentUpon>CustForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HolidayDest.resx">
+      <DependentUpon>HolidayDest.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginForm.resx">
+      <DependentUpon>LoginForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
