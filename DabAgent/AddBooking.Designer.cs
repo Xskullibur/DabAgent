@@ -33,9 +33,9 @@
             System.Windows.Forms.Label travelDateLabel;
             System.Windows.Forms.Label paxLabel;
             System.Windows.Forms.Label costPxLabel;
+            System.Windows.Forms.Label bookingDateLabel;
             System.Windows.Forms.Label departureLabel;
             System.Windows.Forms.Label arrivalLabel;
-            System.Windows.Forms.Label bookingDateLabel;
             this.TabControl = new System.Windows.Forms.TabControl();
             this.PersonalTab = new System.Windows.Forms.TabPage();
             this.bookingDateDateTimePicker = new System.Windows.Forms.DateTimePicker();
@@ -47,19 +47,19 @@
             this.FlightTab = new System.Windows.Forms.TabPage();
             this.CalBtn = new System.Windows.Forms.Button();
             this.DistLbl = new System.Windows.Forms.Label();
-            this.ArrivalCombo = new System.Windows.Forms.ComboBox();
-            this.DepartureCombo = new System.Windows.Forms.ComboBox();
             this.costPxTextBox = new System.Windows.Forms.TextBox();
             this.SaveBtn = new System.Windows.Forms.Button();
             this.taBooking = new DabAgent.DabAgencyDataSetTableAdapters.BookingTBTableAdapter();
             this.tam = new DabAgent.DabAgencyDataSetTableAdapters.TableAdapterManager();
+            this.departureComboBox = new System.Windows.Forms.ComboBox();
+            this.arrivalComboBox = new System.Windows.Forms.ComboBox();
             nRICLabel = new System.Windows.Forms.Label();
             travelDateLabel = new System.Windows.Forms.Label();
             paxLabel = new System.Windows.Forms.Label();
             costPxLabel = new System.Windows.Forms.Label();
+            bookingDateLabel = new System.Windows.Forms.Label();
             departureLabel = new System.Windows.Forms.Label();
             arrivalLabel = new System.Windows.Forms.Label();
-            bookingDateLabel = new System.Windows.Forms.Label();
             this.TabControl.SuspendLayout();
             this.PersonalTab.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bsBooking)).BeginInit();
@@ -102,24 +102,6 @@
             costPxLabel.Size = new System.Drawing.Size(67, 20);
             costPxLabel.TabIndex = 16;
             costPxLabel.Text = "Cost Px:";
-            // 
-            // departureLabel
-            // 
-            departureLabel.AutoSize = true;
-            departureLabel.Location = new System.Drawing.Point(18, 20);
-            departureLabel.Name = "departureLabel";
-            departureLabel.Size = new System.Drawing.Size(85, 20);
-            departureLabel.TabIndex = 18;
-            departureLabel.Text = "Departure:";
-            // 
-            // arrivalLabel
-            // 
-            arrivalLabel.AutoSize = true;
-            arrivalLabel.Location = new System.Drawing.Point(18, 52);
-            arrivalLabel.Name = "arrivalLabel";
-            arrivalLabel.Size = new System.Drawing.Size(56, 20);
-            arrivalLabel.TabIndex = 20;
-            arrivalLabel.Text = "Arrival:";
             // 
             // bookingDateLabel
             // 
@@ -208,14 +190,15 @@
             // 
             // FlightTab
             // 
+            this.FlightTab.Controls.Add(this.SaveBtn);
+            this.FlightTab.Controls.Add(arrivalLabel);
+            this.FlightTab.Controls.Add(this.arrivalComboBox);
+            this.FlightTab.Controls.Add(departureLabel);
+            this.FlightTab.Controls.Add(this.departureComboBox);
             this.FlightTab.Controls.Add(this.CalBtn);
             this.FlightTab.Controls.Add(this.DistLbl);
-            this.FlightTab.Controls.Add(this.ArrivalCombo);
-            this.FlightTab.Controls.Add(this.DepartureCombo);
             this.FlightTab.Controls.Add(costPxLabel);
             this.FlightTab.Controls.Add(this.costPxTextBox);
-            this.FlightTab.Controls.Add(departureLabel);
-            this.FlightTab.Controls.Add(arrivalLabel);
             this.FlightTab.Location = new System.Drawing.Point(4, 29);
             this.FlightTab.Name = "FlightTab";
             this.FlightTab.Padding = new System.Windows.Forms.Padding(3);
@@ -245,70 +228,6 @@
             this.DistLbl.Text = "Distance: 0000";
             this.DistLbl.Visible = false;
             // 
-            // ArrivalCombo
-            // 
-            this.ArrivalCombo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.ArrivalCombo.FormattingEnabled = true;
-            this.ArrivalCombo.Items.AddRange(new object[] {
-            "",
-            "Singapore",
-            "Italy",
-            "France",
-            "Spain",
-            "America",
-            "Greece",
-            "Australia",
-            "New Zealand",
-            "Thailand",
-            "Turkey",
-            "India",
-            "South Africa",
-            "Vietnam",
-            "Sri Lanka",
-            "Netherlands",
-            "Mexico",
-            "Portugal",
-            "Ireland",
-            "Japan",
-            "Canada",
-            "Morocco"});
-            this.ArrivalCombo.Location = new System.Drawing.Point(134, 49);
-            this.ArrivalCombo.Name = "ArrivalCombo";
-            this.ArrivalCombo.Size = new System.Drawing.Size(200, 28);
-            this.ArrivalCombo.TabIndex = 22;
-            // 
-            // DepartureCombo
-            // 
-            this.DepartureCombo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.DepartureCombo.FormattingEnabled = true;
-            this.DepartureCombo.Items.AddRange(new object[] {
-            "",
-            "Singapore",
-            "Italy",
-            "France",
-            "Spain",
-            "America",
-            "Greece",
-            "Australia",
-            "New Zealand",
-            "Thailand",
-            "Turkey",
-            "India",
-            "South Africa",
-            "Vietnam",
-            "Sri Lanka",
-            "Netherlands",
-            "Mexico",
-            "Portugal",
-            "Ireland",
-            "Japan",
-            "Canada",
-            "Morocco"});
-            this.DepartureCombo.Location = new System.Drawing.Point(134, 17);
-            this.DepartureCombo.Name = "DepartureCombo";
-            this.DepartureCombo.Size = new System.Drawing.Size(200, 28);
-            this.DepartureCombo.TabIndex = 21;
-            // 
             // costPxTextBox
             // 
             this.costPxTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bsBooking, "CostPx", true));
@@ -319,7 +238,7 @@
             // 
             // SaveBtn
             // 
-            this.SaveBtn.Location = new System.Drawing.Point(368, 255);
+            this.SaveBtn.Location = new System.Drawing.Point(346, 156);
             this.SaveBtn.Name = "SaveBtn";
             this.SaveBtn.Size = new System.Drawing.Size(104, 42);
             this.SaveBtn.TabIndex = 1;
@@ -339,12 +258,95 @@
             this.tam.HolidayTBTableAdapter = null;
             this.tam.UpdateOrder = DabAgent.DabAgencyDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
             // 
+            // departureLabel
+            // 
+            departureLabel.AutoSize = true;
+            departureLabel.Location = new System.Drawing.Point(18, 16);
+            departureLabel.Name = "departureLabel";
+            departureLabel.Size = new System.Drawing.Size(85, 20);
+            departureLabel.TabIndex = 25;
+            departureLabel.Text = "Departure:";
+            // 
+            // departureComboBox
+            // 
+            this.departureComboBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bsBooking, "Departure", true));
+            this.departureComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.departureComboBox.FormattingEnabled = true;
+            this.departureComboBox.Items.AddRange(new object[] {
+            "",
+            "Singapore",
+            "Italy",
+            "France",
+            "Spain",
+            "America",
+            "Greece",
+            "Australia",
+            "New Zealand",
+            "Thailand",
+            "Turkey",
+            "India",
+            "South Africa",
+            "Vietnam",
+            "Sri Lanka",
+            "Netherlands",
+            "Mexico",
+            "Portugal",
+            "Ireland",
+            "Japan",
+            "Canada",
+            "Morocco"});
+            this.departureComboBox.Location = new System.Drawing.Point(134, 13);
+            this.departureComboBox.Name = "departureComboBox";
+            this.departureComboBox.Size = new System.Drawing.Size(199, 28);
+            this.departureComboBox.TabIndex = 26;
+            // 
+            // arrivalLabel
+            // 
+            arrivalLabel.AutoSize = true;
+            arrivalLabel.Location = new System.Drawing.Point(18, 50);
+            arrivalLabel.Name = "arrivalLabel";
+            arrivalLabel.Size = new System.Drawing.Size(56, 20);
+            arrivalLabel.TabIndex = 26;
+            arrivalLabel.Text = "Arrival:";
+            // 
+            // arrivalComboBox
+            // 
+            this.arrivalComboBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bsBooking, "Arrival", true));
+            this.arrivalComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.arrivalComboBox.FormattingEnabled = true;
+            this.arrivalComboBox.Items.AddRange(new object[] {
+            "",
+            "Singapore",
+            "Italy",
+            "France",
+            "Spain",
+            "America",
+            "Greece",
+            "Australia",
+            "New Zealand",
+            "Thailand",
+            "Turkey",
+            "India",
+            "South Africa",
+            "Vietnam",
+            "Sri Lanka",
+            "Netherlands",
+            "Mexico",
+            "Portugal",
+            "Ireland",
+            "Japan",
+            "Canada",
+            "Morocco"});
+            this.arrivalComboBox.Location = new System.Drawing.Point(134, 47);
+            this.arrivalComboBox.Name = "arrivalComboBox";
+            this.arrivalComboBox.Size = new System.Drawing.Size(199, 28);
+            this.arrivalComboBox.TabIndex = 27;
+            // 
             // AddBooking
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(483, 305);
-            this.Controls.Add(this.SaveBtn);
             this.Controls.Add(this.TabControl);
             this.Name = "AddBooking";
             this.Text = "AddBooking";
@@ -375,9 +377,9 @@
         private System.Windows.Forms.TextBox costPxTextBox;
         private System.Windows.Forms.Button SaveBtn;
         private System.Windows.Forms.DateTimePicker bookingDateDateTimePicker;
-        private System.Windows.Forms.ComboBox ArrivalCombo;
-        private System.Windows.Forms.ComboBox DepartureCombo;
         private System.Windows.Forms.Label DistLbl;
         private System.Windows.Forms.Button CalBtn;
+        private System.Windows.Forms.ComboBox arrivalComboBox;
+        private System.Windows.Forms.ComboBox departureComboBox;
     }
 }

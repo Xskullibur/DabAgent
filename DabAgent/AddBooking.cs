@@ -19,6 +19,7 @@ namespace DabAgent
 
         private void SaveBtn_Click(object sender, EventArgs e)
         {
+            bsBooking.AddNew();
             bsBooking.EndEdit();
             taBooking.Update(ds.BookingTB);
         }
@@ -32,6 +33,9 @@ namespace DabAgent
         {
             travelDateDateTimePicker.Format = DateTimePickerFormat.Custom;
             travelDateDateTimePicker.CustomFormat = " ";
+
+            bookingDateDateTimePicker.Format = DateTimePickerFormat.Custom;
+            bookingDateDateTimePicker.CustomFormat = "dd MMMM yyyy";
         }
 
         private void travelDateDateTimePicker_ValueChanged(object sender, EventArgs e)
