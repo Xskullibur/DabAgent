@@ -28,11 +28,15 @@ namespace DabAgent
             else if(!txtPassword.Text.Equals("pass"))
             {
                 x++;
-                    if(x==3)
+                if (x < 3)
                 {
+                    MessageBox.Show("Invaild Password\nPlease Try Again...!"); 
+                }
+                else
+                {
+                    MessageBox.Show("You Have Entered an Invalid Password Too Many Times!\nTerminating System...");
                     Application.Exit();
                 }
-                MessageBox.Show("Wrong Password!");
             }
         }
 
