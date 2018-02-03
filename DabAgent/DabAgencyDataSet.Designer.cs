@@ -358,8 +358,6 @@ namespace DabAgent {
             
             private global::System.Data.DataColumn columnBookingID;
             
-            private global::System.Data.DataColumn columnBookingDate;
-            
             private global::System.Data.DataColumn columnNRIC;
             
             private global::System.Data.DataColumn columnTravelDate;
@@ -410,14 +408,6 @@ namespace DabAgent {
             public global::System.Data.DataColumn BookingIDColumn {
                 get {
                     return this.columnBookingID;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public global::System.Data.DataColumn BookingDateColumn {
-                get {
-                    return this.columnBookingDate;
                 }
             }
             
@@ -506,11 +496,10 @@ namespace DabAgent {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public BookingTBRow AddBookingTBRow(System.DateTime BookingDate, CustomerTBRow parentCustomerTBRowByFK_BookingTB_ToTable, System.DateTime TravelDate, int Pax, decimal CostPx, string Departure, string Arrival) {
+            public BookingTBRow AddBookingTBRow(CustomerTBRow parentCustomerTBRowByFK_BookingTB_ToTable, System.DateTime TravelDate, int Pax, decimal CostPx, string Departure, string Arrival) {
                 BookingTBRow rowBookingTBRow = ((BookingTBRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         null,
-                        BookingDate,
                         null,
                         TravelDate,
                         Pax,
@@ -518,7 +507,7 @@ namespace DabAgent {
                         Departure,
                         Arrival};
                 if ((parentCustomerTBRowByFK_BookingTB_ToTable != null)) {
-                    columnValuesArray[2] = parentCustomerTBRowByFK_BookingTB_ToTable[0];
+                    columnValuesArray[1] = parentCustomerTBRowByFK_BookingTB_ToTable[0];
                 }
                 rowBookingTBRow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowBookingTBRow);
@@ -550,7 +539,6 @@ namespace DabAgent {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
             internal void InitVars() {
                 this.columnBookingID = base.Columns["BookingID"];
-                this.columnBookingDate = base.Columns["BookingDate"];
                 this.columnNRIC = base.Columns["NRIC"];
                 this.columnTravelDate = base.Columns["TravelDate"];
                 this.columnPax = base.Columns["Pax"];
@@ -564,8 +552,6 @@ namespace DabAgent {
             private void InitClass() {
                 this.columnBookingID = new global::System.Data.DataColumn("BookingID", typeof(int), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnBookingID);
-                this.columnBookingDate = new global::System.Data.DataColumn("BookingDate", typeof(global::System.DateTime), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnBookingDate);
                 this.columnNRIC = new global::System.Data.DataColumn("NRIC", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnNRIC);
                 this.columnTravelDate = new global::System.Data.DataColumn("TravelDate", typeof(global::System.DateTime), null, global::System.Data.MappingType.Element);
@@ -586,7 +572,6 @@ namespace DabAgent {
                 this.columnBookingID.AllowDBNull = false;
                 this.columnBookingID.ReadOnly = true;
                 this.columnBookingID.Unique = true;
-                this.columnBookingDate.AllowDBNull = false;
                 this.columnNRIC.AllowDBNull = false;
                 this.columnNRIC.MaxLength = 9;
                 this.columnTravelDate.AllowDBNull = false;
@@ -1392,17 +1377,6 @@ namespace DabAgent {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public System.DateTime BookingDate {
-                get {
-                    return ((global::System.DateTime)(this[this.tableBookingTB.BookingDateColumn]));
-                }
-                set {
-                    this[this.tableBookingTB.BookingDateColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
             public string NRIC {
                 get {
                     return ((string)(this[this.tableBookingTB.NRICColumn]));
@@ -1858,7 +1832,6 @@ namespace DabAgent.DabAgencyDataSetTableAdapters {
             tableMapping.SourceTable = "Table";
             tableMapping.DataSetTable = "BookingTB";
             tableMapping.ColumnMappings.Add("BookingID", "BookingID");
-            tableMapping.ColumnMappings.Add("BookingDate", "BookingDate");
             tableMapping.ColumnMappings.Add("NRIC", "NRIC");
             tableMapping.ColumnMappings.Add("TravelDate", "TravelDate");
             tableMapping.ColumnMappings.Add("Pax", "Pax");
@@ -1868,10 +1841,9 @@ namespace DabAgent.DabAgencyDataSetTableAdapters {
             this._adapter.TableMappings.Add(tableMapping);
             this._adapter.DeleteCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.DeleteCommand.Connection = this.Connection;
-            this._adapter.DeleteCommand.CommandText = @"DELETE FROM [dbo].[BookingTB] WHERE (([BookingID] = @Original_BookingID) AND ([BookingDate] = @Original_BookingDate) AND ([NRIC] = @Original_NRIC) AND ([TravelDate] = @Original_TravelDate) AND ([Pax] = @Original_Pax) AND ([CostPx] = @Original_CostPx) AND ([Departure] = @Original_Departure) AND ([Arrival] = @Original_Arrival))";
+            this._adapter.DeleteCommand.CommandText = @"DELETE FROM [BookingTB] WHERE (([BookingID] = @Original_BookingID) AND ([NRIC] = @Original_NRIC) AND ([TravelDate] = @Original_TravelDate) AND ([Pax] = @Original_Pax) AND ([CostPx] = @Original_CostPx) AND ([Departure] = @Original_Departure) AND ([Arrival] = @Original_Arrival))";
             this._adapter.DeleteCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_BookingID", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "BookingID", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_BookingDate", global::System.Data.SqlDbType.DateTime, 0, global::System.Data.ParameterDirection.Input, 0, 0, "BookingDate", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_NRIC", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "NRIC", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_TravelDate", global::System.Data.SqlDbType.DateTime, 0, global::System.Data.ParameterDirection.Input, 0, 0, "TravelDate", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Pax", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Pax", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
@@ -1880,10 +1852,9 @@ namespace DabAgent.DabAgencyDataSetTableAdapters {
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Arrival", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Arrival", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.InsertCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.InsertCommand.Connection = this.Connection;
-            this._adapter.InsertCommand.CommandText = @"INSERT INTO [dbo].[BookingTB] ([BookingDate], [NRIC], [TravelDate], [Pax], [CostPx], [Departure], [Arrival]) VALUES (@BookingDate, @NRIC, @TravelDate, @Pax, @CostPx, @Departure, @Arrival);
-SELECT BookingID, BookingDate, NRIC, TravelDate, Pax, CostPx, Departure, Arrival FROM BookingTB WHERE (BookingID = SCOPE_IDENTITY())";
+            this._adapter.InsertCommand.CommandText = @"INSERT INTO [BookingTB] ([NRIC], [TravelDate], [Pax], [CostPx], [Departure], [Arrival]) VALUES (@NRIC, @TravelDate, @Pax, @CostPx, @Departure, @Arrival);
+SELECT BookingID, NRIC, TravelDate, Pax, CostPx, Departure, Arrival FROM BookingTB WHERE (BookingID = SCOPE_IDENTITY())";
             this._adapter.InsertCommand.CommandType = global::System.Data.CommandType.Text;
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@BookingDate", global::System.Data.SqlDbType.DateTime, 0, global::System.Data.ParameterDirection.Input, 0, 0, "BookingDate", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@NRIC", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "NRIC", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@TravelDate", global::System.Data.SqlDbType.DateTime, 0, global::System.Data.ParameterDirection.Input, 0, 0, "TravelDate", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Pax", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Pax", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
@@ -1892,10 +1863,9 @@ SELECT BookingID, BookingDate, NRIC, TravelDate, Pax, CostPx, Departure, Arrival
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Arrival", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Arrival", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.UpdateCommand.Connection = this.Connection;
-            this._adapter.UpdateCommand.CommandText = @"UPDATE [dbo].[BookingTB] SET [BookingDate] = @BookingDate, [NRIC] = @NRIC, [TravelDate] = @TravelDate, [Pax] = @Pax, [CostPx] = @CostPx, [Departure] = @Departure, [Arrival] = @Arrival WHERE (([BookingID] = @Original_BookingID) AND ([BookingDate] = @Original_BookingDate) AND ([NRIC] = @Original_NRIC) AND ([TravelDate] = @Original_TravelDate) AND ([Pax] = @Original_Pax) AND ([CostPx] = @Original_CostPx) AND ([Departure] = @Original_Departure) AND ([Arrival] = @Original_Arrival));
-SELECT BookingID, BookingDate, NRIC, TravelDate, Pax, CostPx, Departure, Arrival FROM BookingTB WHERE (BookingID = @BookingID)";
+            this._adapter.UpdateCommand.CommandText = @"UPDATE [BookingTB] SET [NRIC] = @NRIC, [TravelDate] = @TravelDate, [Pax] = @Pax, [CostPx] = @CostPx, [Departure] = @Departure, [Arrival] = @Arrival WHERE (([BookingID] = @Original_BookingID) AND ([NRIC] = @Original_NRIC) AND ([TravelDate] = @Original_TravelDate) AND ([Pax] = @Original_Pax) AND ([CostPx] = @Original_CostPx) AND ([Departure] = @Original_Departure) AND ([Arrival] = @Original_Arrival));
+SELECT BookingID, NRIC, TravelDate, Pax, CostPx, Departure, Arrival FROM BookingTB WHERE (BookingID = @BookingID)";
             this._adapter.UpdateCommand.CommandType = global::System.Data.CommandType.Text;
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@BookingDate", global::System.Data.SqlDbType.DateTime, 0, global::System.Data.ParameterDirection.Input, 0, 0, "BookingDate", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@NRIC", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "NRIC", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@TravelDate", global::System.Data.SqlDbType.DateTime, 0, global::System.Data.ParameterDirection.Input, 0, 0, "TravelDate", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Pax", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Pax", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
@@ -1903,7 +1873,6 @@ SELECT BookingID, BookingDate, NRIC, TravelDate, Pax, CostPx, Departure, Arrival
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Departure", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Departure", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Arrival", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Arrival", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_BookingID", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "BookingID", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_BookingDate", global::System.Data.SqlDbType.DateTime, 0, global::System.Data.ParameterDirection.Input, 0, 0, "BookingDate", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_NRIC", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "NRIC", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_TravelDate", global::System.Data.SqlDbType.DateTime, 0, global::System.Data.ParameterDirection.Input, 0, 0, "TravelDate", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Pax", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Pax", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
@@ -1926,8 +1895,8 @@ SELECT BookingID, BookingDate, NRIC, TravelDate, Pax, CostPx, Departure, Arrival
             this._commandCollection = new global::System.Data.SqlClient.SqlCommand[1];
             this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[0].Connection = this.Connection;
-            this._commandCollection[0].CommandText = "SELECT BookingID, BookingDate, NRIC, TravelDate, Pax, CostPx, Departure, Arrival " +
-                "FROM dbo.BookingTB";
+            this._commandCollection[0].CommandText = "SELECT BookingID, NRIC, TravelDate, Pax, CostPx, Departure, Arrival FROM BookingT" +
+                "B";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
         }
         
@@ -1988,29 +1957,28 @@ SELECT BookingID, BookingDate, NRIC, TravelDate, Pax, CostPx, Departure, Arrival
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Delete, true)]
-        public virtual int Delete(int Original_BookingID, System.DateTime Original_BookingDate, string Original_NRIC, System.DateTime Original_TravelDate, int Original_Pax, decimal Original_CostPx, string Original_Departure, string Original_Arrival) {
+        public virtual int Delete(int Original_BookingID, string Original_NRIC, System.DateTime Original_TravelDate, int Original_Pax, decimal Original_CostPx, string Original_Departure, string Original_Arrival) {
             this.Adapter.DeleteCommand.Parameters[0].Value = ((int)(Original_BookingID));
-            this.Adapter.DeleteCommand.Parameters[1].Value = ((System.DateTime)(Original_BookingDate));
             if ((Original_NRIC == null)) {
                 throw new global::System.ArgumentNullException("Original_NRIC");
             }
             else {
-                this.Adapter.DeleteCommand.Parameters[2].Value = ((string)(Original_NRIC));
+                this.Adapter.DeleteCommand.Parameters[1].Value = ((string)(Original_NRIC));
             }
-            this.Adapter.DeleteCommand.Parameters[3].Value = ((System.DateTime)(Original_TravelDate));
-            this.Adapter.DeleteCommand.Parameters[4].Value = ((int)(Original_Pax));
-            this.Adapter.DeleteCommand.Parameters[5].Value = ((decimal)(Original_CostPx));
+            this.Adapter.DeleteCommand.Parameters[2].Value = ((System.DateTime)(Original_TravelDate));
+            this.Adapter.DeleteCommand.Parameters[3].Value = ((int)(Original_Pax));
+            this.Adapter.DeleteCommand.Parameters[4].Value = ((decimal)(Original_CostPx));
             if ((Original_Departure == null)) {
                 throw new global::System.ArgumentNullException("Original_Departure");
             }
             else {
-                this.Adapter.DeleteCommand.Parameters[6].Value = ((string)(Original_Departure));
+                this.Adapter.DeleteCommand.Parameters[5].Value = ((string)(Original_Departure));
             }
             if ((Original_Arrival == null)) {
                 throw new global::System.ArgumentNullException("Original_Arrival");
             }
             else {
-                this.Adapter.DeleteCommand.Parameters[7].Value = ((string)(Original_Arrival));
+                this.Adapter.DeleteCommand.Parameters[6].Value = ((string)(Original_Arrival));
             }
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.DeleteCommand.Connection.State;
             if (((this.Adapter.DeleteCommand.Connection.State & global::System.Data.ConnectionState.Open) 
@@ -2032,28 +2000,27 @@ SELECT BookingID, BookingDate, NRIC, TravelDate, Pax, CostPx, Departure, Arrival
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Insert, true)]
-        public virtual int Insert(System.DateTime BookingDate, string NRIC, System.DateTime TravelDate, int Pax, decimal CostPx, string Departure, string Arrival) {
-            this.Adapter.InsertCommand.Parameters[0].Value = ((System.DateTime)(BookingDate));
+        public virtual int Insert(string NRIC, System.DateTime TravelDate, int Pax, decimal CostPx, string Departure, string Arrival) {
             if ((NRIC == null)) {
                 throw new global::System.ArgumentNullException("NRIC");
             }
             else {
-                this.Adapter.InsertCommand.Parameters[1].Value = ((string)(NRIC));
+                this.Adapter.InsertCommand.Parameters[0].Value = ((string)(NRIC));
             }
-            this.Adapter.InsertCommand.Parameters[2].Value = ((System.DateTime)(TravelDate));
-            this.Adapter.InsertCommand.Parameters[3].Value = ((int)(Pax));
-            this.Adapter.InsertCommand.Parameters[4].Value = ((decimal)(CostPx));
+            this.Adapter.InsertCommand.Parameters[1].Value = ((System.DateTime)(TravelDate));
+            this.Adapter.InsertCommand.Parameters[2].Value = ((int)(Pax));
+            this.Adapter.InsertCommand.Parameters[3].Value = ((decimal)(CostPx));
             if ((Departure == null)) {
                 throw new global::System.ArgumentNullException("Departure");
             }
             else {
-                this.Adapter.InsertCommand.Parameters[5].Value = ((string)(Departure));
+                this.Adapter.InsertCommand.Parameters[4].Value = ((string)(Departure));
             }
             if ((Arrival == null)) {
                 throw new global::System.ArgumentNullException("Arrival");
             }
             else {
-                this.Adapter.InsertCommand.Parameters[6].Value = ((string)(Arrival));
+                this.Adapter.InsertCommand.Parameters[5].Value = ((string)(Arrival));
             }
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.InsertCommand.Connection.State;
             if (((this.Adapter.InsertCommand.Connection.State & global::System.Data.ConnectionState.Open) 
@@ -2075,69 +2042,51 @@ SELECT BookingID, BookingDate, NRIC, TravelDate, Pax, CostPx, Departure, Arrival
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
-        public virtual int Update(
-                    System.DateTime BookingDate, 
-                    string NRIC, 
-                    System.DateTime TravelDate, 
-                    int Pax, 
-                    decimal CostPx, 
-                    string Departure, 
-                    string Arrival, 
-                    int Original_BookingID, 
-                    System.DateTime Original_BookingDate, 
-                    string Original_NRIC, 
-                    System.DateTime Original_TravelDate, 
-                    int Original_Pax, 
-                    decimal Original_CostPx, 
-                    string Original_Departure, 
-                    string Original_Arrival, 
-                    int BookingID) {
-            this.Adapter.UpdateCommand.Parameters[0].Value = ((System.DateTime)(BookingDate));
+        public virtual int Update(string NRIC, System.DateTime TravelDate, int Pax, decimal CostPx, string Departure, string Arrival, int Original_BookingID, string Original_NRIC, System.DateTime Original_TravelDate, int Original_Pax, decimal Original_CostPx, string Original_Departure, string Original_Arrival, int BookingID) {
             if ((NRIC == null)) {
                 throw new global::System.ArgumentNullException("NRIC");
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[1].Value = ((string)(NRIC));
+                this.Adapter.UpdateCommand.Parameters[0].Value = ((string)(NRIC));
             }
-            this.Adapter.UpdateCommand.Parameters[2].Value = ((System.DateTime)(TravelDate));
-            this.Adapter.UpdateCommand.Parameters[3].Value = ((int)(Pax));
-            this.Adapter.UpdateCommand.Parameters[4].Value = ((decimal)(CostPx));
+            this.Adapter.UpdateCommand.Parameters[1].Value = ((System.DateTime)(TravelDate));
+            this.Adapter.UpdateCommand.Parameters[2].Value = ((int)(Pax));
+            this.Adapter.UpdateCommand.Parameters[3].Value = ((decimal)(CostPx));
             if ((Departure == null)) {
                 throw new global::System.ArgumentNullException("Departure");
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[5].Value = ((string)(Departure));
+                this.Adapter.UpdateCommand.Parameters[4].Value = ((string)(Departure));
             }
             if ((Arrival == null)) {
                 throw new global::System.ArgumentNullException("Arrival");
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[6].Value = ((string)(Arrival));
+                this.Adapter.UpdateCommand.Parameters[5].Value = ((string)(Arrival));
             }
-            this.Adapter.UpdateCommand.Parameters[7].Value = ((int)(Original_BookingID));
-            this.Adapter.UpdateCommand.Parameters[8].Value = ((System.DateTime)(Original_BookingDate));
+            this.Adapter.UpdateCommand.Parameters[6].Value = ((int)(Original_BookingID));
             if ((Original_NRIC == null)) {
                 throw new global::System.ArgumentNullException("Original_NRIC");
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[9].Value = ((string)(Original_NRIC));
+                this.Adapter.UpdateCommand.Parameters[7].Value = ((string)(Original_NRIC));
             }
-            this.Adapter.UpdateCommand.Parameters[10].Value = ((System.DateTime)(Original_TravelDate));
-            this.Adapter.UpdateCommand.Parameters[11].Value = ((int)(Original_Pax));
-            this.Adapter.UpdateCommand.Parameters[12].Value = ((decimal)(Original_CostPx));
+            this.Adapter.UpdateCommand.Parameters[8].Value = ((System.DateTime)(Original_TravelDate));
+            this.Adapter.UpdateCommand.Parameters[9].Value = ((int)(Original_Pax));
+            this.Adapter.UpdateCommand.Parameters[10].Value = ((decimal)(Original_CostPx));
             if ((Original_Departure == null)) {
                 throw new global::System.ArgumentNullException("Original_Departure");
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[13].Value = ((string)(Original_Departure));
+                this.Adapter.UpdateCommand.Parameters[11].Value = ((string)(Original_Departure));
             }
             if ((Original_Arrival == null)) {
                 throw new global::System.ArgumentNullException("Original_Arrival");
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[14].Value = ((string)(Original_Arrival));
+                this.Adapter.UpdateCommand.Parameters[12].Value = ((string)(Original_Arrival));
             }
-            this.Adapter.UpdateCommand.Parameters[15].Value = ((int)(BookingID));
+            this.Adapter.UpdateCommand.Parameters[13].Value = ((int)(BookingID));
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.UpdateCommand.Connection.State;
             if (((this.Adapter.UpdateCommand.Connection.State & global::System.Data.ConnectionState.Open) 
                         != global::System.Data.ConnectionState.Open)) {
@@ -2158,8 +2107,8 @@ SELECT BookingID, BookingDate, NRIC, TravelDate, Pax, CostPx, Departure, Arrival
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
-        public virtual int Update(System.DateTime BookingDate, string NRIC, System.DateTime TravelDate, int Pax, decimal CostPx, string Departure, string Arrival, int Original_BookingID, System.DateTime Original_BookingDate, string Original_NRIC, System.DateTime Original_TravelDate, int Original_Pax, decimal Original_CostPx, string Original_Departure, string Original_Arrival) {
-            return this.Update(BookingDate, NRIC, TravelDate, Pax, CostPx, Departure, Arrival, Original_BookingID, Original_BookingDate, Original_NRIC, Original_TravelDate, Original_Pax, Original_CostPx, Original_Departure, Original_Arrival, Original_BookingID);
+        public virtual int Update(string NRIC, System.DateTime TravelDate, int Pax, decimal CostPx, string Departure, string Arrival, int Original_BookingID, string Original_NRIC, System.DateTime Original_TravelDate, int Original_Pax, decimal Original_CostPx, string Original_Departure, string Original_Arrival) {
+            return this.Update(NRIC, TravelDate, Pax, CostPx, Departure, Arrival, Original_BookingID, Original_NRIC, Original_TravelDate, Original_Pax, Original_CostPx, Original_Departure, Original_Arrival, Original_BookingID);
         }
     }
     
