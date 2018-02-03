@@ -30,8 +30,6 @@ namespace DabAgent
 
         }
 
-      
-
         private void btnViewBooking_Click(object sender, EventArgs e)
         {
             BookingMain book = new BookingMain();
