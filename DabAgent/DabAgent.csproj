@@ -129,6 +129,9 @@
     <EmbeddedResource Include="BookingMain.resx">
       <DependentUpon>BookingMain.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="CustEdit.resx">
+      <DependentUpon>CustEdit.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="CustForm.resx">
       <DependentUpon>CustForm.cs</DependentUpon>
     </EmbeddedResource>
