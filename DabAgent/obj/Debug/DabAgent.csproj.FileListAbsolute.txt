@@ -14,3 +14,5 @@ C:\Users\drago\Source\Repos\DabAgent\DabAgent\obj\Debug\DabAgent.csproj.CoreComp
 C:\Users\drago\Source\Repos\DabAgent\DabAgent\obj\Debug\DabAgent.exe
 C:\Users\drago\Source\Repos\DabAgent\DabAgent\obj\Debug\DabAgent.pdb
 C:\Users\drago\Source\Repos\DabAgent\DabAgent\obj\Debug\DabAgent.MainForm.resources
+C:\Users\drago\Source\Repos\DabAgent\DabAgent\obj\Debug\DabAgent.csprojResolveAssemblyReference.cache
+C:\Users\drago\Source\Repos\DabAgent\DabAgent\obj\Debug\DabAgent.CustEdit.resources

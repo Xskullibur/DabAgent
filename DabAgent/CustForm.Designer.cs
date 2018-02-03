@@ -36,10 +36,6 @@
             System.Windows.Forms.Label date_of_BirthLabel;
             System.Windows.Forms.Label countryLabel;
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CustForm));
-            this.dabAgencyDS = new DabAgent.DabAgencyDataSet();
-            this.customerBS = new System.Windows.Forms.BindingSource(this.components);
-            this.customerTA = new DabAgent.DabAgencyDataSetTableAdapters.CustomerTBTableAdapter();
-            this.tam = new DabAgent.DabAgencyDataSetTableAdapters.TableAdapterManager();
             this.customerBN = new System.Windows.Forms.BindingNavigator(this.components);
             this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
             this.bindingNavigatorDeleteItem = new System.Windows.Forms.ToolStripButton();
@@ -62,16 +58,21 @@
             this.btnSearch = new System.Windows.Forms.Button();
             this.btnUpdate = new System.Windows.Forms.Button();
             this.btnAdd = new System.Windows.Forms.Button();
+            this.customerBS = new System.Windows.Forms.BindingSource(this.components);
+            this.dabAgencyDS = new DabAgent.DabAgencyDataSet();
+            this.customerTA = new DabAgent.DabAgencyDataSetTableAdapters.CustomerTBTableAdapter();
+            this.tam = new DabAgent.DabAgencyDataSetTableAdapters.TableAdapterManager();
+            this.btnView = new System.Windows.Forms.Button();
             nRICLabel = new System.Windows.Forms.Label();
             nameLabel = new System.Windows.Forms.Label();
             contactLabel = new System.Windows.Forms.Label();
             addressLabel = new System.Windows.Forms.Label();
             date_of_BirthLabel = new System.Windows.Forms.Label();
             countryLabel = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.dabAgencyDS)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.customerBS)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.customerBN)).BeginInit();
             this.customerBN.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.customerBS)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dabAgencyDS)).BeginInit();
             this.SuspendLayout();
             // 
             // nRICLabel
@@ -127,28 +128,6 @@
             countryLabel.Size = new System.Drawing.Size(46, 13);
             countryLabel.TabIndex = 11;
             countryLabel.Text = "Country:";
-            // 
-            // dabAgencyDS
-            // 
-            this.dabAgencyDS.DataSetName = "DabAgencyDataSet";
-            this.dabAgencyDS.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // customerBS
-            // 
-            this.customerBS.DataMember = "CustomerTB";
-            this.customerBS.DataSource = this.dabAgencyDS;
-            // 
-            // customerTA
-            // 
-            this.customerTA.ClearBeforeFill = true;
-            // 
-            // tam
-            // 
-            this.tam.BackupDataSetBeforeUpdate = false;
-            this.tam.BookingTBTableAdapter = null;
-            this.tam.CustomerTBTableAdapter = this.customerTA;
-            this.tam.HolidayTBTableAdapter = null;
-            this.tam.UpdateOrder = DabAgent.DabAgencyDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
             // 
             // customerBN
             // 
@@ -349,11 +328,44 @@
             this.btnAdd.UseVisualStyleBackColor = true;
             this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
+            // customerBS
+            // 
+            this.customerBS.DataMember = "CustomerTB";
+            this.customerBS.DataSource = this.dabAgencyDS;
+            // 
+            // dabAgencyDS
+            // 
+            this.dabAgencyDS.DataSetName = "DabAgencyDataSet";
+            this.dabAgencyDS.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // customerTA
+            // 
+            this.customerTA.ClearBeforeFill = true;
+            // 
+            // tam
+            // 
+            this.tam.BackupDataSetBeforeUpdate = false;
+            this.tam.BookingTBTableAdapter = null;
+            this.tam.CustomerTBTableAdapter = this.customerTA;
+            this.tam.HolidayTBTableAdapter = null;
+            this.tam.UpdateOrder = DabAgent.DabAgencyDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
+            // 
+            // btnView
+            // 
+            this.btnView.Location = new System.Drawing.Point(15, 242);
+            this.btnView.Name = "btnView";
+            this.btnView.Size = new System.Drawing.Size(75, 23);
+            this.btnView.TabIndex = 17;
+            this.btnView.Text = "View All";
+            this.btnView.UseVisualStyleBackColor = true;
+            this.btnView.Click += new System.EventHandler(this.btnView_Click);
+            // 
             // CustForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(574, 317);
+            this.Controls.Add(this.btnView);
             this.Controls.Add(this.btnAdd);
             this.Controls.Add(this.btnUpdate);
             this.Controls.Add(this.btnSearch);
@@ -374,11 +386,11 @@
             this.Name = "CustForm";
             this.Text = "CustForm";
             this.Load += new System.EventHandler(this.CustForm_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dabAgencyDS)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.customerBS)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.customerBN)).EndInit();
             this.customerBN.ResumeLayout(false);
             this.customerBN.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.customerBS)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dabAgencyDS)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -412,5 +424,6 @@
         private System.Windows.Forms.Button btnSearch;
         private System.Windows.Forms.Button btnUpdate;
         private System.Windows.Forms.Button btnAdd;
+        private System.Windows.Forms.Button btnView;
     }
 }

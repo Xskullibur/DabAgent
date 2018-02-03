@@ -15,8 +15,10 @@ namespace DabAgent
 
         public bool IsNRICValid()
         {
+            
             if (NRIC == String.Format("{0: (a-zA-Z)#######(a-zA-Z)}", NRIC))
             {
+                
                 return true;
             }
             else

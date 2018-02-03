@@ -48,5 +48,10 @@ namespace DabAgent
         {
             customerTA.FillBySearchNric(dabAgencyDS.CustomerTB, txtSearch.Text);
         }
+
+        private void btnView_Click(object sender, EventArgs e)
+        {
+            customerTA.Fill(dabAgencyDS.CustomerTB);
+        }
     }
 }
