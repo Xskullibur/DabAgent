@@ -232,6 +232,7 @@
             this.CalBtn.TabIndex = 25;
             this.CalBtn.Text = "Calculate Cost";
             this.CalBtn.UseVisualStyleBackColor = true;
+            this.CalBtn.Visible = false;
             this.CalBtn.Click += new System.EventHandler(this.CalBtn_Click);
             // 
             // DistLbl
@@ -242,6 +243,7 @@
             this.DistLbl.Size = new System.Drawing.Size(116, 20);
             this.DistLbl.TabIndex = 23;
             this.DistLbl.Text = "Distance: 0000";
+            this.DistLbl.Visible = false;
             // 
             // ArrivalCombo
             // 
@@ -310,7 +312,6 @@
             // costPxTextBox
             // 
             this.costPxTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bsBooking, "CostPx", true));
-            this.costPxTextBox.Enabled = false;
             this.costPxTextBox.Location = new System.Drawing.Point(134, 81);
             this.costPxTextBox.Name = "costPxTextBox";
             this.costPxTextBox.Size = new System.Drawing.Size(200, 26);
