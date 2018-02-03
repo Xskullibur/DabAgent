@@ -23,11 +23,7 @@ namespace DabAgent
           
             if (txtPassword.Text.Equals("pass"))
             {
-              
                 this.Close();
-                
-                
-
             }
             else if(!txtPassword.Text.Equals("pass"))
             {
@@ -37,6 +33,14 @@ namespace DabAgent
                     Application.Exit();
                 }
                 MessageBox.Show("Wrong Password!");
+            }
+        }
+
+        private void txtPassword_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                btnLogin.PerformClick();
             }
         }
     }
