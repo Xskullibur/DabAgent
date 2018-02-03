@@ -28,24 +28,20 @@ namespace DabAgent
 
         private void btnSave_Click(object sender, EventArgs e)
         {
-            //Customer custclass = new Customer();
-            //custclass.NRIC = nRICTextBox.Text;
-            
-            //bool a = custclass.IsNRICValid();
-            //if (a.Equals(true))
-            //{
-            //    this.customerTBBS.EndEdit();
-            //    this.tam.UpdateAll(this.dabAgencyDataSet);
-            //    this.Close();
-            //}
-            //else
-            //{
-            //    MessageBox.Show("Invalid IC");
-            //}
+            Customer custclass = new Customer();
+            custclass.NRIC = nRICTextBox.Text;
+
+            if (custclass.IsNRICValid())
+            {
+                this.customerTBBS.EndEdit();
+                this.tam.UpdateAll(this.dabAgencyDataSet);
+                this.Close();
+            }
+            else
+            {
+                MessageBox.Show("Invalid IC");
+            }
             //FIX THIS IDK HOW TO(KEEGAN)
-            
-        
-           
         }
     }
 }

@@ -29,11 +29,7 @@ namespace DabAgent
 
         public Customer()
         {
-            Customer customer = new Customer();
-            customer.NRIC = NRIC;
-            customer.Name = Name;
-            customer.Contact = Contact;
-            customer.Address = Address;
+
         }
     }
 }
