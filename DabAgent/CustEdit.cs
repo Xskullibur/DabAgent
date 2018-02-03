@@ -22,8 +22,6 @@ namespace DabAgent
         private void CustEdit_Load(object sender, EventArgs e)
         {
             customerTA.Fill(dabAgencyDataSet.CustomerTB);
-            
-
         }
 
         private void btnSave_Click(object sender, EventArgs e)
