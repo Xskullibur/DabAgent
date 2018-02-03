@@ -56,6 +56,8 @@ namespace DabAgent
 
         private void SaveBtn_Click(object sender, EventArgs e)
         {
+            bsBooking.EndEdit();
+            taBooking.Update(ds.BookingTB);
         }
 
         private void CalBtn_Click(object sender, EventArgs e)
