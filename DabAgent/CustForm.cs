@@ -27,21 +27,26 @@ namespace DabAgent
 
         private void CustForm_Load(object sender, EventArgs e)
         {
-            // TODO: This line of code loads data into the 'dabAgencyDataSet.CustomerTB' table. You can move, or remove it, as needed.
-            this.customerTA.Fill(this.dabAgencyDS.CustomerTB);
+            
 
         }
+   
 
-        private void bindingNavigatorAddNewItem_Click(object sender, EventArgs e)
-        {
-            CustEdit custedit = new CustEdit();
-            custedit.ShowDialog();
-        }
-
-        private void btnEdit_Click(object sender, EventArgs e)
+        private void btnUpdate_Click(object sender, EventArgs e)
         {
             CustEdit edit = new CustEdit();
             edit.ShowDialog();
+        }
+
+        private void btnAdd_Click(object sender, EventArgs e)
+        {
+            CustAdd add = new CustAdd();
+            add.ShowDialog();
+        }
+
+        private void btnSearch_Click(object sender, EventArgs e)
+        {
+            customerTA.FillBySearchNric(dabAgencyDS.CustomerTB, txtSearch.Text);
         }
     }
 }

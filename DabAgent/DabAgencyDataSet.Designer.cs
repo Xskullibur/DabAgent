@@ -737,6 +737,10 @@ namespace DabAgent {
             
             private global::System.Data.DataColumn columnAddress;
             
+            private global::System.Data.DataColumn columnDate_of_Birth;
+            
+            private global::System.Data.DataColumn columnCountry;
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
             public CustomerTBDataTable() {
@@ -804,6 +808,22 @@ namespace DabAgent {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public global::System.Data.DataColumn Date_of_BirthColumn {
+                get {
+                    return this.columnDate_of_Birth;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public global::System.Data.DataColumn CountryColumn {
+                get {
+                    return this.columnCountry;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
             [global::System.ComponentModel.Browsable(false)]
             public int Count {
                 get {
@@ -839,13 +859,15 @@ namespace DabAgent {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public CustomerTBRow AddCustomerTBRow(string NRIC, string Name, int Contact, string Address) {
+            public CustomerTBRow AddCustomerTBRow(string NRIC, string Name, int Contact, string Address, System.DateTime Date_of_Birth, string Country) {
                 CustomerTBRow rowCustomerTBRow = ((CustomerTBRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         NRIC,
                         Name,
                         Contact,
-                        Address};
+                        Address,
+                        Date_of_Birth,
+                        Country};
                 rowCustomerTBRow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowCustomerTBRow);
                 return rowCustomerTBRow;
@@ -879,6 +901,8 @@ namespace DabAgent {
                 this.columnName = base.Columns["Name"];
                 this.columnContact = base.Columns["Contact"];
                 this.columnAddress = base.Columns["Address"];
+                this.columnDate_of_Birth = base.Columns["Date of Birth"];
+                this.columnCountry = base.Columns["Country"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -892,6 +916,10 @@ namespace DabAgent {
                 base.Columns.Add(this.columnContact);
                 this.columnAddress = new global::System.Data.DataColumn("Address", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnAddress);
+                this.columnDate_of_Birth = new global::System.Data.DataColumn("Date of Birth", typeof(global::System.DateTime), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnDate_of_Birth);
+                this.columnCountry = new global::System.Data.DataColumn("Country", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnCountry);
                 this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
                                 this.columnNRIC}, true));
                 this.columnNRIC.AllowDBNull = false;
@@ -902,6 +930,7 @@ namespace DabAgent {
                 this.columnContact.AllowDBNull = false;
                 this.columnAddress.AllowDBNull = false;
                 this.columnAddress.MaxLength = 50;
+                this.columnCountry.MaxLength = 30;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -1504,6 +1533,62 @@ namespace DabAgent {
                 set {
                     this[this.tableCustomerTB.AddressColumn] = value;
                 }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public System.DateTime Date_of_Birth {
+                get {
+                    try {
+                        return ((global::System.DateTime)(this[this.tableCustomerTB.Date_of_BirthColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'Date of Birth\' in table \'CustomerTB\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableCustomerTB.Date_of_BirthColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public string Country {
+                get {
+                    try {
+                        return ((string)(this[this.tableCustomerTB.CountryColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'Country\' in table \'CustomerTB\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableCustomerTB.CountryColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public bool IsDate_of_BirthNull() {
+                return this.IsNull(this.tableCustomerTB.Date_of_BirthColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public void SetDate_of_BirthNull() {
+                this[this.tableCustomerTB.Date_of_BirthColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public bool IsCountryNull() {
+                return this.IsNull(this.tableCustomerTB.CountryColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public void SetCountryNull() {
+                this[this.tableCustomerTB.CountryColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -2263,40 +2348,51 @@ SELECT BookingID, BookingDate, NRIC, TravelDate, Pax, CostPx, Departure, Arrival
             tableMapping.ColumnMappings.Add("Name", "Name");
             tableMapping.ColumnMappings.Add("Contact", "Contact");
             tableMapping.ColumnMappings.Add("Address", "Address");
+            tableMapping.ColumnMappings.Add("Date of Birth", "Date of Birth");
+            tableMapping.ColumnMappings.Add("Country", "Country");
             this._adapter.TableMappings.Add(tableMapping);
             this._adapter.DeleteCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.DeleteCommand.Connection = this.Connection;
-            this._adapter.DeleteCommand.CommandText = "DELETE FROM [dbo].[CustomerTB] WHERE (([NRIC] = @Original_NRIC) AND ([Name] = @Or" +
-                "iginal_Name) AND ([Contact] = @Original_Contact) AND ([Address] = @Original_Addr" +
-                "ess))";
+            this._adapter.DeleteCommand.CommandText = @"DELETE FROM [CustomerTB] WHERE (([NRIC] = @Original_NRIC) AND ([Name] = @Original_Name) AND ([Contact] = @Original_Contact) AND ([Address] = @Original_Address) AND ((@IsNull_Country = 1 AND [Country] IS NULL) OR ([Country] = @Original_Country)) AND ((@IsNull_Date_of_Birth = 1 AND [Date of Birth] IS NULL) OR ([Date of Birth] = @Original_Date_of_Birth)))";
             this._adapter.DeleteCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_NRIC", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "NRIC", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Name", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Name", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Contact", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Contact", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Address", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Address", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_Country", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Country", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Country", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Country", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_Date_of_Birth", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Date of Birth", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Date_of_Birth", global::System.Data.SqlDbType.DateTime, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Date of Birth", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.InsertCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.InsertCommand.Connection = this.Connection;
-            this._adapter.InsertCommand.CommandText = "INSERT INTO [dbo].[CustomerTB] ([NRIC], [Name], [Contact], [Address]) VALUES (@NR" +
-                "IC, @Name, @Contact, @Address);\r\nSELECT NRIC, Name, Contact, Address FROM Custom" +
-                "erTB WHERE (NRIC = @NRIC)";
+            this._adapter.InsertCommand.CommandText = @"INSERT INTO [CustomerTB] ([NRIC], [Name], [Contact], [Address], [Country], [Date of Birth]) VALUES (@NRIC, @Name, @Contact, @Address, @Country, @Date_of_Birth);
+SELECT NRIC, Name, Contact, Address, Country, [Date of Birth] FROM CustomerTB WHERE (NRIC = @NRIC)";
             this._adapter.InsertCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@NRIC", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "NRIC", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Name", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Name", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Contact", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Contact", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Address", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Address", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Country", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Country", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Date_of_Birth", global::System.Data.SqlDbType.DateTime, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Date of Birth", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.UpdateCommand.Connection = this.Connection;
-            this._adapter.UpdateCommand.CommandText = @"UPDATE [dbo].[CustomerTB] SET [NRIC] = @NRIC, [Name] = @Name, [Contact] = @Contact, [Address] = @Address WHERE (([NRIC] = @Original_NRIC) AND ([Name] = @Original_Name) AND ([Contact] = @Original_Contact) AND ([Address] = @Original_Address));
-SELECT NRIC, Name, Contact, Address FROM CustomerTB WHERE (NRIC = @NRIC)";
+            this._adapter.UpdateCommand.CommandText = @"UPDATE [CustomerTB] SET [NRIC] = @NRIC, [Name] = @Name, [Contact] = @Contact, [Address] = @Address, [Country] = @Country, [Date of Birth] = @Date_of_Birth WHERE (([NRIC] = @Original_NRIC) AND ([Name] = @Original_Name) AND ([Contact] = @Original_Contact) AND ([Address] = @Original_Address) AND ((@IsNull_Country = 1 AND [Country] IS NULL) OR ([Country] = @Original_Country)) AND ((@IsNull_Date_of_Birth = 1 AND [Date of Birth] IS NULL) OR ([Date of Birth] = @Original_Date_of_Birth)));
+SELECT NRIC, Name, Contact, Address, Country, [Date of Birth] FROM CustomerTB WHERE (NRIC = @NRIC)";
             this._adapter.UpdateCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@NRIC", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "NRIC", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Name", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Name", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Contact", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Contact", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Address", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Address", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Country", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Country", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Date_of_Birth", global::System.Data.SqlDbType.DateTime, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Date of Birth", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_NRIC", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "NRIC", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Name", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Name", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Contact", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Contact", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Address", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Address", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_Country", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Country", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Country", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Country", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_Date_of_Birth", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Date of Birth", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Date_of_Birth", global::System.Data.SqlDbType.DateTime, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Date of Birth", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -2309,11 +2405,17 @@ SELECT NRIC, Name, Contact, Address FROM CustomerTB WHERE (NRIC = @NRIC)";
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         private void InitCommandCollection() {
-            this._commandCollection = new global::System.Data.SqlClient.SqlCommand[1];
+            this._commandCollection = new global::System.Data.SqlClient.SqlCommand[2];
             this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[0].Connection = this.Connection;
-            this._commandCollection[0].CommandText = "SELECT NRIC, Name, Contact, Address FROM dbo.CustomerTB";
+            this._commandCollection[0].CommandText = "SELECT NRIC, Name, Contact, Address, Country, [Date of Birth] FROM CustomerTB";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
+            this._commandCollection[1] = new global::System.Data.SqlClient.SqlCommand();
+            this._commandCollection[1].Connection = this.Connection;
+            this._commandCollection[1].CommandText = "SELECT        NRIC, Name, Contact, Address, Country, [Date of Birth]\r\nFROM       " +
+                "     CustomerTB\r\nWHERE        (NRIC = @nric)";
+            this._commandCollection[1].CommandType = global::System.Data.CommandType.Text;
+            this._commandCollection[1].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@nric", global::System.Data.SqlDbType.NVarChar, 9, global::System.Data.ParameterDirection.Input, 0, 0, "NRIC", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -2335,6 +2437,42 @@ SELECT NRIC, Name, Contact, Address FROM CustomerTB WHERE (NRIC = @NRIC)";
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
         public virtual DabAgencyDataSet.CustomerTBDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
+            DabAgencyDataSet.CustomerTBDataTable dataTable = new DabAgencyDataSet.CustomerTBDataTable();
+            this.Adapter.Fill(dataTable);
+            return dataTable;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, false)]
+        public virtual int FillBySearchNric(DabAgencyDataSet.CustomerTBDataTable dataTable, string nric) {
+            this.Adapter.SelectCommand = this.CommandCollection[1];
+            if ((nric == null)) {
+                throw new global::System.ArgumentNullException("nric");
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[0].Value = ((string)(nric));
+            }
+            if ((this.ClearBeforeFill == true)) {
+                dataTable.Clear();
+            }
+            int returnValue = this.Adapter.Fill(dataTable);
+            return returnValue;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, false)]
+        public virtual DabAgencyDataSet.CustomerTBDataTable GetDataBySearchNric(string nric) {
+            this.Adapter.SelectCommand = this.CommandCollection[1];
+            if ((nric == null)) {
+                throw new global::System.ArgumentNullException("nric");
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[0].Value = ((string)(nric));
+            }
             DabAgencyDataSet.CustomerTBDataTable dataTable = new DabAgencyDataSet.CustomerTBDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
@@ -2373,7 +2511,7 @@ SELECT NRIC, Name, Contact, Address FROM CustomerTB WHERE (NRIC = @NRIC)";
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Delete, true)]
-        public virtual int Delete(string Original_NRIC, string Original_Name, int Original_Contact, string Original_Address) {
+        public virtual int Delete(string Original_NRIC, string Original_Name, int Original_Contact, string Original_Address, string Original_Country, global::System.Nullable<global::System.DateTime> Original_Date_of_Birth) {
             if ((Original_NRIC == null)) {
                 throw new global::System.ArgumentNullException("Original_NRIC");
             }
@@ -2392,6 +2530,22 @@ SELECT NRIC, Name, Contact, Address FROM CustomerTB WHERE (NRIC = @NRIC)";
             }
             else {
                 this.Adapter.DeleteCommand.Parameters[3].Value = ((string)(Original_Address));
+            }
+            if ((Original_Country == null)) {
+                this.Adapter.DeleteCommand.Parameters[4].Value = ((object)(1));
+                this.Adapter.DeleteCommand.Parameters[5].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.DeleteCommand.Parameters[4].Value = ((object)(0));
+                this.Adapter.DeleteCommand.Parameters[5].Value = ((string)(Original_Country));
+            }
+            if ((Original_Date_of_Birth.HasValue == true)) {
+                this.Adapter.DeleteCommand.Parameters[6].Value = ((object)(0));
+                this.Adapter.DeleteCommand.Parameters[7].Value = ((System.DateTime)(Original_Date_of_Birth.Value));
+            }
+            else {
+                this.Adapter.DeleteCommand.Parameters[6].Value = ((object)(1));
+                this.Adapter.DeleteCommand.Parameters[7].Value = global::System.DBNull.Value;
             }
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.DeleteCommand.Connection.State;
             if (((this.Adapter.DeleteCommand.Connection.State & global::System.Data.ConnectionState.Open) 
@@ -2413,7 +2567,7 @@ SELECT NRIC, Name, Contact, Address FROM CustomerTB WHERE (NRIC = @NRIC)";
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Insert, true)]
-        public virtual int Insert(string NRIC, string Name, int Contact, string Address) {
+        public virtual int Insert(string NRIC, string Name, int Contact, string Address, string Country, global::System.Nullable<global::System.DateTime> Date_of_Birth) {
             if ((NRIC == null)) {
                 throw new global::System.ArgumentNullException("NRIC");
             }
@@ -2432,6 +2586,18 @@ SELECT NRIC, Name, Contact, Address FROM CustomerTB WHERE (NRIC = @NRIC)";
             }
             else {
                 this.Adapter.InsertCommand.Parameters[3].Value = ((string)(Address));
+            }
+            if ((Country == null)) {
+                this.Adapter.InsertCommand.Parameters[4].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.InsertCommand.Parameters[4].Value = ((string)(Country));
+            }
+            if ((Date_of_Birth.HasValue == true)) {
+                this.Adapter.InsertCommand.Parameters[5].Value = ((System.DateTime)(Date_of_Birth.Value));
+            }
+            else {
+                this.Adapter.InsertCommand.Parameters[5].Value = global::System.DBNull.Value;
             }
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.InsertCommand.Connection.State;
             if (((this.Adapter.InsertCommand.Connection.State & global::System.Data.ConnectionState.Open) 
@@ -2453,7 +2619,7 @@ SELECT NRIC, Name, Contact, Address FROM CustomerTB WHERE (NRIC = @NRIC)";
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
-        public virtual int Update(string NRIC, string Name, int Contact, string Address, string Original_NRIC, string Original_Name, int Original_Contact, string Original_Address) {
+        public virtual int Update(string NRIC, string Name, int Contact, string Address, string Country, global::System.Nullable<global::System.DateTime> Date_of_Birth, string Original_NRIC, string Original_Name, int Original_Contact, string Original_Address, string Original_Country, global::System.Nullable<global::System.DateTime> Original_Date_of_Birth) {
             if ((NRIC == null)) {
                 throw new global::System.ArgumentNullException("NRIC");
             }
@@ -2473,24 +2639,52 @@ SELECT NRIC, Name, Contact, Address FROM CustomerTB WHERE (NRIC = @NRIC)";
             else {
                 this.Adapter.UpdateCommand.Parameters[3].Value = ((string)(Address));
             }
+            if ((Country == null)) {
+                this.Adapter.UpdateCommand.Parameters[4].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[4].Value = ((string)(Country));
+            }
+            if ((Date_of_Birth.HasValue == true)) {
+                this.Adapter.UpdateCommand.Parameters[5].Value = ((System.DateTime)(Date_of_Birth.Value));
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[5].Value = global::System.DBNull.Value;
+            }
             if ((Original_NRIC == null)) {
                 throw new global::System.ArgumentNullException("Original_NRIC");
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[4].Value = ((string)(Original_NRIC));
+                this.Adapter.UpdateCommand.Parameters[6].Value = ((string)(Original_NRIC));
             }
             if ((Original_Name == null)) {
                 throw new global::System.ArgumentNullException("Original_Name");
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[5].Value = ((string)(Original_Name));
+                this.Adapter.UpdateCommand.Parameters[7].Value = ((string)(Original_Name));
             }
-            this.Adapter.UpdateCommand.Parameters[6].Value = ((int)(Original_Contact));
+            this.Adapter.UpdateCommand.Parameters[8].Value = ((int)(Original_Contact));
             if ((Original_Address == null)) {
                 throw new global::System.ArgumentNullException("Original_Address");
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[7].Value = ((string)(Original_Address));
+                this.Adapter.UpdateCommand.Parameters[9].Value = ((string)(Original_Address));
+            }
+            if ((Original_Country == null)) {
+                this.Adapter.UpdateCommand.Parameters[10].Value = ((object)(1));
+                this.Adapter.UpdateCommand.Parameters[11].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[10].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[11].Value = ((string)(Original_Country));
+            }
+            if ((Original_Date_of_Birth.HasValue == true)) {
+                this.Adapter.UpdateCommand.Parameters[12].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[13].Value = ((System.DateTime)(Original_Date_of_Birth.Value));
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[12].Value = ((object)(1));
+                this.Adapter.UpdateCommand.Parameters[13].Value = global::System.DBNull.Value;
             }
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.UpdateCommand.Connection.State;
             if (((this.Adapter.UpdateCommand.Connection.State & global::System.Data.ConnectionState.Open) 
@@ -2512,8 +2706,8 @@ SELECT NRIC, Name, Contact, Address FROM CustomerTB WHERE (NRIC = @NRIC)";
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
-        public virtual int Update(string Name, int Contact, string Address, string Original_NRIC, string Original_Name, int Original_Contact, string Original_Address) {
-            return this.Update(Original_NRIC, Name, Contact, Address, Original_NRIC, Original_Name, Original_Contact, Original_Address);
+        public virtual int Update(string Name, int Contact, string Address, string Country, global::System.Nullable<global::System.DateTime> Date_of_Birth, string Original_NRIC, string Original_Name, int Original_Contact, string Original_Address, string Original_Country, global::System.Nullable<global::System.DateTime> Original_Date_of_Birth) {
+            return this.Update(Original_NRIC, Name, Contact, Address, Country, Date_of_Birth, Original_NRIC, Original_Name, Original_Contact, Original_Address, Original_Country, Original_Date_of_Birth);
         }
     }
     

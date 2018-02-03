@@ -29,36 +29,104 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.Windows.Forms.Label nRICLabel;
+            System.Windows.Forms.Label nameLabel;
+            System.Windows.Forms.Label contactLabel;
+            System.Windows.Forms.Label addressLabel;
+            System.Windows.Forms.Label date_of_BirthLabel;
+            System.Windows.Forms.Label countryLabel;
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CustForm));
             this.dabAgencyDS = new DabAgent.DabAgencyDataSet();
             this.customerBS = new System.Windows.Forms.BindingSource(this.components);
             this.customerTA = new DabAgent.DabAgencyDataSetTableAdapters.CustomerTBTableAdapter();
             this.tam = new DabAgent.DabAgencyDataSetTableAdapters.TableAdapterManager();
             this.customerBN = new System.Windows.Forms.BindingNavigator(this.components);
+            this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
+            this.bindingNavigatorDeleteItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMoveFirstItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMovePreviousItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorSeparator = new System.Windows.Forms.ToolStripSeparator();
             this.bindingNavigatorPositionItem = new System.Windows.Forms.ToolStripTextBox();
-            this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
             this.bindingNavigatorSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.bindingNavigatorMoveNextItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMoveLastItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorSeparator2 = new System.Windows.Forms.ToolStripSeparator();
-            this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
-            this.bindingNavigatorDeleteItem = new System.Windows.Forms.ToolStripButton();
             this.customerTBBindingNavigatorSaveItem = new System.Windows.Forms.ToolStripButton();
-            this.customerTBDataGridView = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.btnEdit = new System.Windows.Forms.ToolStripButton();
+            this.nRICTextBox = new System.Windows.Forms.TextBox();
+            this.nameTextBox = new System.Windows.Forms.TextBox();
+            this.contactTextBox = new System.Windows.Forms.TextBox();
+            this.addressTextBox = new System.Windows.Forms.TextBox();
+            this.date_of_BirthDateTimePicker = new System.Windows.Forms.DateTimePicker();
+            this.countryTextBox = new System.Windows.Forms.TextBox();
+            this.txtSearch = new System.Windows.Forms.TextBox();
+            this.btnSearch = new System.Windows.Forms.Button();
+            this.btnUpdate = new System.Windows.Forms.Button();
+            this.btnAdd = new System.Windows.Forms.Button();
+            nRICLabel = new System.Windows.Forms.Label();
+            nameLabel = new System.Windows.Forms.Label();
+            contactLabel = new System.Windows.Forms.Label();
+            addressLabel = new System.Windows.Forms.Label();
+            date_of_BirthLabel = new System.Windows.Forms.Label();
+            countryLabel = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dabAgencyDS)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.customerBS)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.customerBN)).BeginInit();
             this.customerBN.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.customerTBDataGridView)).BeginInit();
             this.SuspendLayout();
+            // 
+            // nRICLabel
+            // 
+            nRICLabel.AutoSize = true;
+            nRICLabel.Location = new System.Drawing.Point(12, 44);
+            nRICLabel.Name = "nRICLabel";
+            nRICLabel.Size = new System.Drawing.Size(36, 13);
+            nRICLabel.TabIndex = 1;
+            nRICLabel.Text = "NRIC:";
+            // 
+            // nameLabel
+            // 
+            nameLabel.AutoSize = true;
+            nameLabel.Location = new System.Drawing.Point(12, 70);
+            nameLabel.Name = "nameLabel";
+            nameLabel.Size = new System.Drawing.Size(38, 13);
+            nameLabel.TabIndex = 3;
+            nameLabel.Text = "Name:";
+            // 
+            // contactLabel
+            // 
+            contactLabel.AutoSize = true;
+            contactLabel.Location = new System.Drawing.Point(12, 96);
+            contactLabel.Name = "contactLabel";
+            contactLabel.Size = new System.Drawing.Size(47, 13);
+            contactLabel.TabIndex = 5;
+            contactLabel.Text = "Contact:";
+            // 
+            // addressLabel
+            // 
+            addressLabel.AutoSize = true;
+            addressLabel.Location = new System.Drawing.Point(12, 122);
+            addressLabel.Name = "addressLabel";
+            addressLabel.Size = new System.Drawing.Size(48, 13);
+            addressLabel.TabIndex = 7;
+            addressLabel.Text = "Address:";
+            // 
+            // date_of_BirthLabel
+            // 
+            date_of_BirthLabel.AutoSize = true;
+            date_of_BirthLabel.Location = new System.Drawing.Point(12, 149);
+            date_of_BirthLabel.Name = "date_of_BirthLabel";
+            date_of_BirthLabel.Size = new System.Drawing.Size(69, 13);
+            date_of_BirthLabel.TabIndex = 9;
+            date_of_BirthLabel.Text = "Date of Birth:";
+            // 
+            // countryLabel
+            // 
+            countryLabel.AutoSize = true;
+            countryLabel.Location = new System.Drawing.Point(12, 174);
+            countryLabel.Name = "countryLabel";
+            countryLabel.Size = new System.Drawing.Size(46, 13);
+            countryLabel.TabIndex = 11;
+            countryLabel.Text = "Country:";
             // 
             // dabAgencyDS
             // 
@@ -84,7 +152,7 @@
             // 
             // customerBN
             // 
-            this.customerBN.AddNewItem = this.bindingNavigatorAddNewItem;
+            this.customerBN.AddNewItem = null;
             this.customerBN.BindingSource = this.customerBS;
             this.customerBN.CountItem = this.bindingNavigatorCountItem;
             this.customerBN.DeleteItem = this.bindingNavigatorDeleteItem;
@@ -98,9 +166,7 @@
             this.bindingNavigatorMoveNextItem,
             this.bindingNavigatorMoveLastItem,
             this.bindingNavigatorSeparator2,
-            this.bindingNavigatorAddNewItem,
             this.bindingNavigatorDeleteItem,
-            this.btnEdit,
             this.customerTBBindingNavigatorSaveItem});
             this.customerBN.Location = new System.Drawing.Point(0, 0);
             this.customerBN.MoveFirstItem = this.bindingNavigatorMoveFirstItem;
@@ -112,6 +178,22 @@
             this.customerBN.Size = new System.Drawing.Size(574, 25);
             this.customerBN.TabIndex = 0;
             this.customerBN.Text = "bindingNavigator1";
+            // 
+            // bindingNavigatorCountItem
+            // 
+            this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
+            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(35, 22);
+            this.bindingNavigatorCountItem.Text = "of {0}";
+            this.bindingNavigatorCountItem.ToolTipText = "Total number of items";
+            // 
+            // bindingNavigatorDeleteItem
+            // 
+            this.bindingNavigatorDeleteItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorDeleteItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorDeleteItem.Image")));
+            this.bindingNavigatorDeleteItem.Name = "bindingNavigatorDeleteItem";
+            this.bindingNavigatorDeleteItem.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorDeleteItem.Size = new System.Drawing.Size(23, 22);
+            this.bindingNavigatorDeleteItem.Text = "Delete";
             // 
             // bindingNavigatorMoveFirstItem
             // 
@@ -145,16 +227,9 @@
             this.bindingNavigatorPositionItem.Text = "0";
             this.bindingNavigatorPositionItem.ToolTipText = "Current position";
             // 
-            // bindingNavigatorCountItem
-            // 
-            this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
-            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(35, 22);
-            this.bindingNavigatorCountItem.Text = "of {0}";
-            this.bindingNavigatorCountItem.ToolTipText = "Total number of items";
-            // 
             // bindingNavigatorSeparator1
             // 
-            this.bindingNavigatorSeparator1.Name = "bindingNavigatorSeparator";
+            this.bindingNavigatorSeparator1.Name = "bindingNavigatorSeparator1";
             this.bindingNavigatorSeparator1.Size = new System.Drawing.Size(6, 25);
             // 
             // bindingNavigatorMoveNextItem
@@ -177,27 +252,8 @@
             // 
             // bindingNavigatorSeparator2
             // 
-            this.bindingNavigatorSeparator2.Name = "bindingNavigatorSeparator";
+            this.bindingNavigatorSeparator2.Name = "bindingNavigatorSeparator2";
             this.bindingNavigatorSeparator2.Size = new System.Drawing.Size(6, 25);
-            // 
-            // bindingNavigatorAddNewItem
-            // 
-            this.bindingNavigatorAddNewItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorAddNewItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorAddNewItem.Image")));
-            this.bindingNavigatorAddNewItem.Name = "bindingNavigatorAddNewItem";
-            this.bindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(23, 22);
-            this.bindingNavigatorAddNewItem.Text = "Add new";
-            this.bindingNavigatorAddNewItem.Click += new System.EventHandler(this.bindingNavigatorAddNewItem_Click);
-            // 
-            // bindingNavigatorDeleteItem
-            // 
-            this.bindingNavigatorDeleteItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorDeleteItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorDeleteItem.Image")));
-            this.bindingNavigatorDeleteItem.Name = "bindingNavigatorDeleteItem";
-            this.bindingNavigatorDeleteItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorDeleteItem.Size = new System.Drawing.Size(23, 22);
-            this.bindingNavigatorDeleteItem.Text = "Delete";
             // 
             // customerTBBindingNavigatorSaveItem
             // 
@@ -208,61 +264,112 @@
             this.customerTBBindingNavigatorSaveItem.Text = "Save Data";
             this.customerTBBindingNavigatorSaveItem.Click += new System.EventHandler(this.customerTBBindingNavigatorSaveItem_Click);
             // 
-            // customerTBDataGridView
+            // nRICTextBox
             // 
-            this.customerTBDataGridView.AutoGenerateColumns = false;
-            this.customerTBDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.customerTBDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dataGridViewTextBoxColumn1,
-            this.dataGridViewTextBoxColumn2,
-            this.dataGridViewTextBoxColumn3,
-            this.dataGridViewTextBoxColumn4});
-            this.customerTBDataGridView.DataSource = this.customerBS;
-            this.customerTBDataGridView.Location = new System.Drawing.Point(0, 28);
-            this.customerTBDataGridView.Name = "customerTBDataGridView";
-            this.customerTBDataGridView.Size = new System.Drawing.Size(445, 220);
-            this.customerTBDataGridView.TabIndex = 1;
+            this.nRICTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.customerBS, "NRIC", true));
+            this.nRICTextBox.Location = new System.Drawing.Point(87, 41);
+            this.nRICTextBox.Name = "nRICTextBox";
+            this.nRICTextBox.Size = new System.Drawing.Size(200, 20);
+            this.nRICTextBox.TabIndex = 2;
             // 
-            // dataGridViewTextBoxColumn1
+            // nameTextBox
             // 
-            this.dataGridViewTextBoxColumn1.DataPropertyName = "NRIC";
-            this.dataGridViewTextBoxColumn1.HeaderText = "NRIC";
-            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            this.nameTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.customerBS, "Name", true));
+            this.nameTextBox.Location = new System.Drawing.Point(87, 67);
+            this.nameTextBox.Name = "nameTextBox";
+            this.nameTextBox.Size = new System.Drawing.Size(200, 20);
+            this.nameTextBox.TabIndex = 4;
             // 
-            // dataGridViewTextBoxColumn2
+            // contactTextBox
             // 
-            this.dataGridViewTextBoxColumn2.DataPropertyName = "Name";
-            this.dataGridViewTextBoxColumn2.HeaderText = "Name";
-            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            this.contactTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.customerBS, "Contact", true));
+            this.contactTextBox.Location = new System.Drawing.Point(87, 93);
+            this.contactTextBox.Name = "contactTextBox";
+            this.contactTextBox.Size = new System.Drawing.Size(200, 20);
+            this.contactTextBox.TabIndex = 6;
             // 
-            // dataGridViewTextBoxColumn3
+            // addressTextBox
             // 
-            this.dataGridViewTextBoxColumn3.DataPropertyName = "Contact";
-            this.dataGridViewTextBoxColumn3.HeaderText = "Contact";
-            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
+            this.addressTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.customerBS, "Address", true));
+            this.addressTextBox.Location = new System.Drawing.Point(87, 119);
+            this.addressTextBox.Name = "addressTextBox";
+            this.addressTextBox.Size = new System.Drawing.Size(200, 20);
+            this.addressTextBox.TabIndex = 8;
             // 
-            // dataGridViewTextBoxColumn4
+            // date_of_BirthDateTimePicker
             // 
-            this.dataGridViewTextBoxColumn4.DataPropertyName = "Address";
-            this.dataGridViewTextBoxColumn4.HeaderText = "Address";
-            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
+            this.date_of_BirthDateTimePicker.DataBindings.Add(new System.Windows.Forms.Binding("Value", this.customerBS, "Date of Birth", true));
+            this.date_of_BirthDateTimePicker.Location = new System.Drawing.Point(87, 145);
+            this.date_of_BirthDateTimePicker.Name = "date_of_BirthDateTimePicker";
+            this.date_of_BirthDateTimePicker.Size = new System.Drawing.Size(200, 20);
+            this.date_of_BirthDateTimePicker.TabIndex = 10;
             // 
-            // btnEdit
+            // countryTextBox
             // 
-            this.btnEdit.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
-            this.btnEdit.Image = ((System.Drawing.Image)(resources.GetObject("btnEdit.Image")));
-            this.btnEdit.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.btnEdit.Name = "btnEdit";
-            this.btnEdit.Size = new System.Drawing.Size(31, 22);
-            this.btnEdit.Text = "Edit";
-            this.btnEdit.Click += new System.EventHandler(this.btnEdit_Click);
+            this.countryTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.customerBS, "Country", true));
+            this.countryTextBox.Location = new System.Drawing.Point(87, 171);
+            this.countryTextBox.Name = "countryTextBox";
+            this.countryTextBox.Size = new System.Drawing.Size(200, 20);
+            this.countryTextBox.TabIndex = 12;
+            // 
+            // txtSearch
+            // 
+            this.txtSearch.Location = new System.Drawing.Point(338, 41);
+            this.txtSearch.Name = "txtSearch";
+            this.txtSearch.Size = new System.Drawing.Size(137, 20);
+            this.txtSearch.TabIndex = 13;
+            // 
+            // btnSearch
+            // 
+            this.btnSearch.Location = new System.Drawing.Point(487, 39);
+            this.btnSearch.Name = "btnSearch";
+            this.btnSearch.Size = new System.Drawing.Size(75, 23);
+            this.btnSearch.TabIndex = 14;
+            this.btnSearch.Text = "Search";
+            this.btnSearch.UseVisualStyleBackColor = true;
+            this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
+            // 
+            // btnUpdate
+            // 
+            this.btnUpdate.Location = new System.Drawing.Point(338, 93);
+            this.btnUpdate.Name = "btnUpdate";
+            this.btnUpdate.Size = new System.Drawing.Size(92, 46);
+            this.btnUpdate.TabIndex = 15;
+            this.btnUpdate.Text = "Update/Edit";
+            this.btnUpdate.UseVisualStyleBackColor = true;
+            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
+            // 
+            // btnAdd
+            // 
+            this.btnAdd.Location = new System.Drawing.Point(470, 93);
+            this.btnAdd.Name = "btnAdd";
+            this.btnAdd.Size = new System.Drawing.Size(92, 46);
+            this.btnAdd.TabIndex = 16;
+            this.btnAdd.Text = "Add";
+            this.btnAdd.UseVisualStyleBackColor = true;
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
             // CustForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(574, 317);
-            this.Controls.Add(this.customerTBDataGridView);
+            this.Controls.Add(this.btnAdd);
+            this.Controls.Add(this.btnUpdate);
+            this.Controls.Add(this.btnSearch);
+            this.Controls.Add(this.txtSearch);
+            this.Controls.Add(nRICLabel);
+            this.Controls.Add(this.nRICTextBox);
+            this.Controls.Add(nameLabel);
+            this.Controls.Add(this.nameTextBox);
+            this.Controls.Add(contactLabel);
+            this.Controls.Add(this.contactTextBox);
+            this.Controls.Add(addressLabel);
+            this.Controls.Add(this.addressTextBox);
+            this.Controls.Add(date_of_BirthLabel);
+            this.Controls.Add(this.date_of_BirthDateTimePicker);
+            this.Controls.Add(countryLabel);
+            this.Controls.Add(this.countryTextBox);
             this.Controls.Add(this.customerBN);
             this.Name = "CustForm";
             this.Text = "CustForm";
@@ -272,7 +379,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.customerBN)).EndInit();
             this.customerBN.ResumeLayout(false);
             this.customerBN.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.customerTBDataGridView)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -285,7 +391,6 @@
         private DabAgencyDataSetTableAdapters.CustomerTBTableAdapter customerTA;
         private DabAgencyDataSetTableAdapters.TableAdapterManager tam;
         private System.Windows.Forms.BindingNavigator customerBN;
-        private System.Windows.Forms.ToolStripButton bindingNavigatorAddNewItem;
         private System.Windows.Forms.ToolStripLabel bindingNavigatorCountItem;
         private System.Windows.Forms.ToolStripButton bindingNavigatorDeleteItem;
         private System.Windows.Forms.ToolStripButton bindingNavigatorMoveFirstItem;
@@ -297,11 +402,15 @@
         private System.Windows.Forms.ToolStripButton bindingNavigatorMoveLastItem;
         private System.Windows.Forms.ToolStripSeparator bindingNavigatorSeparator2;
         private System.Windows.Forms.ToolStripButton customerTBBindingNavigatorSaveItem;
-        private System.Windows.Forms.DataGridView customerTBDataGridView;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
-        private System.Windows.Forms.ToolStripButton btnEdit;
+        private System.Windows.Forms.TextBox nRICTextBox;
+        private System.Windows.Forms.TextBox nameTextBox;
+        private System.Windows.Forms.TextBox contactTextBox;
+        private System.Windows.Forms.TextBox addressTextBox;
+        private System.Windows.Forms.DateTimePicker date_of_BirthDateTimePicker;
+        private System.Windows.Forms.TextBox countryTextBox;
+        private System.Windows.Forms.TextBox txtSearch;
+        private System.Windows.Forms.Button btnSearch;
+        private System.Windows.Forms.Button btnUpdate;
+        private System.Windows.Forms.Button btnAdd;
     }
 }

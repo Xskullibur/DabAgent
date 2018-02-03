@@ -17,11 +17,17 @@ namespace DabAgent
             InitializeComponent();
         }
         int x = 0;
+       
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            if(txtPassword.Text.Equals("pass"))
+          
+            if (txtPassword.Text.Equals("pass"))
             {
+              
                 this.Close();
+                
+                
+
             }
             else if(!txtPassword.Text.Equals("pass"))
             {
