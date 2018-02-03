@@ -29,12 +29,8 @@ namespace DabAgent
             }
 
             taBooking.Update(ds.BookingTB);
+            MessageBox.Show("Record Added!");
             this.Close();
-        }
-
-        private void CalBtn_Click(object sender, EventArgs e)
-        {
-            
         }
 
         private void AddBooking_Load(object sender, EventArgs e)

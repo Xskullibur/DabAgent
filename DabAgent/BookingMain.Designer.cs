@@ -36,7 +36,6 @@
             this.bsBooking = new System.Windows.Forms.BindingSource(this.components);
             this.bookingTBDataGridView = new System.Windows.Forms.DataGridView();
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -89,7 +88,6 @@
             this.bookingTBDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.bookingTBDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewTextBoxColumn1,
-            this.dataGridViewTextBoxColumn2,
             this.dataGridViewTextBoxColumn3,
             this.dataGridViewTextBoxColumn4,
             this.dataGridViewTextBoxColumn5,
@@ -112,12 +110,6 @@
             this.dataGridViewTextBoxColumn1.HeaderText = "BookingID";
             this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
             this.dataGridViewTextBoxColumn1.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn2
-            // 
-            this.dataGridViewTextBoxColumn2.DataPropertyName = "BookingDate";
-            this.dataGridViewTextBoxColumn2.HeaderText = "BookingDate";
-            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
             // 
             // dataGridViewTextBoxColumn3
             // 
@@ -165,6 +157,7 @@
             this.RemoveBtn.TabIndex = 2;
             this.RemoveBtn.Text = "Remove";
             this.RemoveBtn.UseVisualStyleBackColor = true;
+            this.RemoveBtn.Click += new System.EventHandler(this.RemoveBtn_Click);
             // 
             // AddBtn
             // 

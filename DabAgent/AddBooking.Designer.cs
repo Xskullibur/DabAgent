@@ -273,7 +273,6 @@
             this.CalBtn.Text = "Calculate Cost";
             this.CalBtn.UseVisualStyleBackColor = true;
             this.CalBtn.Visible = false;
-            this.CalBtn.Click += new System.EventHandler(this.CalBtn_Click);
             // 
             // DistLbl
             // 

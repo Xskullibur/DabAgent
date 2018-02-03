@@ -36,5 +36,12 @@ namespace DabAgent
             addBooking.ShowDialog();
             taBooking.Fill(ds.BookingTB);
         }
+
+        private void RemoveBtn_Click(object sender, EventArgs e)
+        {
+            bsBooking.RemoveCurrent();
+            taBooking.Update(ds.BookingTB);
+            MessageBox.Show("Record Removed!");
+        }
     }
 }
