@@ -30,6 +30,8 @@
         {
             this.components = new System.ComponentModel.Container();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.ds = new DabAgent.DabAgencyDataSet();
             this.taBooking = new DabAgent.DabAgencyDataSetTableAdapters.BookingTBTableAdapter();
             this.tam = new DabAgent.DabAgencyDataSetTableAdapters.TableAdapterManager();
@@ -45,6 +47,7 @@
             this.RemoveBtn = new System.Windows.Forms.Button();
             this.AddBtn = new System.Windows.Forms.Button();
             this.EditBtn = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.ds)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bsBooking)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bookingTBDataGridView)).BeginInit();
@@ -74,17 +77,23 @@
             // 
             // bookingTBDataGridView
             // 
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(239)))), ((int)(((byte)(249)))));
+            this.bookingTBDataGridView.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.bookingTBDataGridView.AutoGenerateColumns = false;
             this.bookingTBDataGridView.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.bookingTBDataGridView.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("MS Reference Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.bookingTBDataGridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            this.bookingTBDataGridView.BackgroundColor = System.Drawing.SystemColors.Control;
+            this.bookingTBDataGridView.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.bookingTBDataGridView.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            this.bookingTBDataGridView.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(25)))), ((int)(((byte)(72)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("MS Reference Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.bookingTBDataGridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.bookingTBDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.bookingTBDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewTextBoxColumn1,
@@ -95,13 +104,24 @@
             this.dataGridViewTextBoxColumn7,
             this.dataGridViewTextBoxColumn8});
             this.bookingTBDataGridView.DataSource = this.bsBooking;
-            this.bookingTBDataGridView.Dock = System.Windows.Forms.DockStyle.Top;
-            this.bookingTBDataGridView.Location = new System.Drawing.Point(0, 0);
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle3.Padding = new System.Windows.Forms.Padding(0, 4, 0, 4);
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.DarkTurquoise;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.bookingTBDataGridView.DefaultCellStyle = dataGridViewCellStyle3;
+            this.bookingTBDataGridView.EnableHeadersVisualStyles = false;
+            this.bookingTBDataGridView.GridColor = System.Drawing.Color.LightGray;
+            this.bookingTBDataGridView.Location = new System.Drawing.Point(0, 65);
             this.bookingTBDataGridView.Name = "bookingTBDataGridView";
+            this.bookingTBDataGridView.RowHeadersVisible = false;
             this.bookingTBDataGridView.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
-            this.bookingTBDataGridView.RowTemplate.Height = 28;
+            this.bookingTBDataGridView.RowTemplate.Height = 40;
             this.bookingTBDataGridView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.bookingTBDataGridView.Size = new System.Drawing.Size(1067, 220);
+            this.bookingTBDataGridView.Size = new System.Drawing.Size(935, 281);
             this.bookingTBDataGridView.TabIndex = 1;
             // 
             // dataGridViewTextBoxColumn1
@@ -151,7 +171,7 @@
             // 
             this.RemoveBtn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.RemoveBtn.AutoSize = true;
-            this.RemoveBtn.Location = new System.Drawing.Point(781, 226);
+            this.RemoveBtn.Location = new System.Drawing.Point(649, 352);
             this.RemoveBtn.Name = "RemoveBtn";
             this.RemoveBtn.Size = new System.Drawing.Size(134, 43);
             this.RemoveBtn.TabIndex = 2;
@@ -163,7 +183,7 @@
             // 
             this.AddBtn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.AddBtn.AutoSize = true;
-            this.AddBtn.Location = new System.Drawing.Point(641, 226);
+            this.AddBtn.Location = new System.Drawing.Point(509, 352);
             this.AddBtn.Name = "AddBtn";
             this.AddBtn.Size = new System.Drawing.Size(134, 43);
             this.AddBtn.TabIndex = 3;
@@ -175,23 +195,39 @@
             // 
             this.EditBtn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.EditBtn.AutoSize = true;
-            this.EditBtn.Location = new System.Drawing.Point(921, 226);
+            this.EditBtn.Location = new System.Drawing.Point(789, 352);
             this.EditBtn.Name = "EditBtn";
             this.EditBtn.Size = new System.Drawing.Size(134, 43);
             this.EditBtn.TabIndex = 4;
             this.EditBtn.Text = "Edit";
             this.EditBtn.UseVisualStyleBackColor = true;
             // 
+            // label1
+            // 
+            this.label1.BackColor = System.Drawing.Color.DodgerBlue;
+            this.label1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.label1.Font = new System.Drawing.Font("Cambria", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(0, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(935, 62);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Booking Records";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // BookingMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1067, 281);
+            this.ClientSize = new System.Drawing.Size(935, 407);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.EditBtn);
             this.Controls.Add(this.AddBtn);
             this.Controls.Add(this.RemoveBtn);
             this.Controls.Add(this.bookingTBDataGridView);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "BookingMain";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "BookingMain";
             this.Load += new System.EventHandler(this.BookingMain_Load);
             ((System.ComponentModel.ISupportInitialize)(this.ds)).EndInit();
@@ -220,5 +256,6 @@
         private System.Windows.Forms.Button RemoveBtn;
         private System.Windows.Forms.Button AddBtn;
         private System.Windows.Forms.Button EditBtn;
+        private System.Windows.Forms.Label label1;
     }
 }
