@@ -179,10 +179,10 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="DabAgency.mdf">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="DabAgency_log.ldf">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       <DependentUpon>DabAgency.mdf</DependentUpon>
     </Content>
   </ItemGroup>
