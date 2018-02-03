@@ -34,6 +34,7 @@ namespace DabAgent
         {
             AddBooking addBooking = new AddBooking();
             addBooking.ShowDialog();
+            taBooking.Fill(ds.BookingTB);
         }
     }
 }
