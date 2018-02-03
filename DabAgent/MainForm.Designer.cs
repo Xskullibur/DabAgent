@@ -42,11 +42,12 @@
             this.btnViewCustomer.FlatAppearance.BorderColor = System.Drawing.Color.DeepSkyBlue;
             this.btnViewCustomer.FlatAppearance.BorderSize = 0;
             this.btnViewCustomer.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnViewCustomer.Font = new System.Drawing.Font("Monotype Corsiva", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnViewCustomer.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.btnViewCustomer.Location = new System.Drawing.Point(34, 76);
+            this.btnViewCustomer.Location = new System.Drawing.Point(87, 117);
             this.btnViewCustomer.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnViewCustomer.Name = "btnViewCustomer";
-            this.btnViewCustomer.Size = new System.Drawing.Size(160, 55);
+            this.btnViewCustomer.Size = new System.Drawing.Size(215, 81);
             this.btnViewCustomer.TabIndex = 1;
             this.btnViewCustomer.Text = "View Customer Details";
             this.btnViewCustomer.UseVisualStyleBackColor = false;
@@ -59,10 +60,11 @@
             this.btnViewBooking.FlatAppearance.BorderColor = System.Drawing.Color.DeepSkyBlue;
             this.btnViewBooking.FlatAppearance.BorderSize = 0;
             this.btnViewBooking.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnViewBooking.Location = new System.Drawing.Point(34, 168);
+            this.btnViewBooking.Font = new System.Drawing.Font("Monotype Corsiva", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnViewBooking.Location = new System.Drawing.Point(87, 258);
             this.btnViewBooking.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnViewBooking.Name = "btnViewBooking";
-            this.btnViewBooking.Size = new System.Drawing.Size(160, 57);
+            this.btnViewBooking.Size = new System.Drawing.Size(215, 81);
             this.btnViewBooking.TabIndex = 2;
             this.btnViewBooking.Text = "View Booking Details";
             this.btnViewBooking.UseVisualStyleBackColor = false;
@@ -74,7 +76,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(223, 51);
+            this.panel1.Size = new System.Drawing.Size(382, 64);
             this.panel1.TabIndex = 0;
             // 
             // ExitBtn
@@ -84,16 +86,17 @@
             this.ExitBtn.FlatAppearance.BorderColor = System.Drawing.Color.DeepSkyBlue;
             this.ExitBtn.FlatAppearance.BorderSize = 0;
             this.ExitBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ExitBtn.Location = new System.Drawing.Point(34, 262);
+            this.ExitBtn.Font = new System.Drawing.Font("Monotype Corsiva", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ExitBtn.Location = new System.Drawing.Point(87, 399);
             this.ExitBtn.Name = "ExitBtn";
-            this.ExitBtn.Size = new System.Drawing.Size(160, 57);
+            this.ExitBtn.Size = new System.Drawing.Size(215, 81);
             this.ExitBtn.TabIndex = 3;
             this.ExitBtn.Text = "Exit";
             this.ExitBtn.UseVisualStyleBackColor = false;
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(0, 58);
+            this.button1.Location = new System.Drawing.Point(358, 500);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(12, 10);
             this.button1.TabIndex = 0;
@@ -108,7 +111,7 @@
             this.BackColor = System.Drawing.Color.White;
             this.BackgroundImage = global::DabAgent.Properties.Resources.background11;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(223, 350);
+            this.ClientSize = new System.Drawing.Size(382, 567);
             this.ControlBox = false;
             this.Controls.Add(this.button1);
             this.Controls.Add(this.ExitBtn);
