@@ -47,5 +47,10 @@ namespace DabAgent
                 btnLogin.PerformClick();
             }
         }
+
+        private void ExitBtn_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }
