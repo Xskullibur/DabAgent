@@ -58,7 +58,6 @@ namespace DabAgent
 
         private void ExitBtn_Click(object sender, EventArgs e)
         {
-            bsBooking.CancelEdit();
             this.Close();
         }
     }

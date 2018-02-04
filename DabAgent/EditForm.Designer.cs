@@ -36,10 +36,6 @@
             System.Windows.Forms.Label arrivalLabel;
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(EditForm));
             System.Windows.Forms.Label nRICLabel;
-            this.ds = new DabAgent.DabAgencyDataSet();
-            this.bsBooking = new System.Windows.Forms.BindingSource(this.components);
-            this.taBooking = new DabAgent.DabAgencyDataSetTableAdapters.BookingTBTableAdapter();
-            this.tam = new DabAgent.DabAgencyDataSetTableAdapters.TableAdapterManager();
             this.bookingTBBindingNavigator = new System.Windows.Forms.BindingNavigator(this.components);
             this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
             this.bindingNavigatorMoveFirstItem = new System.Windows.Forms.ToolStripButton();
@@ -59,16 +55,20 @@
             this.nRICTextBox = new System.Windows.Forms.TextBox();
             this.SaveBtn = new System.Windows.Forms.Button();
             this.ExitBtn = new System.Windows.Forms.Button();
+            this.bsBooking = new System.Windows.Forms.BindingSource(this.components);
+            this.ds = new DabAgent.DabAgencyDataSet();
+            this.taBooking = new DabAgent.DabAgencyDataSetTableAdapters.BookingTBTableAdapter();
+            this.tam = new DabAgent.DabAgencyDataSetTableAdapters.TableAdapterManager();
             travelDateLabel = new System.Windows.Forms.Label();
             paxLabel = new System.Windows.Forms.Label();
             costPxLabel = new System.Windows.Forms.Label();
             departureLabel = new System.Windows.Forms.Label();
             arrivalLabel = new System.Windows.Forms.Label();
             nRICLabel = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.ds)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bsBooking)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bookingTBBindingNavigator)).BeginInit();
             this.bookingTBBindingNavigator.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.bsBooking)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ds)).BeginInit();
             this.SuspendLayout();
             // 
             // travelDateLabel
@@ -116,27 +116,6 @@
             arrivalLabel.TabIndex = 13;
             arrivalLabel.Text = "Arrival:";
             // 
-            // ds
-            // 
-            this.ds.DataSetName = "DabAgencyDataSet";
-            this.ds.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // bsBooking
-            // 
-            this.bsBooking.DataMember = "BookingTB";
-            this.bsBooking.DataSource = this.ds;
-            // 
-            // taBooking
-            // 
-            this.taBooking.ClearBeforeFill = true;
-            // 
-            // tam
-            // 
-            this.tam.BackupDataSetBeforeUpdate = false;
-            this.tam.BookingTBTableAdapter = this.taBooking;
-            this.tam.HolidayTBTableAdapter = null;
-            this.tam.UpdateOrder = DabAgent.DabAgencyDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
-            // 
             // bookingTBBindingNavigator
             // 
             this.bookingTBBindingNavigator.AddNewItem = null;
@@ -162,7 +141,7 @@
             this.bookingTBBindingNavigator.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
             this.bookingTBBindingNavigator.Name = "bookingTBBindingNavigator";
             this.bookingTBBindingNavigator.PositionItem = this.bindingNavigatorPositionItem;
-            this.bookingTBBindingNavigator.Size = new System.Drawing.Size(399, 31);
+            this.bookingTBBindingNavigator.Size = new System.Drawing.Size(390, 31);
             this.bookingTBBindingNavigator.TabIndex = 0;
             this.bookingTBBindingNavigator.Text = "bindingNavigator1";
             // 
@@ -303,9 +282,9 @@
             // 
             // SaveBtn
             // 
-            this.SaveBtn.Location = new System.Drawing.Point(210, 372);
+            this.SaveBtn.Location = new System.Drawing.Point(220, 372);
             this.SaveBtn.Name = "SaveBtn";
-            this.SaveBtn.Size = new System.Drawing.Size(135, 42);
+            this.SaveBtn.Size = new System.Drawing.Size(125, 42);
             this.SaveBtn.TabIndex = 15;
             this.SaveBtn.Text = "Save Changes";
             this.SaveBtn.UseVisualStyleBackColor = true;
@@ -313,19 +292,41 @@
             // 
             // ExitBtn
             // 
-            this.ExitBtn.Location = new System.Drawing.Point(210, 420);
+            this.ExitBtn.Location = new System.Drawing.Point(220, 420);
             this.ExitBtn.Name = "ExitBtn";
-            this.ExitBtn.Size = new System.Drawing.Size(135, 42);
+            this.ExitBtn.Size = new System.Drawing.Size(125, 42);
             this.ExitBtn.TabIndex = 16;
-            this.ExitBtn.Text = "Cancel Changes";
+            this.ExitBtn.Text = "Exit";
             this.ExitBtn.UseVisualStyleBackColor = true;
             this.ExitBtn.Click += new System.EventHandler(this.ExitBtn_Click);
+            // 
+            // bsBooking
+            // 
+            this.bsBooking.DataMember = "BookingTB";
+            this.bsBooking.DataSource = this.ds;
+            // 
+            // ds
+            // 
+            this.ds.DataSetName = "DabAgencyDataSet";
+            this.ds.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // taBooking
+            // 
+            this.taBooking.ClearBeforeFill = true;
+            // 
+            // tam
+            // 
+            this.tam.BackupDataSetBeforeUpdate = false;
+            this.tam.BookingTBTableAdapter = this.taBooking;
+            this.tam.CustomerTBTableAdapter = null;
+            this.tam.HolidayTBTableAdapter = null;
+            this.tam.UpdateOrder = DabAgent.DabAgencyDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
             // 
             // EditForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(399, 499);
+            this.ClientSize = new System.Drawing.Size(390, 481);
             this.Controls.Add(this.ExitBtn);
             this.Controls.Add(this.SaveBtn);
             this.Controls.Add(nRICLabel);
@@ -344,11 +345,11 @@
             this.Name = "EditForm";
             this.Text = "EditForm";
             this.Load += new System.EventHandler(this.EditForm_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.ds)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bsBooking)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bookingTBBindingNavigator)).EndInit();
             this.bookingTBBindingNavigator.ResumeLayout(false);
             this.bookingTBBindingNavigator.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.bsBooking)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ds)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
