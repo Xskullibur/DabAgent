@@ -19,13 +19,6 @@ namespace DabAgent
             InitializeComponent();
         }
 
-        private void bookingTBBindingNavigatorSaveItem_Click(object sender, EventArgs e)
-        {
-            bsBooking.EndEdit();
-            tam.UpdateAll(ds);
-
-        }
-
         private void BookingDisplay_Load(object sender, EventArgs e)
         {
             customerTBTableAdapter.Fill(ds.CustomerTB);
