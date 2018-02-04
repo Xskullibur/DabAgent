@@ -116,6 +116,7 @@
             this.bookingTBDataGridView.EnableHeadersVisualStyles = false;
             this.bookingTBDataGridView.GridColor = System.Drawing.Color.LightGray;
             this.bookingTBDataGridView.Location = new System.Drawing.Point(0, 65);
+            this.bookingTBDataGridView.MultiSelect = false;
             this.bookingTBDataGridView.Name = "bookingTBDataGridView";
             this.bookingTBDataGridView.RowHeadersVisible = false;
             this.bookingTBDataGridView.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
@@ -123,6 +124,7 @@
             this.bookingTBDataGridView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.bookingTBDataGridView.Size = new System.Drawing.Size(935, 281);
             this.bookingTBDataGridView.TabIndex = 1;
+            this.bookingTBDataGridView.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.bookingTBDataGridView_CellDoubleClick);
             // 
             // dataGridViewTextBoxColumn1
             // 
