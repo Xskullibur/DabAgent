@@ -199,8 +199,9 @@
             this.EditBtn.Name = "EditBtn";
             this.EditBtn.Size = new System.Drawing.Size(134, 43);
             this.EditBtn.TabIndex = 4;
-            this.EditBtn.Text = "Edit";
+            this.EditBtn.Text = "Edit Records";
             this.EditBtn.UseVisualStyleBackColor = true;
+            this.EditBtn.Click += new System.EventHandler(this.EditBtn_Click);
             // 
             // label1
             // 

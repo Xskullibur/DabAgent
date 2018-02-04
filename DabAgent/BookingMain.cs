@@ -43,5 +43,11 @@ namespace DabAgent
             taBooking.Update(ds.BookingTB);
             MessageBox.Show("Record Removed!");
         }
+
+        private void EditBtn_Click(object sender, EventArgs e)
+        {
+            EditForm editForm = new EditForm();
+            editForm.ShowDialog();
+        }
     }
 }

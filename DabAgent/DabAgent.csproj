@@ -97,6 +97,12 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>DabAgencyDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="EditForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditForm.Designer.cs">
+      <DependentUpon>EditForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="HolidayDest.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -134,6 +140,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="CustForm.resx">
       <DependentUpon>CustForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditForm.resx">
+      <DependentUpon>EditForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="HolidayDest.resx">
       <DependentUpon>HolidayDest.cs</DependentUpon>
