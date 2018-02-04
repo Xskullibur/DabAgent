@@ -59,7 +59,14 @@ namespace DabAgent
         private void SaveBtn_Click(object sender, EventArgs e)
         {
             bsBooking.EndEdit();
-            taBooking.Update(ds.BookingTB);
+            try
+            {
+                taBooking.Update(ds.BookingTB);
+            }
+            catch (System.Data.SqlClient.SqlException)
+            {
+                MessageBox.Show("Please Ensure all Fields are Filled...");
+            }
 
             MessageBox.Show("Successfully Saved Changes!");
         }
