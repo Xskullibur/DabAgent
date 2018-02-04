@@ -21,14 +21,7 @@ namespace DabAgent
 
         private void CustEdit_Load(object sender, EventArgs e)
         {
-            if (customerTA.Fill(dabAgencyDataSet.CustomerTB) != 0)
-            {
-                customerTA.Fill(dabAgencyDataSet.CustomerTB); 
-            }
-            else
-            {
-                MessageBox.Show("No Records Found!");
-            }
+            customerTA.Fill(dabAgencyDataSet.CustomerTB);
         }
 
         private void btnSave_Click(object sender, EventArgs e)

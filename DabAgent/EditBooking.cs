@@ -41,7 +41,14 @@ namespace DabAgent
 
             if (string.IsNullOrEmpty(id))
             {
-                taBooking.Fill(ds.BookingTB); 
+                if (taBooking.Fill(ds.BookingTB) != 0)
+                {
+                    taBooking.Fill(ds.BookingTB);  
+                }
+                else
+                {
+                    MessageBox.Show("No Records Found!");
+                }
             }
             else
             {
