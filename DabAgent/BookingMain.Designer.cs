@@ -48,6 +48,8 @@
             this.AddBtn = new System.Windows.Forms.Button();
             this.EditBtn = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
+            this.SearchTxt = new System.Windows.Forms.TextBox();
+            this.SearchBtn = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.ds)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bsBooking)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bookingTBDataGridView)).BeginInit();
@@ -218,11 +220,30 @@
             this.label1.Text = "Booking Records";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // SearchTxt
+            // 
+            this.SearchTxt.Location = new System.Drawing.Point(26, 360);
+            this.SearchTxt.Name = "SearchTxt";
+            this.SearchTxt.Size = new System.Drawing.Size(176, 26);
+            this.SearchTxt.TabIndex = 5;
+            // 
+            // SearchBtn
+            // 
+            this.SearchBtn.Location = new System.Drawing.Point(208, 352);
+            this.SearchBtn.Name = "SearchBtn";
+            this.SearchBtn.Size = new System.Drawing.Size(134, 43);
+            this.SearchBtn.TabIndex = 6;
+            this.SearchBtn.Text = "Search Name";
+            this.SearchBtn.UseVisualStyleBackColor = true;
+            this.SearchBtn.Click += new System.EventHandler(this.SearchBtn_Click);
+            // 
             // BookingMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(935, 407);
+            this.Controls.Add(this.SearchBtn);
+            this.Controls.Add(this.SearchTxt);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.EditBtn);
             this.Controls.Add(this.AddBtn);
@@ -260,5 +281,7 @@
         private System.Windows.Forms.Button AddBtn;
         private System.Windows.Forms.Button EditBtn;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox SearchTxt;
+        private System.Windows.Forms.Button SearchBtn;
     }
 }

@@ -16,3 +16,5 @@ C:\Users\Alson\Source\Repos\DabAgent\DabAgent\obj\Debug\DabAgent.exe
 C:\Users\Alson\Source\Repos\DabAgent\DabAgent\obj\Debug\DabAgent.pdb
 C:\Users\Alson\Source\Repos\DabAgent\DabAgent\bin\Debug\DabAgency.mdf
 C:\Users\Alson\Source\Repos\DabAgent\DabAgent\bin\Debug\DabAgency_log.ldf
+C:\Users\Alson\Source\Repos\DabAgent\DabAgent\obj\Debug\DabAgent.csprojResolveAssemblyReference.cache
+C:\Users\Alson\Source\Repos\DabAgent\DabAgent\obj\Debug\DabAgent.BookingDisplay.resources

@@ -60,5 +60,12 @@ namespace DabAgent
                 taBooking.Fill(ds.BookingTB);
             }
         }
+
+        private void SearchBtn_Click(object sender, EventArgs e)
+        {
+            BookingDisplay bookingDisplay = new BookingDisplay();
+            bookingDisplay.name = SearchTxt.Text;
+            bookingDisplay.ShowDialog();
+        }
     }
 }
