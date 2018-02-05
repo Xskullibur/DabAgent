@@ -48,6 +48,7 @@ namespace DabAgent
         {
             EditBooking editForm = new EditBooking();
             editForm.ShowDialog();
+            taBooking.Fill(ds.BookingTB);
         }
 
         private void bookingTBDataGridView_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
