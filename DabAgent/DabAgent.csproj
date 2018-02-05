@@ -156,6 +156,9 @@
     <EmbeddedResource Include="HolidayDest.resx">
       <DependentUpon>HolidayDest.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Info.resx">
+      <DependentUpon>Info.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="LoginForm.resx">
       <DependentUpon>LoginForm.cs</DependentUpon>
     </EmbeddedResource>

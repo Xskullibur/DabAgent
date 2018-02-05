@@ -45,10 +45,10 @@
             this.btnViewCustomer.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnViewCustomer.Font = new System.Drawing.Font("Monotype Corsiva", 13F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnViewCustomer.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.btnViewCustomer.Location = new System.Drawing.Point(367, 56);
-            this.btnViewCustomer.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnViewCustomer.Location = new System.Drawing.Point(652, 87);
+            this.btnViewCustomer.Margin = new System.Windows.Forms.Padding(7, 8, 7, 8);
             this.btnViewCustomer.Name = "btnViewCustomer";
-            this.btnViewCustomer.Size = new System.Drawing.Size(170, 170);
+            this.btnViewCustomer.Size = new System.Drawing.Size(302, 263);
             this.btnViewCustomer.TabIndex = 1;
             this.btnViewCustomer.Text = "View Customer Details";
             this.btnViewCustomer.UseVisualStyleBackColor = false;
@@ -62,10 +62,10 @@
             this.btnViewBooking.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnViewBooking.Font = new System.Drawing.Font("Monotype Corsiva", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnViewBooking.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.btnViewBooking.Location = new System.Drawing.Point(12, 234);
-            this.btnViewBooking.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnViewBooking.Location = new System.Drawing.Point(21, 363);
+            this.btnViewBooking.Margin = new System.Windows.Forms.Padding(7, 8, 7, 8);
             this.btnViewBooking.Name = "btnViewBooking";
-            this.btnViewBooking.Size = new System.Drawing.Size(170, 170);
+            this.btnViewBooking.Size = new System.Drawing.Size(302, 263);
             this.btnViewBooking.TabIndex = 2;
             this.btnViewBooking.Text = "View Booking Details";
             this.btnViewBooking.UseVisualStyleBackColor = false;
@@ -79,9 +79,10 @@
             this.ExitBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.ExitBtn.Font = new System.Drawing.Font("Monotype Corsiva", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ExitBtn.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.ExitBtn.Location = new System.Drawing.Point(367, 234);
+            this.ExitBtn.Location = new System.Drawing.Point(652, 363);
+            this.ExitBtn.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.ExitBtn.Name = "ExitBtn";
-            this.ExitBtn.Size = new System.Drawing.Size(170, 170);
+            this.ExitBtn.Size = new System.Drawing.Size(302, 263);
             this.ExitBtn.TabIndex = 3;
             this.ExitBtn.Text = "Exit";
             this.ExitBtn.UseVisualStyleBackColor = false;
@@ -91,12 +92,14 @@
             // 
             this.AbtBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.AbtBtn.BackgroundImage = global::DabAgent.Properties.Resources.abt;
-            this.AbtBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.AbtBtn.Location = new System.Drawing.Point(12, 56);
+            this.AbtBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.AbtBtn.Location = new System.Drawing.Point(21, 87);
+            this.AbtBtn.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.AbtBtn.Name = "AbtBtn";
-            this.AbtBtn.Size = new System.Drawing.Size(348, 170);
+            this.AbtBtn.Size = new System.Drawing.Size(619, 263);
             this.AbtBtn.TabIndex = 5;
             this.AbtBtn.UseVisualStyleBackColor = false;
+            this.AbtBtn.Click += new System.EventHandler(this.AbtBtn_Click);
             // 
             // HolidayBtn
             // 
@@ -106,19 +109,20 @@
             this.HolidayBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.HolidayBtn.Font = new System.Drawing.Font("Monotype Corsiva", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.HolidayBtn.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.HolidayBtn.Location = new System.Drawing.Point(190, 234);
-            this.HolidayBtn.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.HolidayBtn.Location = new System.Drawing.Point(338, 363);
+            this.HolidayBtn.Margin = new System.Windows.Forms.Padding(7, 8, 7, 8);
             this.HolidayBtn.Name = "HolidayBtn";
-            this.HolidayBtn.Size = new System.Drawing.Size(170, 170);
+            this.HolidayBtn.Size = new System.Drawing.Size(302, 263);
             this.HolidayBtn.TabIndex = 6;
             this.HolidayBtn.Text = "Holiday Destinations";
             this.HolidayBtn.UseVisualStyleBackColor = false;
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(12, 25);
+            this.button1.Location = new System.Drawing.Point(21, 39);
+            this.button1.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(12, 10);
+            this.button1.Size = new System.Drawing.Size(21, 15);
             this.button1.TabIndex = 0;
             this.button1.Text = "button1";
             this.button1.UseVisualStyleBackColor = true;
@@ -131,19 +135,20 @@
             this.label1.Font = new System.Drawing.Font("Cambria", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.label1.Location = new System.Drawing.Point(0, 0);
+            this.label1.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(552, 51);
+            this.label1.Size = new System.Drawing.Size(981, 79);
             this.label1.TabIndex = 7;
             this.label1.Text = "Main Menu";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // MainForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(16F, 31F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(552, 421);
+            this.ClientSize = new System.Drawing.Size(981, 653);
             this.ControlBox = false;
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button1);
@@ -154,7 +159,7 @@
             this.Controls.Add(this.btnViewCustomer);
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.Margin = new System.Windows.Forms.Padding(7, 8, 7, 8);
             this.Name = "MainForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "MainForm";
