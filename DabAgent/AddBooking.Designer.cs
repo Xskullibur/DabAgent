@@ -327,7 +327,7 @@
             this.MinimizeBox = false;
             this.Name = "AddBooking";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "AddBooking";
+            this.Text = "Add Booking";
             this.Load += new System.EventHandler(this.AddBooking_Load);
             this.TabControl.ResumeLayout(false);
             this.PersonalTab.ResumeLayout(false);
