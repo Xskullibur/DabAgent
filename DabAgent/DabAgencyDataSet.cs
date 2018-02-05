@@ -2,9 +2,11 @@
 {
 }
 
-namespace DabAgent {
-    
-    
-    public partial class DabAgencyDataSet {
+namespace DabAgent
+{
+
+
+    public partial class DabAgencyDataSet
+    {
     }
 }

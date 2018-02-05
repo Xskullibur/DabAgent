@@ -56,6 +56,66 @@
             ((System.ComponentModel.ISupportInitialize)(this.customerBS)).BeginInit();
             this.SuspendLayout();
             // 
+            // nRICLabel
+            // 
+            nRICLabel.AutoSize = true;
+            nRICLabel.Location = new System.Drawing.Point(48, 70);
+            nRICLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            nRICLabel.Name = "nRICLabel";
+            nRICLabel.Size = new System.Drawing.Size(52, 20);
+            nRICLabel.TabIndex = 1;
+            nRICLabel.Text = "NRIC:";
+            // 
+            // nameLabel
+            // 
+            nameLabel.AutoSize = true;
+            nameLabel.Location = new System.Drawing.Point(48, 115);
+            nameLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            nameLabel.Name = "nameLabel";
+            nameLabel.Size = new System.Drawing.Size(55, 20);
+            nameLabel.TabIndex = 3;
+            nameLabel.Text = "Name:";
+            // 
+            // contactLabel
+            // 
+            contactLabel.AutoSize = true;
+            contactLabel.Location = new System.Drawing.Point(48, 161);
+            contactLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            contactLabel.Name = "contactLabel";
+            contactLabel.Size = new System.Drawing.Size(69, 20);
+            contactLabel.TabIndex = 5;
+            contactLabel.Text = "Contact:";
+            // 
+            // addressLabel
+            // 
+            addressLabel.AutoSize = true;
+            addressLabel.Location = new System.Drawing.Point(48, 206);
+            addressLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            addressLabel.Name = "addressLabel";
+            addressLabel.Size = new System.Drawing.Size(72, 20);
+            addressLabel.TabIndex = 7;
+            addressLabel.Text = "Address:";
+            // 
+            // date_of_BirthLabel
+            // 
+            date_of_BirthLabel.AutoSize = true;
+            date_of_BirthLabel.Location = new System.Drawing.Point(48, 253);
+            date_of_BirthLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            date_of_BirthLabel.Name = "date_of_BirthLabel";
+            date_of_BirthLabel.Size = new System.Drawing.Size(103, 20);
+            date_of_BirthLabel.TabIndex = 9;
+            date_of_BirthLabel.Text = "Date of Birth:";
+            // 
+            // countryLabel
+            // 
+            countryLabel.AutoSize = true;
+            countryLabel.Location = new System.Drawing.Point(51, 296);
+            countryLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            countryLabel.Name = "countryLabel";
+            countryLabel.Size = new System.Drawing.Size(68, 20);
+            countryLabel.TabIndex = 11;
+            countryLabel.Text = "Country:";
+            // 
             // dabAgencyDS
             // 
             this.dabAgencyDS.DataSetName = "DabAgencyDataSet";
@@ -78,115 +138,68 @@
             this.tam.HolidayTBTableAdapter = null;
             this.tam.UpdateOrder = DabAgent.DabAgencyDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
             // 
-            // nRICLabel
-            // 
-            nRICLabel.AutoSize = true;
-            nRICLabel.Location = new System.Drawing.Point(86, 109);
-            nRICLabel.Name = "nRICLabel";
-            nRICLabel.Size = new System.Drawing.Size(90, 32);
-            nRICLabel.TabIndex = 1;
-            nRICLabel.Text = "NRIC:";
-            // 
             // nRICTextBox
             // 
             this.nRICTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.customerBS, "NRIC", true));
-            this.nRICTextBox.Location = new System.Drawing.Point(286, 106);
+            this.nRICTextBox.Location = new System.Drawing.Point(161, 68);
+            this.nRICTextBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.nRICTextBox.Name = "nRICTextBox";
-            this.nRICTextBox.Size = new System.Drawing.Size(522, 38);
+            this.nRICTextBox.Size = new System.Drawing.Size(295, 26);
             this.nRICTextBox.TabIndex = 2;
-            // 
-            // nameLabel
-            // 
-            nameLabel.AutoSize = true;
-            nameLabel.Location = new System.Drawing.Point(86, 179);
-            nameLabel.Name = "nameLabel";
-            nameLabel.Size = new System.Drawing.Size(98, 32);
-            nameLabel.TabIndex = 3;
-            nameLabel.Text = "Name:";
             // 
             // nameTextBox
             // 
             this.nameTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.customerBS, "Name", true));
-            this.nameTextBox.Location = new System.Drawing.Point(286, 176);
+            this.nameTextBox.Location = new System.Drawing.Point(161, 114);
+            this.nameTextBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.nameTextBox.Name = "nameTextBox";
-            this.nameTextBox.Size = new System.Drawing.Size(522, 38);
+            this.nameTextBox.Size = new System.Drawing.Size(295, 26);
             this.nameTextBox.TabIndex = 4;
-            // 
-            // contactLabel
-            // 
-            contactLabel.AutoSize = true;
-            contactLabel.Location = new System.Drawing.Point(86, 249);
-            contactLabel.Name = "contactLabel";
-            contactLabel.Size = new System.Drawing.Size(121, 32);
-            contactLabel.TabIndex = 5;
-            contactLabel.Text = "Contact:";
             // 
             // contactTextBox
             // 
             this.contactTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.customerBS, "Contact", true));
-            this.contactTextBox.Location = new System.Drawing.Point(286, 246);
+            this.contactTextBox.Location = new System.Drawing.Point(161, 159);
+            this.contactTextBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.contactTextBox.Name = "contactTextBox";
-            this.contactTextBox.Size = new System.Drawing.Size(522, 38);
+            this.contactTextBox.Size = new System.Drawing.Size(295, 26);
             this.contactTextBox.TabIndex = 6;
-            // 
-            // addressLabel
-            // 
-            addressLabel.AutoSize = true;
-            addressLabel.Location = new System.Drawing.Point(86, 319);
-            addressLabel.Name = "addressLabel";
-            addressLabel.Size = new System.Drawing.Size(127, 32);
-            addressLabel.TabIndex = 7;
-            addressLabel.Text = "Address:";
             // 
             // addressTextBox
             // 
             this.addressTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.customerBS, "Address", true));
-            this.addressTextBox.Location = new System.Drawing.Point(286, 316);
+            this.addressTextBox.Location = new System.Drawing.Point(161, 204);
+            this.addressTextBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.addressTextBox.Name = "addressTextBox";
-            this.addressTextBox.Size = new System.Drawing.Size(522, 38);
+            this.addressTextBox.Size = new System.Drawing.Size(295, 26);
             this.addressTextBox.TabIndex = 8;
-            // 
-            // date_of_BirthLabel
-            // 
-            date_of_BirthLabel.AutoSize = true;
-            date_of_BirthLabel.Location = new System.Drawing.Point(86, 392);
-            date_of_BirthLabel.Name = "date_of_BirthLabel";
-            date_of_BirthLabel.Size = new System.Drawing.Size(180, 32);
-            date_of_BirthLabel.TabIndex = 9;
-            date_of_BirthLabel.Text = "Date of Birth:";
             // 
             // date_of_BirthDateTimePicker
             // 
             this.date_of_BirthDateTimePicker.DataBindings.Add(new System.Windows.Forms.Binding("Value", this.customerBS, "Date of Birth", true));
-            this.date_of_BirthDateTimePicker.Location = new System.Drawing.Point(286, 386);
+            this.date_of_BirthDateTimePicker.Location = new System.Drawing.Point(161, 249);
+            this.date_of_BirthDateTimePicker.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.date_of_BirthDateTimePicker.Name = "date_of_BirthDateTimePicker";
-            this.date_of_BirthDateTimePicker.Size = new System.Drawing.Size(522, 38);
+            this.date_of_BirthDateTimePicker.Size = new System.Drawing.Size(295, 26);
             this.date_of_BirthDateTimePicker.TabIndex = 10;
-            // 
-            // countryLabel
-            // 
-            countryLabel.AutoSize = true;
-            countryLabel.Location = new System.Drawing.Point(91, 459);
-            countryLabel.Name = "countryLabel";
-            countryLabel.Size = new System.Drawing.Size(122, 32);
-            countryLabel.TabIndex = 11;
-            countryLabel.Text = "Country:";
             // 
             // countryTextBox
             // 
             this.countryTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.customerBS, "Country", true));
-            this.countryTextBox.Location = new System.Drawing.Point(286, 456);
+            this.countryTextBox.Location = new System.Drawing.Point(161, 294);
+            this.countryTextBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.countryTextBox.Name = "countryTextBox";
-            this.countryTextBox.Size = new System.Drawing.Size(522, 38);
+            this.countryTextBox.Size = new System.Drawing.Size(295, 26);
             this.countryTextBox.TabIndex = 12;
             // 
             // btnAddCust
             // 
             this.btnAddCust.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.btnAddCust.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAddCust.Location = new System.Drawing.Point(0, 674);
+            this.btnAddCust.Location = new System.Drawing.Point(0, 435);
+            this.btnAddCust.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnAddCust.Name = "btnAddCust";
-            this.btnAddCust.Size = new System.Drawing.Size(941, 102);
+            this.btnAddCust.Size = new System.Drawing.Size(529, 66);
             this.btnAddCust.TabIndex = 13;
             this.btnAddCust.Text = "Add Customer";
             this.btnAddCust.UseVisualStyleBackColor = true;
@@ -194,9 +207,9 @@
             // 
             // CustAdd
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(16F, 31F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(941, 776);
+            this.ClientSize = new System.Drawing.Size(529, 501);
             this.Controls.Add(this.btnAddCust);
             this.Controls.Add(nRICLabel);
             this.Controls.Add(this.nRICTextBox);
@@ -210,6 +223,7 @@
             this.Controls.Add(this.date_of_BirthDateTimePicker);
             this.Controls.Add(countryLabel);
             this.Controls.Add(this.countryTextBox);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "CustAdd";
             this.Text = "CustAdd";
             this.Load += new System.EventHandler(this.CustAdd_Load);

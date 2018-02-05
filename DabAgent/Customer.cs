@@ -16,8 +16,8 @@ namespace DabAgent
 
         public bool IsNRICValid()
         {
-            
-            if (NRIC.Equals(@"[sStTgGfF]#######[a-zA-Z]"))
+            Regex ValidIC = new Regex(@"^[sStTgGfF]\d{7}[a-zA-Z]$");
+            if (ValidIC.IsMatch(NRIC))
             { 
                 return true;
             }
