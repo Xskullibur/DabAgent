@@ -40,5 +40,11 @@ namespace DabAgent
         {
             this.Close();
         }
+
+        private void AbtBtn_Click(object sender, EventArgs e)
+        {
+            Info about = new Info();
+            about.ShowDialog();
+        }
     }
 }
