@@ -19,9 +19,8 @@ namespace DabAgent
 
         private void customerTBBindingNavigatorSaveItem_Click(object sender, EventArgs e)
         {
-            this.Validate();
-            this.customerBS.EndEdit();
-            this.tam.UpdateAll(this.dabAgencyDS);
+            customerBS.EndEdit();
+            tam.UpdateAll(dabAgencyDS);
 
         }
 
@@ -29,9 +28,20 @@ namespace DabAgent
         {
             customerTA.Fill(dabAgencyDS.CustomerTB);
             date_of_BirthDateTimePicker.Format = DateTimePickerFormat.Custom;
-            date_of_BirthDateTimePicker.CustomFormat = "ddMMMMyyyy";
+            date_of_BirthDateTimePicker.CustomFormat = "dd MMMM yyyy";
         }
-   
+
+        private void btnAdd_Click(object sender, EventArgs e)
+        {
+            CustAdd add = new CustAdd();
+            add.ShowDialog();
+            customerTA.Fill(dabAgencyDS.CustomerTB);
+        }
+
+        private void btnSearch_Click(object sender, EventArgs e)
+        {
+            customerTA.FillBySearchNric(dabAgencyDS.CustomerTB, txtSearch.Text);
+        }
 
         private void btnUpdate_Click(object sender, EventArgs e)
         {
@@ -48,18 +58,6 @@ namespace DabAgent
             {
                 MessageBox.Show("Invalid NRIC\nPlease Try Again...");
             }
-        }
-
-        private void btnAdd_Click(object sender, EventArgs e)
-        {
-            CustAdd add = new CustAdd();
-            add.ShowDialog();
-            customerTA.Fill(dabAgencyDS.CustomerTB);
-        }
-
-        private void btnSearch_Click(object sender, EventArgs e)
-        {
-            customerTA.FillBySearchNric(dabAgencyDS.CustomerTB, txtSearch.Text);
         }
     }
 }
