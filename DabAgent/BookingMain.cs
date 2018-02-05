@@ -19,10 +19,9 @@ namespace DabAgent
 
         private void bookingTBBindingNavigatorSaveItem_Click(object sender, EventArgs e)
         {
-            this.Validate();
-            this.bsBooking.EndEdit();
-            this.tam.UpdateAll(this.ds);
-
+            Validate();
+            bsBooking.EndEdit();
+            tam.UpdateAll(ds);
         }
 
         private void BookingMain_Load(object sender, EventArgs e)
@@ -64,9 +63,13 @@ namespace DabAgent
 
         private void SearchBtn_Click(object sender, EventArgs e)
         {
-            CustomerInfo customerInfo = new CustomerInfo();
-            customerInfo.ic = SearchTxt.Text;
-            customerInfo.ShowDialog();
+            //CustomerInfo customerInfo = new CustomerInfo();
+            //customerInfo.ic = SearchTxt.Text;
+            //customerInfo.ShowDialog();
+
+            BookingDisplay bookingDisplay = new BookingDisplay();
+            bookingDisplay.ic = SearchTxt.Text;
+            bookingDisplay.ShowDialog();
         }
     }
 }

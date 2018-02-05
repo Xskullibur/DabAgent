@@ -40,3 +40,4 @@ C:\Users\Keegan\Source\Repos\DabAgent\DabAgent\obj\Debug\DabAgent.Info.resources
 C:\Users\Alson\Source\Repos\DabAgent\DabAgent\obj\Debug\DabAgent.CustAdd.resources
 C:\Users\Alson\Source\Repos\DabAgent\DabAgent\obj\Debug\DabAgent.CustomerInfo.resources
 C:\Users\Alson\Source\Repos\DabAgent\DabAgent\obj\Debug\DabAgent.Info.resources
+C:\Users\Alson\Source\Repos\DabAgent\DabAgent\obj\Debug\DabAgent.BookingDisplay.resources

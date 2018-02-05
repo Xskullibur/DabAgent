@@ -1923,7 +1923,7 @@ SELECT BookingID, NRIC, TravelDate, Pax, CostPx, Departure, Arrival, BookingDate
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         private void InitCommandCollection() {
-            this._commandCollection = new global::System.Data.SqlClient.SqlCommand[2];
+            this._commandCollection = new global::System.Data.SqlClient.SqlCommand[3];
             this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[0].Connection = this.Connection;
             this._commandCollection[0].CommandText = "SELECT BookingID, NRIC, TravelDate, Pax, CostPx, Departure, Arrival, BookingDate " +
@@ -1935,6 +1935,15 @@ SELECT BookingID, NRIC, TravelDate, Pax, CostPx, Departure, Arrival, BookingDate
                 "FROM BookingTB WHERE (BookingID = @id)";
             this._commandCollection[1].CommandType = global::System.Data.CommandType.Text;
             this._commandCollection[1].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@id", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 0, 0, "BookingID", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[2] = new global::System.Data.SqlClient.SqlCommand();
+            this._commandCollection[2].Connection = this.Connection;
+            this._commandCollection[2].CommandText = @"SELECT BookingTB.BookingID, BookingTB.NRIC, BookingTB.TravelDate, BookingTB.Pax, BookingTB.CostPx, BookingTB.Departure, BookingTB.Arrival, BookingTB.BookingDate, CustomerTB.NRIC AS Expr1
+FROM   BookingTB INNER JOIN
+             CustomerTB ON BookingTB.NRIC = CustomerTB.NRIC
+WHERE (CustomerTB.NRIC = @ic) OR
+             (BookingTB.NRIC = @ic)";
+            this._commandCollection[2].CommandType = global::System.Data.CommandType.Text;
+            this._commandCollection[2].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ic", global::System.Data.SqlDbType.NVarChar, 9, global::System.Data.ParameterDirection.Input, 0, 0, "Expr1", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -1982,6 +1991,42 @@ SELECT BookingID, NRIC, TravelDate, Pax, CostPx, Departure, Arrival, BookingDate
         public virtual DabAgencyDataSet.BookingTBDataTable GetDataBySearchID(int id) {
             this.Adapter.SelectCommand = this.CommandCollection[1];
             this.Adapter.SelectCommand.Parameters[0].Value = ((int)(id));
+            DabAgencyDataSet.BookingTBDataTable dataTable = new DabAgencyDataSet.BookingTBDataTable();
+            this.Adapter.Fill(dataTable);
+            return dataTable;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, false)]
+        public virtual int FillBySearchNRIC(DabAgencyDataSet.BookingTBDataTable dataTable, string ic) {
+            this.Adapter.SelectCommand = this.CommandCollection[2];
+            if ((ic == null)) {
+                throw new global::System.ArgumentNullException("ic");
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[0].Value = ((string)(ic));
+            }
+            if ((this.ClearBeforeFill == true)) {
+                dataTable.Clear();
+            }
+            int returnValue = this.Adapter.Fill(dataTable);
+            return returnValue;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, false)]
+        public virtual DabAgencyDataSet.BookingTBDataTable GetDataBySearchNRIC(string ic) {
+            this.Adapter.SelectCommand = this.CommandCollection[2];
+            if ((ic == null)) {
+                throw new global::System.ArgumentNullException("ic");
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[0].Value = ((string)(ic));
+            }
             DabAgencyDataSet.BookingTBDataTable dataTable = new DabAgencyDataSet.BookingTBDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
