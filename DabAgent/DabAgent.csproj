@@ -67,12 +67,6 @@
       <DependentUpon>AddBooking.cs</DependentUpon>
     </Compile>
     <Compile Include="Booking.cs" />
-    <Compile Include="BookingDisplay.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="BookingDisplay.Designer.cs">
-      <DependentUpon>BookingDisplay.cs</DependentUpon>
-    </Compile>
     <Compile Include="BookingMain.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -92,6 +86,12 @@
       <DependentUpon>CustForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Customer.cs" />
+    <Compile Include="CustomerInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CustomerInfo.Designer.cs">
+      <DependentUpon>CustomerInfo.cs</DependentUpon>
+    </Compile>
     <Compile Include="DabAgencyDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -132,9 +132,6 @@
     <EmbeddedResource Include="AddBooking.resx">
       <DependentUpon>AddBooking.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="BookingDisplay.resx">
-      <DependentUpon>BookingDisplay.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="BookingMain.resx">
       <DependentUpon>BookingMain.cs</DependentUpon>
     </EmbeddedResource>
@@ -143,6 +140,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="CustForm.resx">
       <DependentUpon>CustForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomerInfo.resx">
+      <DependentUpon>CustomerInfo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="EditBooking.resx">
       <DependentUpon>EditBooking.cs</DependentUpon>

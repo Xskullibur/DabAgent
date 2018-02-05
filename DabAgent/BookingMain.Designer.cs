@@ -233,7 +233,7 @@
             this.SearchBtn.Name = "SearchBtn";
             this.SearchBtn.Size = new System.Drawing.Size(134, 43);
             this.SearchBtn.TabIndex = 6;
-            this.SearchBtn.Text = "Search Name";
+            this.SearchBtn.Text = "Search NRIC";
             this.SearchBtn.UseVisualStyleBackColor = true;
             this.SearchBtn.Click += new System.EventHandler(this.SearchBtn_Click);
             // 

@@ -3,7 +3,6 @@ C:\Users\Alson\Source\Repos\DabAgent\DabAgent\bin\Debug\DabAgent.exe
 C:\Users\Alson\Source\Repos\DabAgent\DabAgent\bin\Debug\DabAgent.pdb
 C:\Users\Alson\Source\Repos\DabAgent\DabAgent\obj\Debug\DabAgent.AddBooking.resources
 C:\Users\Alson\Source\Repos\DabAgent\DabAgent\obj\Debug\DabAgent.BookingMain.resources
-C:\Users\Alson\Source\Repos\DabAgent\DabAgent\obj\Debug\DabAgent.CustEdit.resources
 C:\Users\Alson\Source\Repos\DabAgent\DabAgent\obj\Debug\DabAgent.CustForm.resources
 C:\Users\Alson\Source\Repos\DabAgent\DabAgent\obj\Debug\DabAgent.EditBooking.resources
 C:\Users\Alson\Source\Repos\DabAgent\DabAgent\obj\Debug\DabAgent.HolidayDest.resources
@@ -17,7 +16,6 @@ C:\Users\Alson\Source\Repos\DabAgent\DabAgent\obj\Debug\DabAgent.pdb
 C:\Users\Alson\Source\Repos\DabAgent\DabAgent\bin\Debug\DabAgency.mdf
 C:\Users\Alson\Source\Repos\DabAgent\DabAgent\bin\Debug\DabAgency_log.ldf
 C:\Users\Alson\Source\Repos\DabAgent\DabAgent\obj\Debug\DabAgent.csprojResolveAssemblyReference.cache
-C:\Users\Alson\Source\Repos\DabAgent\DabAgent\obj\Debug\DabAgent.BookingDisplay.resources
 C:\Users\Keegan\Source\Repos\DabAgent\DabAgent\bin\Debug\DabAgency.mdf
 C:\Users\Keegan\Source\Repos\DabAgent\DabAgent\bin\Debug\DabAgency_log.ldf
 C:\Users\Keegan\Source\Repos\DabAgent\DabAgent\bin\Debug\DabAgent.exe.config
@@ -39,3 +37,6 @@ C:\Users\Keegan\Source\Repos\DabAgent\DabAgent\obj\Debug\DabAgent.csproj.CoreCom
 C:\Users\Keegan\Source\Repos\DabAgent\DabAgent\obj\Debug\DabAgent.exe
 C:\Users\Keegan\Source\Repos\DabAgent\DabAgent\obj\Debug\DabAgent.pdb
 C:\Users\Keegan\Source\Repos\DabAgent\DabAgent\obj\Debug\DabAgent.Info.resources
+C:\Users\Alson\Source\Repos\DabAgent\DabAgent\obj\Debug\DabAgent.CustAdd.resources
+C:\Users\Alson\Source\Repos\DabAgent\DabAgent\obj\Debug\DabAgent.CustomerInfo.resources
+C:\Users\Alson\Source\Repos\DabAgent\DabAgent\obj\Debug\DabAgent.Info.resources
