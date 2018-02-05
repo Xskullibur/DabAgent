@@ -85,12 +85,6 @@
     <Compile Include="CustAdd.designer.cs">
       <DependentUpon>CustAdd.cs</DependentUpon>
     </Compile>
-    <Compile Include="CustEdit.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="CustEdit.designer.cs">
-      <DependentUpon>CustEdit.cs</DependentUpon>
-    </Compile>
     <Compile Include="CustForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -144,8 +138,8 @@
     <EmbeddedResource Include="BookingMain.resx">
       <DependentUpon>BookingMain.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="CustEdit.resx">
-      <DependentUpon>CustEdit.cs</DependentUpon>
+    <EmbeddedResource Include="CustAdd.resx">
+      <DependentUpon>CustAdd.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="CustForm.resx">
       <DependentUpon>CustForm.cs</DependentUpon>

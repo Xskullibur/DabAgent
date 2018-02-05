@@ -46,5 +46,11 @@ namespace DabAgent
             Info about = new Info();
             about.ShowDialog();
         }
+
+        private void HolidayBtn_Click(object sender, EventArgs e)
+        {
+            HolidayDest dest = new HolidayDest();
+            dest.ShowDialog();
+        }
     }
 }

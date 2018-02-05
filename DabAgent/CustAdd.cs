@@ -16,5 +16,25 @@ namespace DabAgent
         {
             InitializeComponent();
         }
+
+        private void customerTBBindingNavigatorSaveItem_Click(object sender, EventArgs e)
+        {
+            this.Validate();
+            this.customerBS.EndEdit();
+            this.tam.UpdateAll(this.dabAgencyDS);
+
+        }
+
+        private void CustAdd_Load(object sender, EventArgs e)
+        {
+            customerBS.AddNew();
+
+        }
+
+        private void btnAddCust_Click(object sender, EventArgs e)
+        {
+            customerBS.EndEdit();
+            customerTA.Update(dabAgencyDS.CustomerTB);
+        }
     }
 }

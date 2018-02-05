@@ -80,7 +80,7 @@
             this.ExitBtn.Font = new System.Drawing.Font("Monotype Corsiva", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ExitBtn.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.ExitBtn.Location = new System.Drawing.Point(652, 363);
-            this.ExitBtn.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.ExitBtn.Margin = new System.Windows.Forms.Padding(5);
             this.ExitBtn.Name = "ExitBtn";
             this.ExitBtn.Size = new System.Drawing.Size(302, 263);
             this.ExitBtn.TabIndex = 3;
@@ -94,7 +94,7 @@
             this.AbtBtn.BackgroundImage = global::DabAgent.Properties.Resources.abt;
             this.AbtBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.AbtBtn.Location = new System.Drawing.Point(21, 87);
-            this.AbtBtn.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.AbtBtn.Margin = new System.Windows.Forms.Padding(5);
             this.AbtBtn.Name = "AbtBtn";
             this.AbtBtn.Size = new System.Drawing.Size(619, 263);
             this.AbtBtn.TabIndex = 5;
@@ -116,11 +116,12 @@
             this.HolidayBtn.TabIndex = 6;
             this.HolidayBtn.Text = "Holiday Destinations";
             this.HolidayBtn.UseVisualStyleBackColor = false;
+            this.HolidayBtn.Click += new System.EventHandler(this.HolidayBtn_Click);
             // 
             // button1
             // 
             this.button1.Location = new System.Drawing.Point(21, 39);
-            this.button1.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.button1.Margin = new System.Windows.Forms.Padding(5);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(21, 15);
             this.button1.TabIndex = 0;
