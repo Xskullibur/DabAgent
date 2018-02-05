@@ -86,6 +86,15 @@
       <DependentUpon>CustForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Customer.cs" />
+    <Compile Include="CustomerInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CustomerInfo.designer.cs">
+      <DependentUpon>CustomerInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DabAgencyDataSet.cs">
+      <DependentUpon>DabAgencyDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="DabAgencyDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
