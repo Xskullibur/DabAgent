@@ -63,9 +63,9 @@ namespace DabAgent
 
         private void SearchBtn_Click(object sender, EventArgs e)
         {
-            CustomerInfo customerInfo = new CustomerInfo();
-            customerInfo.ic = SearchTxt.Text;
-            customerInfo.ShowDialog();
+            BookingDisplay bookingDisplay = new BookingDisplay();
+            bookingDisplay.name = SearchTxt.Text;
+            bookingDisplay.ShowDialog();
         }
     }
 }
