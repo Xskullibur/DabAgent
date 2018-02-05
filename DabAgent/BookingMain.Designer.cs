@@ -44,15 +44,17 @@
             this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.RemoveBtn = new System.Windows.Forms.Button();
-            this.AddBtn = new System.Windows.Forms.Button();
-            this.EditBtn = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.SearchTxt = new System.Windows.Forms.TextBox();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.SearchBtn = new System.Windows.Forms.Button();
+            this.SearchTxt = new System.Windows.Forms.TextBox();
+            this.EditBtn = new System.Windows.Forms.Button();
+            this.AddBtn = new System.Windows.Forms.Button();
+            this.RemoveBtn = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.ds)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bsBooking)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bookingTBDataGridView)).BeginInit();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // ds
@@ -115,6 +117,7 @@
             dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.ControlText;
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.bookingTBDataGridView.DefaultCellStyle = dataGridViewCellStyle3;
+            this.bookingTBDataGridView.Dock = System.Windows.Forms.DockStyle.Fill;
             this.bookingTBDataGridView.EnableHeadersVisualStyles = false;
             this.bookingTBDataGridView.GridColor = System.Drawing.Color.LightGray;
             this.bookingTBDataGridView.Location = new System.Drawing.Point(0, 65);
@@ -124,7 +127,7 @@
             this.bookingTBDataGridView.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             this.bookingTBDataGridView.RowTemplate.Height = 40;
             this.bookingTBDataGridView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.bookingTBDataGridView.Size = new System.Drawing.Size(935, 281);
+            this.bookingTBDataGridView.Size = new System.Drawing.Size(935, 286);
             this.bookingTBDataGridView.TabIndex = 1;
             this.bookingTBDataGridView.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.bookingTBDataGridView_CellDoubleClick);
             // 
@@ -171,42 +174,6 @@
             this.dataGridViewTextBoxColumn8.HeaderText = "Arrival";
             this.dataGridViewTextBoxColumn8.Name = "dataGridViewTextBoxColumn8";
             // 
-            // RemoveBtn
-            // 
-            this.RemoveBtn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.RemoveBtn.AutoSize = true;
-            this.RemoveBtn.Location = new System.Drawing.Point(649, 352);
-            this.RemoveBtn.Name = "RemoveBtn";
-            this.RemoveBtn.Size = new System.Drawing.Size(134, 43);
-            this.RemoveBtn.TabIndex = 2;
-            this.RemoveBtn.Text = "Remove";
-            this.RemoveBtn.UseVisualStyleBackColor = true;
-            this.RemoveBtn.Click += new System.EventHandler(this.RemoveBtn_Click);
-            // 
-            // AddBtn
-            // 
-            this.AddBtn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.AddBtn.AutoSize = true;
-            this.AddBtn.Location = new System.Drawing.Point(509, 352);
-            this.AddBtn.Name = "AddBtn";
-            this.AddBtn.Size = new System.Drawing.Size(134, 43);
-            this.AddBtn.TabIndex = 3;
-            this.AddBtn.Text = "Add";
-            this.AddBtn.UseVisualStyleBackColor = true;
-            this.AddBtn.Click += new System.EventHandler(this.AddBtn_Click);
-            // 
-            // EditBtn
-            // 
-            this.EditBtn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.EditBtn.AutoSize = true;
-            this.EditBtn.Location = new System.Drawing.Point(789, 352);
-            this.EditBtn.Name = "EditBtn";
-            this.EditBtn.Size = new System.Drawing.Size(134, 43);
-            this.EditBtn.TabIndex = 4;
-            this.EditBtn.Text = "Edit Records";
-            this.EditBtn.UseVisualStyleBackColor = true;
-            this.EditBtn.Click += new System.EventHandler(this.EditBtn_Click);
-            // 
             // label1
             // 
             this.label1.BackColor = System.Drawing.Color.DodgerBlue;
@@ -215,50 +182,106 @@
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(0, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(935, 62);
+            this.label1.Size = new System.Drawing.Size(935, 65);
             this.label1.TabIndex = 0;
             this.label1.Text = "Booking Records";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // SearchTxt
+            // panel1
             // 
-            this.SearchTxt.Location = new System.Drawing.Point(26, 360);
-            this.SearchTxt.Name = "SearchTxt";
-            this.SearchTxt.Size = new System.Drawing.Size(176, 26);
-            this.SearchTxt.TabIndex = 5;
+            this.panel1.BackColor = System.Drawing.Color.DodgerBlue;
+            this.panel1.Controls.Add(this.SearchBtn);
+            this.panel1.Controls.Add(this.SearchTxt);
+            this.panel1.Controls.Add(this.EditBtn);
+            this.panel1.Controls.Add(this.AddBtn);
+            this.panel1.Controls.Add(this.RemoveBtn);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel1.Location = new System.Drawing.Point(0, 351);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(935, 64);
+            this.panel1.TabIndex = 7;
             // 
             // SearchBtn
             // 
-            this.SearchBtn.Location = new System.Drawing.Point(208, 352);
+            this.SearchBtn.BackColor = System.Drawing.SystemColors.Control;
+            this.SearchBtn.FlatAppearance.BorderSize = 0;
+            this.SearchBtn.Location = new System.Drawing.Point(201, 11);
             this.SearchBtn.Name = "SearchBtn";
             this.SearchBtn.Size = new System.Drawing.Size(134, 43);
-            this.SearchBtn.TabIndex = 6;
+            this.SearchBtn.TabIndex = 11;
             this.SearchBtn.Text = "Search NRIC";
-            this.SearchBtn.UseVisualStyleBackColor = true;
+            this.SearchBtn.UseVisualStyleBackColor = false;
             this.SearchBtn.Click += new System.EventHandler(this.SearchBtn_Click);
+            // 
+            // SearchTxt
+            // 
+            this.SearchTxt.Location = new System.Drawing.Point(19, 19);
+            this.SearchTxt.Name = "SearchTxt";
+            this.SearchTxt.Size = new System.Drawing.Size(176, 26);
+            this.SearchTxt.TabIndex = 10;
+            // 
+            // EditBtn
+            // 
+            this.EditBtn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.EditBtn.AutoSize = true;
+            this.EditBtn.BackColor = System.Drawing.SystemColors.Control;
+            this.EditBtn.FlatAppearance.BorderSize = 0;
+            this.EditBtn.Location = new System.Drawing.Point(782, 11);
+            this.EditBtn.Name = "EditBtn";
+            this.EditBtn.Size = new System.Drawing.Size(134, 43);
+            this.EditBtn.TabIndex = 9;
+            this.EditBtn.Text = "Edit Records";
+            this.EditBtn.UseVisualStyleBackColor = false;
+            this.EditBtn.Click += new System.EventHandler(this.EditBtn_Click);
+            // 
+            // AddBtn
+            // 
+            this.AddBtn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.AddBtn.AutoSize = true;
+            this.AddBtn.BackColor = System.Drawing.SystemColors.Control;
+            this.AddBtn.FlatAppearance.BorderSize = 0;
+            this.AddBtn.Location = new System.Drawing.Point(502, 11);
+            this.AddBtn.Name = "AddBtn";
+            this.AddBtn.Size = new System.Drawing.Size(134, 43);
+            this.AddBtn.TabIndex = 8;
+            this.AddBtn.Text = "Add";
+            this.AddBtn.UseVisualStyleBackColor = false;
+            this.AddBtn.Click += new System.EventHandler(this.AddBtn_Click);
+            // 
+            // RemoveBtn
+            // 
+            this.RemoveBtn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.RemoveBtn.AutoSize = true;
+            this.RemoveBtn.BackColor = System.Drawing.SystemColors.Control;
+            this.RemoveBtn.FlatAppearance.BorderSize = 0;
+            this.RemoveBtn.Location = new System.Drawing.Point(642, 11);
+            this.RemoveBtn.Name = "RemoveBtn";
+            this.RemoveBtn.Size = new System.Drawing.Size(134, 43);
+            this.RemoveBtn.TabIndex = 7;
+            this.RemoveBtn.Text = "Remove";
+            this.RemoveBtn.UseVisualStyleBackColor = false;
+            this.RemoveBtn.Click += new System.EventHandler(this.RemoveBtn_Click);
             // 
             // BookingMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(935, 407);
-            this.Controls.Add(this.SearchBtn);
-            this.Controls.Add(this.SearchTxt);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.EditBtn);
-            this.Controls.Add(this.AddBtn);
-            this.Controls.Add(this.RemoveBtn);
+            this.ClientSize = new System.Drawing.Size(935, 415);
             this.Controls.Add(this.bookingTBDataGridView);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "BookingMain";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "BookingMain";
             this.Load += new System.EventHandler(this.BookingMain_Load);
             ((System.ComponentModel.ISupportInitialize)(this.ds)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bsBooking)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bookingTBDataGridView)).EndInit();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -277,11 +300,12 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn6;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn7;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn8;
-        private System.Windows.Forms.Button RemoveBtn;
-        private System.Windows.Forms.Button AddBtn;
-        private System.Windows.Forms.Button EditBtn;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox SearchTxt;
+        private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button SearchBtn;
+        private System.Windows.Forms.TextBox SearchTxt;
+        private System.Windows.Forms.Button EditBtn;
+        private System.Windows.Forms.Button AddBtn;
+        private System.Windows.Forms.Button RemoveBtn;
     }
 }

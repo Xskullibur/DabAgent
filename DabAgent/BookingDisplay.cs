@@ -23,7 +23,6 @@ namespace DabAgent
         {
             bsBooking.EndEdit();
             tam.UpdateAll(ds);
-
         }
 
         private void BookingDisplay_Load(object sender, EventArgs e)
@@ -34,6 +33,7 @@ namespace DabAgent
             if (taBooking.FillBySearchNRIC(ds.BookingTB, ic) != 0)
             {
                 taBooking.FillBySearchNRIC(ds.BookingTB, ic);
+                customerTBTableAdapter.FillBySearchNric(ds.CustomerTB, ic);
 
                 Booking booking = new Booking(Convert.ToInt32(bookingIDTextBox.Text), nRICTextBox.Text, Convert.ToDateTime(travelDateTextBox.Text), Convert.ToInt32(paxTextBox.Text), Convert.ToDouble(costPxTextBox.Text), departureTextBox.Text, arrivalTextBox.Text);
                 TotalTxt.Text = "$ " + Math.Round(booking.TotalCost(), 2).ToString();

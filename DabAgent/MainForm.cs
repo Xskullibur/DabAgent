@@ -23,11 +23,22 @@ namespace DabAgent
             login.ShowDialog();
         }
 
+        private void AbtBtn_Click(object sender, EventArgs e)
+        {
+            Info about = new Info();
+            about.ShowDialog();
+        }
+
+        private void HolidayBtn_Click(object sender, EventArgs e)
+        {
+            HolidayDest dest = new HolidayDest();
+            dest.ShowDialog();
+        }
+
         private void btnViewCustomer_Click(object sender, EventArgs e)
         {
             CustForm cust = new CustForm();
             cust.ShowDialog();
-
         }
 
         private void btnViewBooking_Click(object sender, EventArgs e)
@@ -39,18 +50,6 @@ namespace DabAgent
         private void ExitBtn_Click(object sender, EventArgs e)
         {
             this.Close();
-        }
-
-        private void AbtBtn_Click(object sender, EventArgs e)
-        {
-            Info about = new Info();
-            about.ShowDialog();
-        }
-
-        private void HolidayBtn_Click(object sender, EventArgs e)
-        {
-            HolidayDest dest = new HolidayDest();
-            dest.ShowDialog();
         }
     }
 }

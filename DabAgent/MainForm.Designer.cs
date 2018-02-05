@@ -28,81 +28,16 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.btnViewCustomer = new System.Windows.Forms.Button();
-            this.btnViewBooking = new System.Windows.Forms.Button();
-            this.ExitBtn = new System.Windows.Forms.Button();
-            this.HolidayBtn = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
+            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.AbtBtn = new System.Windows.Forms.Button();
+            this.HolidayBtn = new System.Windows.Forms.Button();
+            this.ExitBtn = new System.Windows.Forms.Button();
+            this.btnViewBooking = new System.Windows.Forms.Button();
+            this.btnViewCustomer = new System.Windows.Forms.Button();
+            this.flowLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // btnViewCustomer
-            // 
-            this.btnViewCustomer.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.btnViewCustomer.FlatAppearance.BorderColor = System.Drawing.Color.DeepSkyBlue;
-            this.btnViewCustomer.FlatAppearance.BorderSize = 0;
-            this.btnViewCustomer.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnViewCustomer.Font = new System.Drawing.Font("Monotype Corsiva", 14.1F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnViewCustomer.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.btnViewCustomer.Location = new System.Drawing.Point(388, 56);
-            this.btnViewCustomer.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.btnViewCustomer.Name = "btnViewCustomer";
-            this.btnViewCustomer.Size = new System.Drawing.Size(180, 180);
-            this.btnViewCustomer.TabIndex = 1;
-            this.btnViewCustomer.Text = "View Customer Details";
-            this.btnViewCustomer.UseVisualStyleBackColor = false;
-            this.btnViewCustomer.Click += new System.EventHandler(this.btnViewCustomer_Click);
-            // 
-            // btnViewBooking
-            // 
-            this.btnViewBooking.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.btnViewBooking.FlatAppearance.BorderColor = System.Drawing.Color.DeepSkyBlue;
-            this.btnViewBooking.FlatAppearance.BorderSize = 0;
-            this.btnViewBooking.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnViewBooking.Font = new System.Drawing.Font("Monotype Corsiva", 14.1F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnViewBooking.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.btnViewBooking.Location = new System.Drawing.Point(13, 244);
-            this.btnViewBooking.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.btnViewBooking.Name = "btnViewBooking";
-            this.btnViewBooking.Size = new System.Drawing.Size(180, 180);
-            this.btnViewBooking.TabIndex = 2;
-            this.btnViewBooking.Text = "View Booking Details";
-            this.btnViewBooking.UseVisualStyleBackColor = false;
-            this.btnViewBooking.Click += new System.EventHandler(this.btnViewBooking_Click);
-            // 
-            // ExitBtn
-            // 
-            this.ExitBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.ExitBtn.FlatAppearance.BorderColor = System.Drawing.Color.DeepSkyBlue;
-            this.ExitBtn.FlatAppearance.BorderSize = 0;
-            this.ExitBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ExitBtn.Font = new System.Drawing.Font("Monotype Corsiva", 14.1F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ExitBtn.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.ExitBtn.Location = new System.Drawing.Point(388, 244);
-            this.ExitBtn.Name = "ExitBtn";
-            this.ExitBtn.Size = new System.Drawing.Size(180, 180);
-            this.ExitBtn.TabIndex = 3;
-            this.ExitBtn.Text = "Exit";
-            this.ExitBtn.UseVisualStyleBackColor = false;
-            this.ExitBtn.Click += new System.EventHandler(this.ExitBtn_Click);
-            // 
-            // HolidayBtn
-            // 
-            this.HolidayBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.HolidayBtn.FlatAppearance.BorderColor = System.Drawing.Color.DeepSkyBlue;
-            this.HolidayBtn.FlatAppearance.BorderSize = 0;
-            this.HolidayBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.HolidayBtn.Font = new System.Drawing.Font("Monotype Corsiva", 14.1F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.HolidayBtn.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.HolidayBtn.Location = new System.Drawing.Point(201, 244);
-            this.HolidayBtn.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.HolidayBtn.Name = "HolidayBtn";
-            this.HolidayBtn.Size = new System.Drawing.Size(180, 180);
-            this.HolidayBtn.TabIndex = 6;
-            this.HolidayBtn.Text = "Holiday Destinations";
-            this.HolidayBtn.UseVisualStyleBackColor = false;
-            this.HolidayBtn.Click += new System.EventHandler(this.HolidayBtn_Click);
             // 
             // button1
             // 
@@ -122,22 +57,103 @@
             this.label1.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.label1.Location = new System.Drawing.Point(0, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(580, 51);
+            this.label1.Size = new System.Drawing.Size(616, 62);
             this.label1.TabIndex = 7;
             this.label1.Text = "Main Menu";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // flowLayoutPanel1
+            // 
+            this.flowLayoutPanel1.Controls.Add(this.AbtBtn);
+            this.flowLayoutPanel1.Controls.Add(this.HolidayBtn);
+            this.flowLayoutPanel1.Controls.Add(this.btnViewBooking);
+            this.flowLayoutPanel1.Controls.Add(this.btnViewCustomer);
+            this.flowLayoutPanel1.Controls.Add(this.ExitBtn);
+            this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 62);
+            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(616, 380);
+            this.flowLayoutPanel1.TabIndex = 8;
+            // 
             // AbtBtn
             // 
+            this.AbtBtn.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.AbtBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.AbtBtn.BackgroundImage = global::DabAgent.Properties.Resources.abt;
             this.AbtBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.AbtBtn.Location = new System.Drawing.Point(12, 56);
+            this.AbtBtn.Location = new System.Drawing.Point(3, 5);
             this.AbtBtn.Name = "AbtBtn";
-            this.AbtBtn.Size = new System.Drawing.Size(369, 180);
-            this.AbtBtn.TabIndex = 5;
+            this.AbtBtn.Size = new System.Drawing.Size(401, 180);
+            this.AbtBtn.TabIndex = 10;
             this.AbtBtn.UseVisualStyleBackColor = false;
             this.AbtBtn.Click += new System.EventHandler(this.AbtBtn_Click);
+            // 
+            // HolidayBtn
+            // 
+            this.HolidayBtn.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.HolidayBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.HolidayBtn.FlatAppearance.BorderColor = System.Drawing.Color.DeepSkyBlue;
+            this.HolidayBtn.FlatAppearance.BorderSize = 0;
+            this.HolidayBtn.Font = new System.Drawing.Font("Monotype Corsiva", 14.1F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.HolidayBtn.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.HolidayBtn.Location = new System.Drawing.Point(411, 5);
+            this.HolidayBtn.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.HolidayBtn.Name = "HolidayBtn";
+            this.HolidayBtn.Size = new System.Drawing.Size(197, 178);
+            this.HolidayBtn.TabIndex = 11;
+            this.HolidayBtn.Text = "Holiday Destinations";
+            this.HolidayBtn.UseVisualStyleBackColor = false;
+            this.HolidayBtn.Click += new System.EventHandler(this.HolidayBtn_Click);
+            // 
+            // ExitBtn
+            // 
+            this.ExitBtn.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.ExitBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.ExitBtn.FlatAppearance.BorderColor = System.Drawing.Color.DeepSkyBlue;
+            this.ExitBtn.FlatAppearance.BorderSize = 0;
+            this.ExitBtn.Font = new System.Drawing.Font("Monotype Corsiva", 14.1F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ExitBtn.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.ExitBtn.Location = new System.Drawing.Point(413, 195);
+            this.ExitBtn.Name = "ExitBtn";
+            this.ExitBtn.Size = new System.Drawing.Size(197, 180);
+            this.ExitBtn.TabIndex = 9;
+            this.ExitBtn.Text = "Exit";
+            this.ExitBtn.UseVisualStyleBackColor = false;
+            this.ExitBtn.Click += new System.EventHandler(this.ExitBtn_Click);
+            // 
+            // btnViewBooking
+            // 
+            this.btnViewBooking.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.btnViewBooking.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.btnViewBooking.FlatAppearance.BorderColor = System.Drawing.Color.DeepSkyBlue;
+            this.btnViewBooking.FlatAppearance.BorderSize = 0;
+            this.btnViewBooking.Font = new System.Drawing.Font("Monotype Corsiva", 14.1F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnViewBooking.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.btnViewBooking.Location = new System.Drawing.Point(4, 193);
+            this.btnViewBooking.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnViewBooking.Name = "btnViewBooking";
+            this.btnViewBooking.Size = new System.Drawing.Size(197, 180);
+            this.btnViewBooking.TabIndex = 8;
+            this.btnViewBooking.Text = "View Booking Details";
+            this.btnViewBooking.UseVisualStyleBackColor = false;
+            this.btnViewBooking.Click += new System.EventHandler(this.btnViewBooking_Click);
+            // 
+            // btnViewCustomer
+            // 
+            this.btnViewCustomer.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.btnViewCustomer.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.btnViewCustomer.FlatAppearance.BorderColor = System.Drawing.Color.DeepSkyBlue;
+            this.btnViewCustomer.FlatAppearance.BorderSize = 0;
+            this.btnViewCustomer.Font = new System.Drawing.Font("Monotype Corsiva", 14.1F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnViewCustomer.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.btnViewCustomer.Location = new System.Drawing.Point(209, 193);
+            this.btnViewCustomer.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnViewCustomer.Name = "btnViewCustomer";
+            this.btnViewCustomer.Size = new System.Drawing.Size(197, 180);
+            this.btnViewCustomer.TabIndex = 7;
+            this.btnViewCustomer.Text = "View Customer Details";
+            this.btnViewCustomer.UseVisualStyleBackColor = false;
+            this.btnViewCustomer.Click += new System.EventHandler(this.btnViewCustomer_Click);
             // 
             // MainForm
             // 
@@ -145,34 +161,32 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(580, 439);
+            this.ClientSize = new System.Drawing.Size(616, 442);
             this.ControlBox = false;
+            this.Controls.Add(this.flowLayoutPanel1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.HolidayBtn);
-            this.Controls.Add(this.AbtBtn);
-            this.Controls.Add(this.ExitBtn);
-            this.Controls.Add(this.btnViewBooking);
-            this.Controls.Add(this.btnViewCustomer);
             this.DoubleBuffered = true;
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "MainForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "MainForm";
             this.Load += new System.EventHandler(this.MainForm_Load);
+            this.flowLayoutPanel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Button btnViewCustomer;
-        private System.Windows.Forms.Button btnViewBooking;
-        private System.Windows.Forms.Button ExitBtn;
-        private System.Windows.Forms.Button AbtBtn;
-        private System.Windows.Forms.Button HolidayBtn;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
+        private System.Windows.Forms.Button AbtBtn;
+        private System.Windows.Forms.Button HolidayBtn;
+        private System.Windows.Forms.Button ExitBtn;
+        private System.Windows.Forms.Button btnViewBooking;
+        private System.Windows.Forms.Button btnViewCustomer;
     }
 }
