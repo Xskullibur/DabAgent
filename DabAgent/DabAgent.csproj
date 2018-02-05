@@ -92,12 +92,6 @@
       <DependentUpon>CustForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Customer.cs" />
-    <Compile Include="CustomerInfo.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="CustomerInfo.designer.cs">
-      <DependentUpon>CustomerInfo.cs</DependentUpon>
-    </Compile>
     <Compile Include="DabAgencyDataSet.cs">
       <DependentUpon>DabAgencyDataSet.xsd</DependentUpon>
     </Compile>
@@ -152,9 +146,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="CustForm.resx">
       <DependentUpon>CustForm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="CustomerInfo.resx">
-      <DependentUpon>CustomerInfo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="EditBooking.resx">
       <DependentUpon>EditBooking.cs</DependentUpon>
