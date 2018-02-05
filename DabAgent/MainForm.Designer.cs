@@ -31,10 +31,10 @@
             this.btnViewCustomer = new System.Windows.Forms.Button();
             this.btnViewBooking = new System.Windows.Forms.Button();
             this.ExitBtn = new System.Windows.Forms.Button();
-            this.AbtBtn = new System.Windows.Forms.Button();
             this.HolidayBtn = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
+            this.AbtBtn = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnViewCustomer
@@ -43,7 +43,7 @@
             this.btnViewCustomer.FlatAppearance.BorderColor = System.Drawing.Color.DeepSkyBlue;
             this.btnViewCustomer.FlatAppearance.BorderSize = 0;
             this.btnViewCustomer.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnViewCustomer.Font = new System.Drawing.Font("Monotype Corsiva", 13F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnViewCustomer.Font = new System.Drawing.Font("Monotype Corsiva", 14.1F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnViewCustomer.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.btnViewCustomer.Location = new System.Drawing.Point(652, 87);
             this.btnViewCustomer.Margin = new System.Windows.Forms.Padding(7, 8, 7, 8);
@@ -60,7 +60,7 @@
             this.btnViewBooking.FlatAppearance.BorderColor = System.Drawing.Color.DeepSkyBlue;
             this.btnViewBooking.FlatAppearance.BorderSize = 0;
             this.btnViewBooking.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnViewBooking.Font = new System.Drawing.Font("Monotype Corsiva", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnViewBooking.Font = new System.Drawing.Font("Monotype Corsiva", 14.1F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnViewBooking.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.btnViewBooking.Location = new System.Drawing.Point(21, 363);
             this.btnViewBooking.Margin = new System.Windows.Forms.Padding(7, 8, 7, 8);
@@ -77,7 +77,7 @@
             this.ExitBtn.FlatAppearance.BorderColor = System.Drawing.Color.DeepSkyBlue;
             this.ExitBtn.FlatAppearance.BorderSize = 0;
             this.ExitBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ExitBtn.Font = new System.Drawing.Font("Monotype Corsiva", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ExitBtn.Font = new System.Drawing.Font("Monotype Corsiva", 14.1F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ExitBtn.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.ExitBtn.Location = new System.Drawing.Point(652, 363);
             this.ExitBtn.Margin = new System.Windows.Forms.Padding(5);
@@ -88,26 +88,13 @@
             this.ExitBtn.UseVisualStyleBackColor = false;
             this.ExitBtn.Click += new System.EventHandler(this.ExitBtn_Click);
             // 
-            // AbtBtn
-            // 
-            this.AbtBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.AbtBtn.BackgroundImage = global::DabAgent.Properties.Resources.abt;
-            this.AbtBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.AbtBtn.Location = new System.Drawing.Point(21, 87);
-            this.AbtBtn.Margin = new System.Windows.Forms.Padding(5);
-            this.AbtBtn.Name = "AbtBtn";
-            this.AbtBtn.Size = new System.Drawing.Size(619, 263);
-            this.AbtBtn.TabIndex = 5;
-            this.AbtBtn.UseVisualStyleBackColor = false;
-            this.AbtBtn.Click += new System.EventHandler(this.AbtBtn_Click);
-            // 
             // HolidayBtn
             // 
             this.HolidayBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.HolidayBtn.FlatAppearance.BorderColor = System.Drawing.Color.DeepSkyBlue;
             this.HolidayBtn.FlatAppearance.BorderSize = 0;
             this.HolidayBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.HolidayBtn.Font = new System.Drawing.Font("Monotype Corsiva", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.HolidayBtn.Font = new System.Drawing.Font("Monotype Corsiva", 14.1F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.HolidayBtn.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.HolidayBtn.Location = new System.Drawing.Point(338, 363);
             this.HolidayBtn.Margin = new System.Windows.Forms.Padding(7, 8, 7, 8);
@@ -142,6 +129,19 @@
             this.label1.TabIndex = 7;
             this.label1.Text = "Main Menu";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // AbtBtn
+            // 
+            this.AbtBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.AbtBtn.BackgroundImage = global::DabAgent.Properties.Resources.abt;
+            this.AbtBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.AbtBtn.Location = new System.Drawing.Point(21, 87);
+            this.AbtBtn.Margin = new System.Windows.Forms.Padding(5);
+            this.AbtBtn.Name = "AbtBtn";
+            this.AbtBtn.Size = new System.Drawing.Size(619, 263);
+            this.AbtBtn.TabIndex = 5;
+            this.AbtBtn.UseVisualStyleBackColor = false;
+            this.AbtBtn.Click += new System.EventHandler(this.AbtBtn_Click);
             // 
             // MainForm
             // 
