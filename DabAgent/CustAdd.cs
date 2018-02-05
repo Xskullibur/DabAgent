@@ -28,13 +28,24 @@ namespace DabAgent
         private void CustAdd_Load(object sender, EventArgs e)
         {
             customerBS.AddNew();
-
         }
 
         private void btnAddCust_Click(object sender, EventArgs e)
         {
-            customerBS.EndEdit();
-            customerTA.Update(dabAgencyDS.CustomerTB);
+            Customer cust = new Customer();
+            cust.NRIC = nRICTextBox.Text;
+            if (cust.IsNRICValid())
+            {
+                customerBS.EndEdit();
+                customerTA.Update(dabAgencyDS.CustomerTB);
+                MessageBox.Show("Customer Added!");
+                this.Close();
+            }
+            else
+            {
+                MessageBox.Show("NRIC Invalid!");
+            }
+            
         }
     }
 }

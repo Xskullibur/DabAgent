@@ -62,7 +62,6 @@
             this.btnAdd = new System.Windows.Forms.Button();
             this.customerTA = new DabAgent.DabAgencyDataSetTableAdapters.CustomerTBTableAdapter();
             this.tam = new DabAgent.DabAgencyDataSetTableAdapters.TableAdapterManager();
-            this.btnView = new System.Windows.Forms.Button();
             nRICLabel = new System.Windows.Forms.Label();
             nameLabel = new System.Windows.Forms.Label();
             contactLabel = new System.Windows.Forms.Label();
@@ -368,22 +367,11 @@
             this.tam.HolidayTBTableAdapter = null;
             this.tam.UpdateOrder = DabAgent.DabAgencyDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
             // 
-            // btnView
-            // 
-            this.btnView.Location = new System.Drawing.Point(22, 372);
-            this.btnView.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.btnView.Name = "btnView";
-            this.btnView.Size = new System.Drawing.Size(112, 35);
-            this.btnView.TabIndex = 17;
-            this.btnView.Text = "View All";
-            this.btnView.UseVisualStyleBackColor = true;
-            // 
             // CustForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(861, 488);
-            this.Controls.Add(this.btnView);
             this.Controls.Add(this.btnAdd);
             this.Controls.Add(this.btnUpdate);
             this.Controls.Add(this.btnSearch);
@@ -403,6 +391,7 @@
             this.Controls.Add(this.customerBN);
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "CustForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "CustForm";
             this.Load += new System.EventHandler(this.CustForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.customerBN)).EndInit();
@@ -443,6 +432,5 @@
         private System.Windows.Forms.Button btnSearch;
         private System.Windows.Forms.Button btnUpdate;
         private System.Windows.Forms.Button btnAdd;
-        private System.Windows.Forms.Button btnView;
     }
 }

@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 
 namespace DabAgent
@@ -16,9 +17,8 @@ namespace DabAgent
         public bool IsNRICValid()
         {
             
-            if (NRIC.Length == 9)
-            {
-                
+            if (NRIC.Equals(@"[sStTgGfF]#######[a-zA-Z]"))
+            { 
                 return true;
             }
             else

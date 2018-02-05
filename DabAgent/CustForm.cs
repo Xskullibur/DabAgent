@@ -54,6 +54,7 @@ namespace DabAgent
         {
             CustAdd add = new CustAdd();
             add.ShowDialog();
+            customerTA.Fill(dabAgencyDS.CustomerTB);
         }
 
         private void btnSearch_Click(object sender, EventArgs e)
