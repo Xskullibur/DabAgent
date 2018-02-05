@@ -45,10 +45,10 @@
             this.btnViewCustomer.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnViewCustomer.Font = new System.Drawing.Font("Monotype Corsiva", 13F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnViewCustomer.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.btnViewCustomer.Location = new System.Drawing.Point(326, 56);
+            this.btnViewCustomer.Location = new System.Drawing.Point(367, 56);
             this.btnViewCustomer.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnViewCustomer.Name = "btnViewCustomer";
-            this.btnViewCustomer.Size = new System.Drawing.Size(150, 150);
+            this.btnViewCustomer.Size = new System.Drawing.Size(170, 170);
             this.btnViewCustomer.TabIndex = 1;
             this.btnViewCustomer.Text = "View Customer Details";
             this.btnViewCustomer.UseVisualStyleBackColor = false;
@@ -62,10 +62,10 @@
             this.btnViewBooking.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnViewBooking.Font = new System.Drawing.Font("Monotype Corsiva", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnViewBooking.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.btnViewBooking.Location = new System.Drawing.Point(12, 212);
+            this.btnViewBooking.Location = new System.Drawing.Point(12, 234);
             this.btnViewBooking.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnViewBooking.Name = "btnViewBooking";
-            this.btnViewBooking.Size = new System.Drawing.Size(150, 150);
+            this.btnViewBooking.Size = new System.Drawing.Size(170, 170);
             this.btnViewBooking.TabIndex = 2;
             this.btnViewBooking.Text = "View Booking Details";
             this.btnViewBooking.UseVisualStyleBackColor = false;
@@ -79,9 +79,9 @@
             this.ExitBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.ExitBtn.Font = new System.Drawing.Font("Monotype Corsiva", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ExitBtn.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.ExitBtn.Location = new System.Drawing.Point(326, 214);
+            this.ExitBtn.Location = new System.Drawing.Point(367, 234);
             this.ExitBtn.Name = "ExitBtn";
-            this.ExitBtn.Size = new System.Drawing.Size(150, 150);
+            this.ExitBtn.Size = new System.Drawing.Size(170, 170);
             this.ExitBtn.TabIndex = 3;
             this.ExitBtn.Text = "Exit";
             this.ExitBtn.UseVisualStyleBackColor = false;
@@ -90,10 +90,11 @@
             // AbtBtn
             // 
             this.AbtBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.AbtBtn.Image = global::DabAgent.Properties.Resources.abt;
+            this.AbtBtn.BackgroundImage = global::DabAgent.Properties.Resources.abt;
+            this.AbtBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.AbtBtn.Location = new System.Drawing.Point(12, 56);
             this.AbtBtn.Name = "AbtBtn";
-            this.AbtBtn.Size = new System.Drawing.Size(307, 150);
+            this.AbtBtn.Size = new System.Drawing.Size(348, 170);
             this.AbtBtn.TabIndex = 5;
             this.AbtBtn.UseVisualStyleBackColor = false;
             // 
@@ -105,10 +106,10 @@
             this.HolidayBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.HolidayBtn.Font = new System.Drawing.Font("Monotype Corsiva", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.HolidayBtn.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.HolidayBtn.Location = new System.Drawing.Point(170, 212);
+            this.HolidayBtn.Location = new System.Drawing.Point(190, 234);
             this.HolidayBtn.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.HolidayBtn.Name = "HolidayBtn";
-            this.HolidayBtn.Size = new System.Drawing.Size(150, 150);
+            this.HolidayBtn.Size = new System.Drawing.Size(170, 170);
             this.HolidayBtn.TabIndex = 6;
             this.HolidayBtn.Text = "Holiday Destinations";
             this.HolidayBtn.UseVisualStyleBackColor = false;
@@ -131,7 +132,7 @@
             this.label1.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.label1.Location = new System.Drawing.Point(0, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(490, 51);
+            this.label1.Size = new System.Drawing.Size(552, 51);
             this.label1.TabIndex = 7;
             this.label1.Text = "Main Menu";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -142,7 +143,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(490, 377);
+            this.ClientSize = new System.Drawing.Size(552, 421);
             this.ControlBox = false;
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button1);
