@@ -229,6 +229,7 @@
             this.ExitBtn.TabIndex = 13;
             this.ExitBtn.Text = "Close";
             this.ExitBtn.UseVisualStyleBackColor = false;
+            this.ExitBtn.Click += new System.EventHandler(this.ExitBtn_Click);
             // 
             // label1
             // 
