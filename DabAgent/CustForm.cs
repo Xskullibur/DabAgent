@@ -40,7 +40,15 @@ namespace DabAgent
 
         private void btnSearch_Click(object sender, EventArgs e)
         {
-            customerTA.FillBySearchNric(dabAgencyDS.CustomerTB, txtSearch.Text);
+            if (customerTA.FillBySearchNric(dabAgencyDS.CustomerTB, txtSearch.Text) != 0)
+            {
+                customerTA.FillBySearchNric(dabAgencyDS.CustomerTB, txtSearch.Text); 
+            }
+            else
+            {
+                MessageBox.Show("No Records Found!");
+                customerTA.Fill(dabAgencyDS.CustomerTB);
+            }
         }
 
         private void btnUpdate_Click(object sender, EventArgs e)

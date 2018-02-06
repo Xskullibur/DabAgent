@@ -29,13 +29,13 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CustForm));
             System.Windows.Forms.Label countryLabel;
             System.Windows.Forms.Label date_of_BirthLabel;
             System.Windows.Forms.Label nRICLabel;
             System.Windows.Forms.Label contactLabel;
             System.Windows.Forms.Label addressLabel;
             System.Windows.Forms.Label nameLabel;
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CustForm));
             this.customerBN = new System.Windows.Forms.BindingNavigator(this.components);
             this.customerBS = new System.Windows.Forms.BindingSource(this.components);
             this.dabAgencyDS = new DabAgent.DabAgencyDataSet();
@@ -77,6 +77,66 @@
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
+            // 
+            // countryLabel
+            // 
+            countryLabel.AutoSize = true;
+            countryLabel.Location = new System.Drawing.Point(14, 244);
+            countryLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            countryLabel.Name = "countryLabel";
+            countryLabel.Size = new System.Drawing.Size(68, 20);
+            countryLabel.TabIndex = 26;
+            countryLabel.Text = "Country:";
+            // 
+            // date_of_BirthLabel
+            // 
+            date_of_BirthLabel.AutoSize = true;
+            date_of_BirthLabel.Location = new System.Drawing.Point(14, 205);
+            date_of_BirthLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            date_of_BirthLabel.Name = "date_of_BirthLabel";
+            date_of_BirthLabel.Size = new System.Drawing.Size(103, 20);
+            date_of_BirthLabel.TabIndex = 24;
+            date_of_BirthLabel.Text = "Date of Birth:";
+            // 
+            // nRICLabel
+            // 
+            nRICLabel.AutoSize = true;
+            nRICLabel.Location = new System.Drawing.Point(14, 44);
+            nRICLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            nRICLabel.Name = "nRICLabel";
+            nRICLabel.Size = new System.Drawing.Size(52, 20);
+            nRICLabel.TabIndex = 16;
+            nRICLabel.Text = "NRIC:";
+            // 
+            // contactLabel
+            // 
+            contactLabel.AutoSize = true;
+            contactLabel.Location = new System.Drawing.Point(14, 124);
+            contactLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            contactLabel.Name = "contactLabel";
+            contactLabel.Size = new System.Drawing.Size(69, 20);
+            contactLabel.TabIndex = 20;
+            contactLabel.Text = "Contact:";
+            // 
+            // addressLabel
+            // 
+            addressLabel.AutoSize = true;
+            addressLabel.Location = new System.Drawing.Point(14, 164);
+            addressLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            addressLabel.Name = "addressLabel";
+            addressLabel.Size = new System.Drawing.Size(72, 20);
+            addressLabel.TabIndex = 22;
+            addressLabel.Text = "Address:";
+            // 
+            // nameLabel
+            // 
+            nameLabel.AutoSize = true;
+            nameLabel.Location = new System.Drawing.Point(14, 84);
+            nameLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            nameLabel.Name = "nameLabel";
+            nameLabel.Size = new System.Drawing.Size(55, 20);
+            nameLabel.TabIndex = 18;
+            nameLabel.Text = "Name:";
             // 
             // customerBN
             // 
@@ -313,16 +373,6 @@
             this.btnUpdate.UseVisualStyleBackColor = true;
             this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
             // 
-            // countryLabel
-            // 
-            countryLabel.AutoSize = true;
-            countryLabel.Location = new System.Drawing.Point(14, 244);
-            countryLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            countryLabel.Name = "countryLabel";
-            countryLabel.Size = new System.Drawing.Size(68, 20);
-            countryLabel.TabIndex = 26;
-            countryLabel.Text = "Country:";
-            // 
             // date_of_BirthDateTimePicker
             // 
             this.date_of_BirthDateTimePicker.DataBindings.Add(new System.Windows.Forms.Binding("Value", this.customerBS, "Date of Birth", true));
@@ -331,36 +381,6 @@
             this.date_of_BirthDateTimePicker.Name = "date_of_BirthDateTimePicker";
             this.date_of_BirthDateTimePicker.Size = new System.Drawing.Size(276, 26);
             this.date_of_BirthDateTimePicker.TabIndex = 25;
-            // 
-            // date_of_BirthLabel
-            // 
-            date_of_BirthLabel.AutoSize = true;
-            date_of_BirthLabel.Location = new System.Drawing.Point(14, 205);
-            date_of_BirthLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            date_of_BirthLabel.Name = "date_of_BirthLabel";
-            date_of_BirthLabel.Size = new System.Drawing.Size(103, 20);
-            date_of_BirthLabel.TabIndex = 24;
-            date_of_BirthLabel.Text = "Date of Birth:";
-            // 
-            // nRICLabel
-            // 
-            nRICLabel.AutoSize = true;
-            nRICLabel.Location = new System.Drawing.Point(14, 44);
-            nRICLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            nRICLabel.Name = "nRICLabel";
-            nRICLabel.Size = new System.Drawing.Size(52, 20);
-            nRICLabel.TabIndex = 16;
-            nRICLabel.Text = "NRIC:";
-            // 
-            // contactLabel
-            // 
-            contactLabel.AutoSize = true;
-            contactLabel.Location = new System.Drawing.Point(14, 124);
-            contactLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            contactLabel.Name = "contactLabel";
-            contactLabel.Size = new System.Drawing.Size(69, 20);
-            contactLabel.TabIndex = 20;
-            contactLabel.Text = "Contact:";
             // 
             // addressTextBox
             // 
@@ -380,16 +400,6 @@
             this.nameTextBox.Size = new System.Drawing.Size(276, 26);
             this.nameTextBox.TabIndex = 19;
             // 
-            // addressLabel
-            // 
-            addressLabel.AutoSize = true;
-            addressLabel.Location = new System.Drawing.Point(14, 164);
-            addressLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            addressLabel.Name = "addressLabel";
-            addressLabel.Size = new System.Drawing.Size(72, 20);
-            addressLabel.TabIndex = 22;
-            addressLabel.Text = "Address:";
-            // 
             // contactTextBox
             // 
             this.contactTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.customerBS, "Contact", true));
@@ -399,21 +409,10 @@
             this.contactTextBox.Size = new System.Drawing.Size(276, 26);
             this.contactTextBox.TabIndex = 21;
             // 
-            // nameLabel
-            // 
-            nameLabel.AutoSize = true;
-            nameLabel.Location = new System.Drawing.Point(14, 84);
-            nameLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            nameLabel.Name = "nameLabel";
-            nameLabel.Size = new System.Drawing.Size(55, 20);
-            nameLabel.TabIndex = 18;
-            nameLabel.Text = "Name:";
-            // 
             // CustForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::DabAgent.Properties.Resources.sky;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(794, 404);
             this.Controls.Add(this.groupBox2);
