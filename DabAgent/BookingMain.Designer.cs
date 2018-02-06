@@ -81,6 +81,8 @@
             // 
             // bookingTBDataGridView
             // 
+            this.bookingTBDataGridView.AllowUserToAddRows = false;
+            this.bookingTBDataGridView.AllowUserToDeleteRows = false;
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(239)))), ((int)(((byte)(249)))));
             this.bookingTBDataGridView.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.bookingTBDataGridView.AutoGenerateColumns = false;
@@ -123,6 +125,7 @@
             this.bookingTBDataGridView.Location = new System.Drawing.Point(0, 65);
             this.bookingTBDataGridView.MultiSelect = false;
             this.bookingTBDataGridView.Name = "bookingTBDataGridView";
+            this.bookingTBDataGridView.ReadOnly = true;
             this.bookingTBDataGridView.RowHeadersVisible = false;
             this.bookingTBDataGridView.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             this.bookingTBDataGridView.RowTemplate.Height = 40;
@@ -143,36 +146,42 @@
             this.dataGridViewTextBoxColumn3.DataPropertyName = "NRIC";
             this.dataGridViewTextBoxColumn3.HeaderText = "NRIC";
             this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
+            this.dataGridViewTextBoxColumn3.ReadOnly = true;
             // 
             // dataGridViewTextBoxColumn4
             // 
             this.dataGridViewTextBoxColumn4.DataPropertyName = "TravelDate";
             this.dataGridViewTextBoxColumn4.HeaderText = "TravelDate";
             this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
+            this.dataGridViewTextBoxColumn4.ReadOnly = true;
             // 
             // dataGridViewTextBoxColumn5
             // 
             this.dataGridViewTextBoxColumn5.DataPropertyName = "Pax";
             this.dataGridViewTextBoxColumn5.HeaderText = "Pax";
             this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
+            this.dataGridViewTextBoxColumn5.ReadOnly = true;
             // 
             // dataGridViewTextBoxColumn6
             // 
             this.dataGridViewTextBoxColumn6.DataPropertyName = "CostPx";
             this.dataGridViewTextBoxColumn6.HeaderText = "CostPx";
             this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
+            this.dataGridViewTextBoxColumn6.ReadOnly = true;
             // 
             // dataGridViewTextBoxColumn7
             // 
             this.dataGridViewTextBoxColumn7.DataPropertyName = "Departure";
             this.dataGridViewTextBoxColumn7.HeaderText = "Departure";
             this.dataGridViewTextBoxColumn7.Name = "dataGridViewTextBoxColumn7";
+            this.dataGridViewTextBoxColumn7.ReadOnly = true;
             // 
             // dataGridViewTextBoxColumn8
             // 
             this.dataGridViewTextBoxColumn8.DataPropertyName = "Arrival";
             this.dataGridViewTextBoxColumn8.HeaderText = "Arrival";
             this.dataGridViewTextBoxColumn8.Name = "dataGridViewTextBoxColumn8";
+            this.dataGridViewTextBoxColumn8.ReadOnly = true;
             // 
             // label1
             // 
