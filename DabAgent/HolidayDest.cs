@@ -27,9 +27,19 @@ namespace DabAgent
 
         private void HolidayDest_Load(object sender, EventArgs e)
         {
-            // TODO: This line of code loads data into the 'dabAgencyDataSet.HolidayTB' table. You can move, or remove it, as needed.
-            this.holidayTBTableAdapter.Fill(this.dabAgencyDataSet.HolidayTB);
+            holidayTBTableAdapter.Fill(dabAgencyDataSet.HolidayTB);
 
+            holidayTBDataGridView.BorderStyle = BorderStyle.None;
+            holidayTBDataGridView.AlternatingRowsDefaultCellStyle.BackColor = Color.FromArgb(238, 239, 249);
+            holidayTBDataGridView.CellBorderStyle = DataGridViewCellBorderStyle.SingleHorizontal;
+            holidayTBDataGridView.DefaultCellStyle.SelectionBackColor = Color.DarkTurquoise;
+            holidayTBDataGridView.DefaultCellStyle.SelectionForeColor = Color.WhiteSmoke;
+            holidayTBDataGridView.BackgroundColor = Color.White;
+
+            holidayTBDataGridView.EnableHeadersVisualStyles = false;
+            holidayTBDataGridView.ColumnHeadersBorderStyle = DataGridViewHeaderBorderStyle.None;
+            holidayTBDataGridView.ColumnHeadersDefaultCellStyle.BackColor = Color.FromArgb(20, 25, 72);
+            holidayTBDataGridView.ColumnHeadersDefaultCellStyle.ForeColor = Color.White;
         }
     }
 }
