@@ -36,10 +36,24 @@ namespace DabAgent
             cust.NRIC = nRICTextBox.Text;
             if (cust.IsNRICValid())
             {
-                customerBS.EndEdit();
-                customerTA.Update(dabAgencyDS.CustomerTB);
-                MessageBox.Show("Customer Added!");
-                this.Close();
+                try
+                {
+                    customerBS.EndEdit();
+                    try
+                    {
+                        customerTA.Update(dabAgencyDS.CustomerTB);
+                        MessageBox.Show("Customer Added!");
+                        this.Close();
+                    }
+                    catch (System.Data.SqlClient.SqlException)
+                    {
+                        MessageBox.Show("Customer Already Exist!");
+                    }
+                }
+                catch (NoNullAllowedException)
+                {
+                    MessageBox.Show("Please Ensure All Fields Are Filled!");
+                }
             }
             else
             {
