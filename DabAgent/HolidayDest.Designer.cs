@@ -80,7 +80,7 @@
             this.holidayTBDataGridView.Location = new System.Drawing.Point(0, 72);
             this.holidayTBDataGridView.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.holidayTBDataGridView.Name = "holidayTBDataGridView";
-            this.holidayTBDataGridView.Size = new System.Drawing.Size(661, 353);
+            this.holidayTBDataGridView.Size = new System.Drawing.Size(663, 353);
             this.holidayTBDataGridView.TabIndex = 1;
             // 
             // dataGridViewTextBoxColumn1
@@ -113,7 +113,7 @@
             this.label1.Dock = System.Windows.Forms.DockStyle.Top;
             this.label1.Location = new System.Drawing.Point(0, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(661, 72);
+            this.label1.Size = new System.Drawing.Size(663, 72);
             this.label1.TabIndex = 2;
             this.label1.Text = "Holiday Destination";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -122,7 +122,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(661, 425);
+            this.ClientSize = new System.Drawing.Size(663, 425);
             this.Controls.Add(this.holidayTBDataGridView);
             this.Controls.Add(this.label1);
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
