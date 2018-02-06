@@ -22,6 +22,13 @@ namespace DabAgent
             try
             {
                 bsBooking.EndEdit();
+            }
+            catch (ArgumentException)
+            {
+                MessageBox.Show("Customer NRIC Does Not Exist!");
+            }
+            try
+            {
                 taBooking.Update(ds.BookingTB);
                 MessageBox.Show("Record Added!");
                 this.Close();
