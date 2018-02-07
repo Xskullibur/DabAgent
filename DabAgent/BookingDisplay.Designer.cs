@@ -118,126 +118,154 @@
             // arrivalLabel
             // 
             arrivalLabel.AutoSize = true;
-            arrivalLabel.Location = new System.Drawing.Point(23, 327);
+            arrivalLabel.Font = new System.Drawing.Font("Cambria", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            arrivalLabel.ForeColor = System.Drawing.Color.WhiteSmoke;
+            arrivalLabel.Location = new System.Drawing.Point(26, 326);
             arrivalLabel.Name = "arrivalLabel";
-            arrivalLabel.Size = new System.Drawing.Size(56, 20);
+            arrivalLabel.Size = new System.Drawing.Size(75, 21);
             arrivalLabel.TabIndex = 38;
             arrivalLabel.Text = "Arrival:";
             // 
             // departureLabel
             // 
             departureLabel.AutoSize = true;
-            departureLabel.Location = new System.Drawing.Point(23, 282);
+            departureLabel.Font = new System.Drawing.Font("Cambria", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            departureLabel.ForeColor = System.Drawing.Color.WhiteSmoke;
+            departureLabel.Location = new System.Drawing.Point(26, 281);
             departureLabel.Name = "departureLabel";
-            departureLabel.Size = new System.Drawing.Size(85, 20);
+            departureLabel.Size = new System.Drawing.Size(103, 21);
             departureLabel.TabIndex = 35;
             departureLabel.Text = "Departure:";
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new System.Drawing.Point(23, 372);
+            label1.Font = new System.Drawing.Font("Cambria", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            label1.ForeColor = System.Drawing.Color.WhiteSmoke;
+            label1.Location = new System.Drawing.Point(26, 371);
             label1.Name = "label1";
-            label1.Size = new System.Drawing.Size(85, 20);
+            label1.Size = new System.Drawing.Size(97, 21);
             label1.TabIndex = 31;
             label1.Text = "Total Cost:";
             // 
             // travelDateLabel
             // 
             travelDateLabel.AutoSize = true;
-            travelDateLabel.Location = new System.Drawing.Point(23, 147);
+            travelDateLabel.Font = new System.Drawing.Font("Cambria", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            travelDateLabel.ForeColor = System.Drawing.Color.WhiteSmoke;
+            travelDateLabel.Location = new System.Drawing.Point(26, 146);
             travelDateLabel.Name = "travelDateLabel";
-            travelDateLabel.Size = new System.Drawing.Size(94, 20);
+            travelDateLabel.Size = new System.Drawing.Size(112, 21);
             travelDateLabel.TabIndex = 34;
             travelDateLabel.Text = "Travel Date:";
             // 
             // bookingIDLabel
             // 
             bookingIDLabel.AutoSize = true;
-            bookingIDLabel.Location = new System.Drawing.Point(23, 57);
+            bookingIDLabel.Font = new System.Drawing.Font("Cambria", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            bookingIDLabel.ForeColor = System.Drawing.Color.WhiteSmoke;
+            bookingIDLabel.Location = new System.Drawing.Point(26, 56);
             bookingIDLabel.Name = "bookingIDLabel";
-            bookingIDLabel.Size = new System.Drawing.Size(92, 20);
+            bookingIDLabel.Size = new System.Drawing.Size(107, 21);
             bookingIDLabel.TabIndex = 23;
             bookingIDLabel.Text = "Booking ID:";
             // 
             // nRICLabel
             // 
             nRICLabel.AutoSize = true;
-            nRICLabel.Location = new System.Drawing.Point(23, 102);
+            nRICLabel.Font = new System.Drawing.Font("Cambria", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            nRICLabel.ForeColor = System.Drawing.Color.WhiteSmoke;
+            nRICLabel.Location = new System.Drawing.Point(26, 101);
             nRICLabel.Name = "nRICLabel";
-            nRICLabel.Size = new System.Drawing.Size(52, 20);
+            nRICLabel.Size = new System.Drawing.Size(55, 21);
             nRICLabel.TabIndex = 25;
             nRICLabel.Text = "NRIC:";
             // 
             // paxLabel
             // 
             paxLabel.AutoSize = true;
-            paxLabel.Location = new System.Drawing.Point(23, 192);
+            paxLabel.Font = new System.Drawing.Font("Cambria", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            paxLabel.ForeColor = System.Drawing.Color.WhiteSmoke;
+            paxLabel.Location = new System.Drawing.Point(26, 191);
             paxLabel.Name = "paxLabel";
-            paxLabel.Size = new System.Drawing.Size(39, 20);
+            paxLabel.Size = new System.Drawing.Size(45, 21);
             paxLabel.TabIndex = 27;
             paxLabel.Text = "Pax:";
             // 
             // costPxLabel
             // 
             costPxLabel.AutoSize = true;
-            costPxLabel.Location = new System.Drawing.Point(23, 237);
+            costPxLabel.Font = new System.Drawing.Font("Cambria", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            costPxLabel.ForeColor = System.Drawing.Color.WhiteSmoke;
+            costPxLabel.Location = new System.Drawing.Point(26, 236);
             costPxLabel.Name = "costPxLabel";
-            costPxLabel.Size = new System.Drawing.Size(67, 20);
+            costPxLabel.Size = new System.Drawing.Size(74, 21);
             costPxLabel.TabIndex = 29;
             costPxLabel.Text = "Cost Px:";
             // 
             // nRICLabel1
             // 
             nRICLabel1.AutoSize = true;
-            nRICLabel1.Location = new System.Drawing.Point(22, 61);
+            nRICLabel1.Font = new System.Drawing.Font("Cambria", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            nRICLabel1.ForeColor = System.Drawing.Color.WhiteSmoke;
+            nRICLabel1.Location = new System.Drawing.Point(20, 60);
             nRICLabel1.Name = "nRICLabel1";
-            nRICLabel1.Size = new System.Drawing.Size(52, 20);
+            nRICLabel1.Size = new System.Drawing.Size(55, 21);
             nRICLabel1.TabIndex = 0;
             nRICLabel1.Text = "NRIC:";
             // 
             // nameLabel
             // 
             nameLabel.AutoSize = true;
-            nameLabel.Location = new System.Drawing.Point(22, 113);
+            nameLabel.Font = new System.Drawing.Font("Cambria", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            nameLabel.ForeColor = System.Drawing.Color.WhiteSmoke;
+            nameLabel.Location = new System.Drawing.Point(20, 112);
             nameLabel.Name = "nameLabel";
-            nameLabel.Size = new System.Drawing.Size(55, 20);
+            nameLabel.Size = new System.Drawing.Size(63, 21);
             nameLabel.TabIndex = 2;
             nameLabel.Text = "Name:";
             // 
             // contactLabel
             // 
             contactLabel.AutoSize = true;
-            contactLabel.Location = new System.Drawing.Point(22, 165);
+            contactLabel.Font = new System.Drawing.Font("Cambria", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            contactLabel.ForeColor = System.Drawing.Color.WhiteSmoke;
+            contactLabel.Location = new System.Drawing.Point(20, 164);
             contactLabel.Name = "contactLabel";
-            contactLabel.Size = new System.Drawing.Size(69, 20);
+            contactLabel.Size = new System.Drawing.Size(78, 21);
             contactLabel.TabIndex = 4;
             contactLabel.Text = "Contact:";
             // 
             // addressLabel
             // 
             addressLabel.AutoSize = true;
-            addressLabel.Location = new System.Drawing.Point(22, 217);
+            addressLabel.Font = new System.Drawing.Font("Cambria", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            addressLabel.ForeColor = System.Drawing.Color.WhiteSmoke;
+            addressLabel.Location = new System.Drawing.Point(20, 216);
             addressLabel.Name = "addressLabel";
-            addressLabel.Size = new System.Drawing.Size(72, 20);
+            addressLabel.Size = new System.Drawing.Size(83, 21);
             addressLabel.TabIndex = 6;
             addressLabel.Text = "Address:";
             // 
             // date_of_BirthLabel
             // 
             date_of_BirthLabel.AutoSize = true;
-            date_of_BirthLabel.Location = new System.Drawing.Point(22, 271);
+            date_of_BirthLabel.Font = new System.Drawing.Font("Cambria", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            date_of_BirthLabel.ForeColor = System.Drawing.Color.WhiteSmoke;
+            date_of_BirthLabel.Location = new System.Drawing.Point(20, 270);
             date_of_BirthLabel.Name = "date_of_BirthLabel";
-            date_of_BirthLabel.Size = new System.Drawing.Size(103, 20);
+            date_of_BirthLabel.Size = new System.Drawing.Size(123, 21);
             date_of_BirthLabel.TabIndex = 8;
             date_of_BirthLabel.Text = "Date of Birth:";
             // 
             // countryLabel
             // 
             countryLabel.AutoSize = true;
-            countryLabel.Location = new System.Drawing.Point(22, 321);
+            countryLabel.Font = new System.Drawing.Font("Cambria", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            countryLabel.ForeColor = System.Drawing.Color.WhiteSmoke;
+            countryLabel.Location = new System.Drawing.Point(20, 320);
             countryLabel.Name = "countryLabel";
-            countryLabel.Size = new System.Drawing.Size(68, 20);
+            countryLabel.Size = new System.Drawing.Size(82, 21);
             countryLabel.TabIndex = 10;
             countryLabel.Text = "Country:";
             // 
@@ -285,6 +313,7 @@
             // 
             // tabPage1
             // 
+            this.tabPage1.BackgroundImage = global::DabAgent.Properties.Resources.addBG;
             this.tabPage1.Controls.Add(arrivalLabel);
             this.tabPage1.Controls.Add(this.arrivalTextBox);
             this.tabPage1.Controls.Add(departureLabel);
@@ -313,78 +342,79 @@
             // arrivalTextBox
             // 
             this.arrivalTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bsBooking, "Arrival", true));
-            this.arrivalTextBox.Location = new System.Drawing.Point(123, 324);
+            this.arrivalTextBox.Location = new System.Drawing.Point(144, 324);
             this.arrivalTextBox.Name = "arrivalTextBox";
             this.arrivalTextBox.ReadOnly = true;
-            this.arrivalTextBox.Size = new System.Drawing.Size(200, 26);
+            this.arrivalTextBox.Size = new System.Drawing.Size(191, 26);
             this.arrivalTextBox.TabIndex = 39;
             // 
             // departureTextBox
             // 
             this.departureTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bsBooking, "Departure", true));
-            this.departureTextBox.Location = new System.Drawing.Point(123, 279);
+            this.departureTextBox.Location = new System.Drawing.Point(144, 279);
             this.departureTextBox.Name = "departureTextBox";
             this.departureTextBox.ReadOnly = true;
-            this.departureTextBox.Size = new System.Drawing.Size(200, 26);
+            this.departureTextBox.Size = new System.Drawing.Size(191, 26);
             this.departureTextBox.TabIndex = 37;
             // 
             // TotalTxt
             // 
             this.TotalTxt.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bsBooking, "CostPx", true));
-            this.TotalTxt.Location = new System.Drawing.Point(123, 369);
+            this.TotalTxt.Location = new System.Drawing.Point(144, 369);
             this.TotalTxt.Name = "TotalTxt";
             this.TotalTxt.ReadOnly = true;
-            this.TotalTxt.Size = new System.Drawing.Size(200, 26);
+            this.TotalTxt.Size = new System.Drawing.Size(191, 26);
             this.TotalTxt.TabIndex = 32;
             // 
             // travelDateTextBox
             // 
             this.travelDateTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bsBooking, "TravelDate", true));
-            this.travelDateTextBox.Location = new System.Drawing.Point(123, 144);
+            this.travelDateTextBox.Location = new System.Drawing.Point(144, 144);
             this.travelDateTextBox.Name = "travelDateTextBox";
             this.travelDateTextBox.ReadOnly = true;
-            this.travelDateTextBox.Size = new System.Drawing.Size(200, 26);
+            this.travelDateTextBox.Size = new System.Drawing.Size(191, 26);
             this.travelDateTextBox.TabIndex = 36;
             // 
             // bookingIDTextBox
             // 
             this.bookingIDTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bsBooking, "BookingID", true));
-            this.bookingIDTextBox.Location = new System.Drawing.Point(123, 54);
+            this.bookingIDTextBox.Location = new System.Drawing.Point(144, 54);
             this.bookingIDTextBox.Name = "bookingIDTextBox";
             this.bookingIDTextBox.ReadOnly = true;
-            this.bookingIDTextBox.Size = new System.Drawing.Size(200, 26);
+            this.bookingIDTextBox.Size = new System.Drawing.Size(191, 26);
             this.bookingIDTextBox.TabIndex = 24;
             // 
             // nRICTextBox
             // 
             this.nRICTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bsBooking, "NRIC", true));
-            this.nRICTextBox.Location = new System.Drawing.Point(123, 99);
+            this.nRICTextBox.Location = new System.Drawing.Point(144, 99);
             this.nRICTextBox.Name = "nRICTextBox";
             this.nRICTextBox.ReadOnly = true;
-            this.nRICTextBox.Size = new System.Drawing.Size(200, 26);
+            this.nRICTextBox.Size = new System.Drawing.Size(191, 26);
             this.nRICTextBox.TabIndex = 26;
             // 
             // paxTextBox
             // 
             this.paxTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bsBooking, "Pax", true));
-            this.paxTextBox.Location = new System.Drawing.Point(123, 189);
+            this.paxTextBox.Location = new System.Drawing.Point(144, 189);
             this.paxTextBox.Name = "paxTextBox";
             this.paxTextBox.ReadOnly = true;
-            this.paxTextBox.Size = new System.Drawing.Size(200, 26);
+            this.paxTextBox.Size = new System.Drawing.Size(191, 26);
             this.paxTextBox.TabIndex = 28;
             // 
             // costPxTextBox
             // 
             this.costPxTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bsBooking, "CostPx", true));
-            this.costPxTextBox.Location = new System.Drawing.Point(123, 234);
+            this.costPxTextBox.Location = new System.Drawing.Point(144, 234);
             this.costPxTextBox.Name = "costPxTextBox";
             this.costPxTextBox.ReadOnly = true;
-            this.costPxTextBox.Size = new System.Drawing.Size(200, 26);
+            this.costPxTextBox.Size = new System.Drawing.Size(191, 26);
             this.costPxTextBox.TabIndex = 30;
             // 
             // bookingTBBindingNavigator
             // 
             this.bookingTBBindingNavigator.AddNewItem = null;
+            this.bookingTBBindingNavigator.BackgroundImage = global::DabAgent.Properties.Resources.addBG;
             this.bookingTBBindingNavigator.BindingSource = this.bsBooking;
             this.bookingTBBindingNavigator.CountItem = this.bindingNavigatorCountItem;
             this.bookingTBBindingNavigator.DeleteItem = null;
@@ -445,7 +475,7 @@
             this.bindingNavigatorPositionItem.AccessibleName = "Position";
             this.bindingNavigatorPositionItem.AutoSize = false;
             this.bindingNavigatorPositionItem.Name = "bindingNavigatorPositionItem";
-            this.bindingNavigatorPositionItem.Size = new System.Drawing.Size(50, 31);
+            this.bindingNavigatorPositionItem.Size = new System.Drawing.Size(50, 26);
             this.bindingNavigatorPositionItem.Text = "0";
             this.bindingNavigatorPositionItem.ToolTipText = "Current position";
             // 
@@ -480,6 +510,7 @@
             // tabPage2
             // 
             this.tabPage2.AutoScroll = true;
+            this.tabPage2.BackgroundImage = global::DabAgent.Properties.Resources.addBG;
             this.tabPage2.Controls.Add(this.DOBtxt);
             this.tabPage2.Controls.Add(this.CustomerbindingNavigator1);
             this.tabPage2.Controls.Add(nRICLabel1);
@@ -504,7 +535,7 @@
             // DOBtxt
             // 
             this.DOBtxt.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.customerTBBindingSource, "Date of Birth", true));
-            this.DOBtxt.Location = new System.Drawing.Point(131, 268);
+            this.DOBtxt.Location = new System.Drawing.Point(149, 268);
             this.DOBtxt.Name = "DOBtxt";
             this.DOBtxt.ReadOnly = true;
             this.DOBtxt.Size = new System.Drawing.Size(200, 26);
@@ -608,7 +639,7 @@
             // nRICTextBox1
             // 
             this.nRICTextBox1.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.customerTBBindingSource, "NRIC", true));
-            this.nRICTextBox1.Location = new System.Drawing.Point(131, 58);
+            this.nRICTextBox1.Location = new System.Drawing.Point(149, 58);
             this.nRICTextBox1.Name = "nRICTextBox1";
             this.nRICTextBox1.ReadOnly = true;
             this.nRICTextBox1.Size = new System.Drawing.Size(200, 26);
@@ -617,7 +648,7 @@
             // nameTextBox
             // 
             this.nameTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.customerTBBindingSource, "Name", true));
-            this.nameTextBox.Location = new System.Drawing.Point(131, 110);
+            this.nameTextBox.Location = new System.Drawing.Point(149, 110);
             this.nameTextBox.Name = "nameTextBox";
             this.nameTextBox.ReadOnly = true;
             this.nameTextBox.Size = new System.Drawing.Size(200, 26);
@@ -626,7 +657,7 @@
             // contactTextBox
             // 
             this.contactTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.customerTBBindingSource, "Contact", true));
-            this.contactTextBox.Location = new System.Drawing.Point(131, 162);
+            this.contactTextBox.Location = new System.Drawing.Point(149, 162);
             this.contactTextBox.Name = "contactTextBox";
             this.contactTextBox.ReadOnly = true;
             this.contactTextBox.Size = new System.Drawing.Size(200, 26);
@@ -635,7 +666,7 @@
             // addressTextBox
             // 
             this.addressTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.customerTBBindingSource, "Address", true));
-            this.addressTextBox.Location = new System.Drawing.Point(131, 214);
+            this.addressTextBox.Location = new System.Drawing.Point(149, 214);
             this.addressTextBox.Name = "addressTextBox";
             this.addressTextBox.ReadOnly = true;
             this.addressTextBox.Size = new System.Drawing.Size(200, 26);
@@ -644,7 +675,7 @@
             // countryTextBox
             // 
             this.countryTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.customerTBBindingSource, "Country", true));
-            this.countryTextBox.Location = new System.Drawing.Point(131, 318);
+            this.countryTextBox.Location = new System.Drawing.Point(149, 318);
             this.countryTextBox.Name = "countryTextBox";
             this.countryTextBox.ReadOnly = true;
             this.countryTextBox.Size = new System.Drawing.Size(200, 26);
@@ -683,6 +714,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::DabAgent.Properties.Resources.addBG;
             this.ClientSize = new System.Drawing.Size(368, 596);
             this.ControlBox = false;
             this.Controls.Add(this.tabControl1);

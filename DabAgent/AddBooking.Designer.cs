@@ -68,63 +68,70 @@
             // nRICLabel
             // 
             nRICLabel.AutoSize = true;
-            nRICLabel.Location = new System.Drawing.Point(36, 32);
+            nRICLabel.Font = new System.Drawing.Font("Candara", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            nRICLabel.Location = new System.Drawing.Point(40, 33);
             nRICLabel.Name = "nRICLabel";
-            nRICLabel.Size = new System.Drawing.Size(52, 20);
+            nRICLabel.Size = new System.Drawing.Size(47, 19);
             nRICLabel.TabIndex = 4;
             nRICLabel.Text = "NRIC:";
             // 
             // travelDateLabel
             // 
             travelDateLabel.AutoSize = true;
-            travelDateLabel.Location = new System.Drawing.Point(36, 82);
+            travelDateLabel.Font = new System.Drawing.Font("Candara", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            travelDateLabel.Location = new System.Drawing.Point(40, 83);
             travelDateLabel.Name = "travelDateLabel";
-            travelDateLabel.Size = new System.Drawing.Size(94, 20);
+            travelDateLabel.Size = new System.Drawing.Size(89, 19);
             travelDateLabel.TabIndex = 6;
             travelDateLabel.Text = "Travel Date:";
             // 
             // paxLabel
             // 
             paxLabel.AutoSize = true;
-            paxLabel.Location = new System.Drawing.Point(36, 178);
+            paxLabel.Font = new System.Drawing.Font("Candara", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            paxLabel.Location = new System.Drawing.Point(40, 179);
             paxLabel.Name = "paxLabel";
-            paxLabel.Size = new System.Drawing.Size(39, 20);
+            paxLabel.Size = new System.Drawing.Size(38, 19);
             paxLabel.TabIndex = 8;
             paxLabel.Text = "Pax:";
             // 
             // costPxLabel
             // 
             costPxLabel.AutoSize = true;
-            costPxLabel.Location = new System.Drawing.Point(46, 151);
+            costPxLabel.Font = new System.Drawing.Font("Cambria", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            costPxLabel.Location = new System.Drawing.Point(42, 152);
             costPxLabel.Name = "costPxLabel";
-            costPxLabel.Size = new System.Drawing.Size(67, 20);
+            costPxLabel.Size = new System.Drawing.Size(66, 19);
             costPxLabel.TabIndex = 16;
             costPxLabel.Text = "Cost Px:";
             // 
             // departureLabel
             // 
             departureLabel.AutoSize = true;
-            departureLabel.Location = new System.Drawing.Point(46, 53);
+            departureLabel.Font = new System.Drawing.Font("Cambria", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            departureLabel.Location = new System.Drawing.Point(42, 54);
             departureLabel.Name = "departureLabel";
-            departureLabel.Size = new System.Drawing.Size(85, 20);
+            departureLabel.Size = new System.Drawing.Size(89, 19);
             departureLabel.TabIndex = 25;
             departureLabel.Text = "Departure:";
             // 
             // arrivalLabel
             // 
             arrivalLabel.AutoSize = true;
-            arrivalLabel.Location = new System.Drawing.Point(46, 102);
+            arrivalLabel.Font = new System.Drawing.Font("Cambria", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            arrivalLabel.Location = new System.Drawing.Point(42, 103);
             arrivalLabel.Name = "arrivalLabel";
-            arrivalLabel.Size = new System.Drawing.Size(56, 20);
+            arrivalLabel.Size = new System.Drawing.Size(64, 19);
             arrivalLabel.TabIndex = 26;
             arrivalLabel.Text = "Arrival:";
             // 
             // bookingDateLabel
             // 
             bookingDateLabel.AutoSize = true;
-            bookingDateLabel.Location = new System.Drawing.Point(36, 128);
+            bookingDateLabel.Font = new System.Drawing.Font("Candara", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            bookingDateLabel.Location = new System.Drawing.Point(40, 129);
             bookingDateLabel.Name = "bookingDateLabel";
-            bookingDateLabel.Size = new System.Drawing.Size(110, 20);
+            bookingDateLabel.Size = new System.Drawing.Size(106, 19);
             bookingDateLabel.TabIndex = 9;
             bookingDateLabel.Text = "Booking Date:";
             // 

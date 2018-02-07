@@ -40,10 +40,16 @@
             this.customerBS = new System.Windows.Forms.BindingSource(this.components);
             this.dabAgencyDS = new DabAgent.DabAgencyDataSet();
             this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
+            this.bindingNavigatorDeleteItem = new System.Windows.Forms.ToolStripButton();
+            this.bindingNavigatorMoveFirstItem = new System.Windows.Forms.ToolStripButton();
+            this.bindingNavigatorMovePreviousItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorSeparator = new System.Windows.Forms.ToolStripSeparator();
             this.bindingNavigatorPositionItem = new System.Windows.Forms.ToolStripTextBox();
             this.bindingNavigatorSeparator1 = new System.Windows.Forms.ToolStripSeparator();
+            this.bindingNavigatorMoveNextItem = new System.Windows.Forms.ToolStripButton();
+            this.bindingNavigatorMoveLastItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorSeparator2 = new System.Windows.Forms.ToolStripSeparator();
+            this.customerTBBindingNavigatorSaveItem = new System.Windows.Forms.ToolStripButton();
             this.customerTA = new DabAgent.DabAgencyDataSetTableAdapters.CustomerTBTableAdapter();
             this.tam = new DabAgent.DabAgencyDataSetTableAdapters.TableAdapterManager();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
@@ -59,12 +65,6 @@
             this.addressTextBox = new System.Windows.Forms.TextBox();
             this.nameTextBox = new System.Windows.Forms.TextBox();
             this.contactTextBox = new System.Windows.Forms.TextBox();
-            this.bindingNavigatorDeleteItem = new System.Windows.Forms.ToolStripButton();
-            this.bindingNavigatorMoveFirstItem = new System.Windows.Forms.ToolStripButton();
-            this.bindingNavigatorMovePreviousItem = new System.Windows.Forms.ToolStripButton();
-            this.bindingNavigatorMoveNextItem = new System.Windows.Forms.ToolStripButton();
-            this.bindingNavigatorMoveLastItem = new System.Windows.Forms.ToolStripButton();
-            this.customerTBBindingNavigatorSaveItem = new System.Windows.Forms.ToolStripButton();
             countryLabel = new System.Windows.Forms.Label();
             date_of_BirthLabel = new System.Windows.Forms.Label();
             nRICLabel = new System.Windows.Forms.Label();
@@ -82,60 +82,72 @@
             // countryLabel
             // 
             countryLabel.AutoSize = true;
-            countryLabel.Location = new System.Drawing.Point(14, 244);
+            countryLabel.Font = new System.Drawing.Font("Cambria", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            countryLabel.ForeColor = System.Drawing.Color.WhiteSmoke;
+            countryLabel.Location = new System.Drawing.Point(11, 244);
             countryLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             countryLabel.Name = "countryLabel";
-            countryLabel.Size = new System.Drawing.Size(68, 20);
+            countryLabel.Size = new System.Drawing.Size(72, 19);
             countryLabel.TabIndex = 26;
             countryLabel.Text = "Country:";
             // 
             // date_of_BirthLabel
             // 
             date_of_BirthLabel.AutoSize = true;
-            date_of_BirthLabel.Location = new System.Drawing.Point(14, 205);
+            date_of_BirthLabel.Font = new System.Drawing.Font("Cambria", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            date_of_BirthLabel.ForeColor = System.Drawing.Color.WhiteSmoke;
+            date_of_BirthLabel.Location = new System.Drawing.Point(11, 205);
             date_of_BirthLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             date_of_BirthLabel.Name = "date_of_BirthLabel";
-            date_of_BirthLabel.Size = new System.Drawing.Size(103, 20);
+            date_of_BirthLabel.Size = new System.Drawing.Size(107, 19);
             date_of_BirthLabel.TabIndex = 24;
             date_of_BirthLabel.Text = "Date of Birth:";
             // 
             // nRICLabel
             // 
             nRICLabel.AutoSize = true;
-            nRICLabel.Location = new System.Drawing.Point(14, 44);
+            nRICLabel.Font = new System.Drawing.Font("Cambria", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            nRICLabel.ForeColor = System.Drawing.Color.WhiteSmoke;
+            nRICLabel.Location = new System.Drawing.Point(11, 44);
             nRICLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             nRICLabel.Name = "nRICLabel";
-            nRICLabel.Size = new System.Drawing.Size(52, 20);
+            nRICLabel.Size = new System.Drawing.Size(50, 19);
             nRICLabel.TabIndex = 16;
             nRICLabel.Text = "NRIC:";
             // 
             // contactLabel
             // 
             contactLabel.AutoSize = true;
-            contactLabel.Location = new System.Drawing.Point(14, 124);
+            contactLabel.Font = new System.Drawing.Font("Cambria", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            contactLabel.ForeColor = System.Drawing.Color.WhiteSmoke;
+            contactLabel.Location = new System.Drawing.Point(11, 124);
             contactLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             contactLabel.Name = "contactLabel";
-            contactLabel.Size = new System.Drawing.Size(69, 20);
+            contactLabel.Size = new System.Drawing.Size(70, 19);
             contactLabel.TabIndex = 20;
             contactLabel.Text = "Contact:";
             // 
             // addressLabel
             // 
             addressLabel.AutoSize = true;
-            addressLabel.Location = new System.Drawing.Point(14, 164);
+            addressLabel.Font = new System.Drawing.Font("Cambria", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            addressLabel.ForeColor = System.Drawing.Color.WhiteSmoke;
+            addressLabel.Location = new System.Drawing.Point(11, 164);
             addressLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             addressLabel.Name = "addressLabel";
-            addressLabel.Size = new System.Drawing.Size(72, 20);
+            addressLabel.Size = new System.Drawing.Size(72, 19);
             addressLabel.TabIndex = 22;
             addressLabel.Text = "Address:";
             // 
             // nameLabel
             // 
             nameLabel.AutoSize = true;
-            nameLabel.Location = new System.Drawing.Point(14, 84);
+            nameLabel.Font = new System.Drawing.Font("Cambria", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            nameLabel.ForeColor = System.Drawing.Color.WhiteSmoke;
+            nameLabel.Location = new System.Drawing.Point(11, 84);
             nameLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             nameLabel.Name = "nameLabel";
-            nameLabel.Size = new System.Drawing.Size(55, 20);
+            nameLabel.Size = new System.Drawing.Size(55, 19);
             nameLabel.TabIndex = 18;
             nameLabel.Text = "Name:";
             // 
@@ -188,6 +200,33 @@
             this.bindingNavigatorCountItem.Text = "of {0}";
             this.bindingNavigatorCountItem.ToolTipText = "Total number of items";
             // 
+            // bindingNavigatorDeleteItem
+            // 
+            this.bindingNavigatorDeleteItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorDeleteItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorDeleteItem.Image")));
+            this.bindingNavigatorDeleteItem.Name = "bindingNavigatorDeleteItem";
+            this.bindingNavigatorDeleteItem.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorDeleteItem.Size = new System.Drawing.Size(28, 28);
+            this.bindingNavigatorDeleteItem.Text = "Delete";
+            // 
+            // bindingNavigatorMoveFirstItem
+            // 
+            this.bindingNavigatorMoveFirstItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorMoveFirstItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveFirstItem.Image")));
+            this.bindingNavigatorMoveFirstItem.Name = "bindingNavigatorMoveFirstItem";
+            this.bindingNavigatorMoveFirstItem.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorMoveFirstItem.Size = new System.Drawing.Size(28, 28);
+            this.bindingNavigatorMoveFirstItem.Text = "Move first";
+            // 
+            // bindingNavigatorMovePreviousItem
+            // 
+            this.bindingNavigatorMovePreviousItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorMovePreviousItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMovePreviousItem.Image")));
+            this.bindingNavigatorMovePreviousItem.Name = "bindingNavigatorMovePreviousItem";
+            this.bindingNavigatorMovePreviousItem.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorMovePreviousItem.Size = new System.Drawing.Size(28, 28);
+            this.bindingNavigatorMovePreviousItem.Text = "Move previous";
+            // 
             // bindingNavigatorSeparator
             // 
             this.bindingNavigatorSeparator.Name = "bindingNavigatorSeparator";
@@ -208,10 +247,37 @@
             this.bindingNavigatorSeparator1.Name = "bindingNavigatorSeparator1";
             this.bindingNavigatorSeparator1.Size = new System.Drawing.Size(6, 31);
             // 
+            // bindingNavigatorMoveNextItem
+            // 
+            this.bindingNavigatorMoveNextItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorMoveNextItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveNextItem.Image")));
+            this.bindingNavigatorMoveNextItem.Name = "bindingNavigatorMoveNextItem";
+            this.bindingNavigatorMoveNextItem.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorMoveNextItem.Size = new System.Drawing.Size(28, 28);
+            this.bindingNavigatorMoveNextItem.Text = "Move next";
+            // 
+            // bindingNavigatorMoveLastItem
+            // 
+            this.bindingNavigatorMoveLastItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorMoveLastItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveLastItem.Image")));
+            this.bindingNavigatorMoveLastItem.Name = "bindingNavigatorMoveLastItem";
+            this.bindingNavigatorMoveLastItem.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorMoveLastItem.Size = new System.Drawing.Size(28, 28);
+            this.bindingNavigatorMoveLastItem.Text = "Move last";
+            // 
             // bindingNavigatorSeparator2
             // 
             this.bindingNavigatorSeparator2.Name = "bindingNavigatorSeparator2";
             this.bindingNavigatorSeparator2.Size = new System.Drawing.Size(6, 31);
+            // 
+            // customerTBBindingNavigatorSaveItem
+            // 
+            this.customerTBBindingNavigatorSaveItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.customerTBBindingNavigatorSaveItem.Image = ((System.Drawing.Image)(resources.GetObject("customerTBBindingNavigatorSaveItem.Image")));
+            this.customerTBBindingNavigatorSaveItem.Name = "customerTBBindingNavigatorSaveItem";
+            this.customerTBBindingNavigatorSaveItem.Size = new System.Drawing.Size(28, 28);
+            this.customerTBBindingNavigatorSaveItem.Text = "Save Data";
+            this.customerTBBindingNavigatorSaveItem.Click += new System.EventHandler(this.customerTBBindingNavigatorSaveItem_Click);
             // 
             // customerTA
             // 
@@ -228,10 +294,12 @@
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.Color.Transparent;
+            this.groupBox1.BackgroundImage = global::DabAgent.Properties.Resources.addBG;
             this.groupBox1.Controls.Add(this.btnViewAll);
             this.groupBox1.Controls.Add(this.btnAdd);
             this.groupBox1.Controls.Add(this.btnSearch);
             this.groupBox1.Controls.Add(this.txtSearch);
+            this.groupBox1.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.groupBox1.Location = new System.Drawing.Point(439, 54);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(311, 180);
@@ -241,6 +309,7 @@
             // 
             // btnViewAll
             // 
+            this.btnViewAll.ForeColor = System.Drawing.Color.Black;
             this.btnViewAll.Location = new System.Drawing.Point(7, 81);
             this.btnViewAll.Margin = new System.Windows.Forms.Padding(2);
             this.btnViewAll.Name = "btnViewAll";
@@ -252,6 +321,7 @@
             // 
             // btnAdd
             // 
+            this.btnAdd.ForeColor = System.Drawing.Color.Black;
             this.btnAdd.Location = new System.Drawing.Point(191, 81);
             this.btnAdd.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnAdd.Name = "btnAdd";
@@ -263,6 +333,7 @@
             // 
             // btnSearch
             // 
+            this.btnSearch.ForeColor = System.Drawing.Color.Black;
             this.btnSearch.Location = new System.Drawing.Point(191, 36);
             this.btnSearch.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnSearch.Name = "btnSearch";
@@ -283,6 +354,7 @@
             // groupBox2
             // 
             this.groupBox2.BackColor = System.Drawing.Color.Transparent;
+            this.groupBox2.BackgroundImage = global::DabAgent.Properties.Resources.addBG;
             this.groupBox2.Controls.Add(this.nRICTextBox);
             this.groupBox2.Controls.Add(this.countryTextBox);
             this.groupBox2.Controls.Add(this.btnUpdate);
@@ -296,6 +368,7 @@
             this.groupBox2.Controls.Add(addressLabel);
             this.groupBox2.Controls.Add(this.contactTextBox);
             this.groupBox2.Controls.Add(nameLabel);
+            this.groupBox2.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.groupBox2.Location = new System.Drawing.Point(12, 54);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(421, 327);
@@ -323,6 +396,7 @@
             // 
             // btnUpdate
             // 
+            this.btnUpdate.ForeColor = System.Drawing.Color.Black;
             this.btnUpdate.Location = new System.Drawing.Point(244, 275);
             this.btnUpdate.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnUpdate.Name = "btnUpdate";
@@ -367,60 +441,6 @@
             this.contactTextBox.Name = "contactTextBox";
             this.contactTextBox.Size = new System.Drawing.Size(276, 26);
             this.contactTextBox.TabIndex = 21;
-            // 
-            // bindingNavigatorDeleteItem
-            // 
-            this.bindingNavigatorDeleteItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorDeleteItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorDeleteItem.Image")));
-            this.bindingNavigatorDeleteItem.Name = "bindingNavigatorDeleteItem";
-            this.bindingNavigatorDeleteItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorDeleteItem.Size = new System.Drawing.Size(28, 28);
-            this.bindingNavigatorDeleteItem.Text = "Delete";
-            // 
-            // bindingNavigatorMoveFirstItem
-            // 
-            this.bindingNavigatorMoveFirstItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorMoveFirstItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveFirstItem.Image")));
-            this.bindingNavigatorMoveFirstItem.Name = "bindingNavigatorMoveFirstItem";
-            this.bindingNavigatorMoveFirstItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveFirstItem.Size = new System.Drawing.Size(28, 28);
-            this.bindingNavigatorMoveFirstItem.Text = "Move first";
-            // 
-            // bindingNavigatorMovePreviousItem
-            // 
-            this.bindingNavigatorMovePreviousItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorMovePreviousItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMovePreviousItem.Image")));
-            this.bindingNavigatorMovePreviousItem.Name = "bindingNavigatorMovePreviousItem";
-            this.bindingNavigatorMovePreviousItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMovePreviousItem.Size = new System.Drawing.Size(28, 28);
-            this.bindingNavigatorMovePreviousItem.Text = "Move previous";
-            // 
-            // bindingNavigatorMoveNextItem
-            // 
-            this.bindingNavigatorMoveNextItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorMoveNextItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveNextItem.Image")));
-            this.bindingNavigatorMoveNextItem.Name = "bindingNavigatorMoveNextItem";
-            this.bindingNavigatorMoveNextItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveNextItem.Size = new System.Drawing.Size(28, 28);
-            this.bindingNavigatorMoveNextItem.Text = "Move next";
-            // 
-            // bindingNavigatorMoveLastItem
-            // 
-            this.bindingNavigatorMoveLastItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorMoveLastItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveLastItem.Image")));
-            this.bindingNavigatorMoveLastItem.Name = "bindingNavigatorMoveLastItem";
-            this.bindingNavigatorMoveLastItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveLastItem.Size = new System.Drawing.Size(28, 28);
-            this.bindingNavigatorMoveLastItem.Text = "Move last";
-            // 
-            // customerTBBindingNavigatorSaveItem
-            // 
-            this.customerTBBindingNavigatorSaveItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.customerTBBindingNavigatorSaveItem.Image = ((System.Drawing.Image)(resources.GetObject("customerTBBindingNavigatorSaveItem.Image")));
-            this.customerTBBindingNavigatorSaveItem.Name = "customerTBBindingNavigatorSaveItem";
-            this.customerTBBindingNavigatorSaveItem.Size = new System.Drawing.Size(28, 28);
-            this.customerTBBindingNavigatorSaveItem.Text = "Save Data";
-            this.customerTBBindingNavigatorSaveItem.Click += new System.EventHandler(this.customerTBBindingNavigatorSaveItem_Click);
             // 
             // CustForm
             // 

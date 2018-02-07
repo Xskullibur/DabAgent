@@ -59,6 +59,7 @@
             this.ExitBtn = new System.Windows.Forms.Button();
             this.taBooking = new DabAgent.DabAgencyDataSetTableAdapters.BookingTBTableAdapter();
             this.tam = new DabAgent.DabAgencyDataSetTableAdapters.TableAdapterManager();
+            this.label1 = new System.Windows.Forms.Label();
             travelDateLabel = new System.Windows.Forms.Label();
             paxLabel = new System.Windows.Forms.Label();
             costPxLabel = new System.Windows.Forms.Label();
@@ -74,60 +75,79 @@
             // travelDateLabel
             // 
             travelDateLabel.AutoSize = true;
-            travelDateLabel.Location = new System.Drawing.Point(45, 122);
+            travelDateLabel.BackColor = System.Drawing.Color.Transparent;
+            travelDateLabel.Font = new System.Drawing.Font("Cambria", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            travelDateLabel.ForeColor = System.Drawing.Color.WhiteSmoke;
+            travelDateLabel.Location = new System.Drawing.Point(24, 172);
             travelDateLabel.Name = "travelDateLabel";
-            travelDateLabel.Size = new System.Drawing.Size(94, 20);
+            travelDateLabel.Size = new System.Drawing.Size(112, 21);
             travelDateLabel.TabIndex = 5;
             travelDateLabel.Text = "Travel Date:";
             // 
             // paxLabel
             // 
             paxLabel.AutoSize = true;
-            paxLabel.Location = new System.Drawing.Point(45, 172);
+            paxLabel.BackColor = System.Drawing.Color.Transparent;
+            paxLabel.Font = new System.Drawing.Font("Cambria", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            paxLabel.ForeColor = System.Drawing.Color.WhiteSmoke;
+            paxLabel.Location = new System.Drawing.Point(24, 222);
             paxLabel.Name = "paxLabel";
-            paxLabel.Size = new System.Drawing.Size(39, 20);
+            paxLabel.Size = new System.Drawing.Size(45, 21);
             paxLabel.TabIndex = 7;
             paxLabel.Text = "Pax:";
             // 
             // costPxLabel
             // 
             costPxLabel.AutoSize = true;
-            costPxLabel.Location = new System.Drawing.Point(45, 332);
+            costPxLabel.BackColor = System.Drawing.Color.Transparent;
+            costPxLabel.Font = new System.Drawing.Font("Cambria", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            costPxLabel.ForeColor = System.Drawing.Color.WhiteSmoke;
+            costPxLabel.Location = new System.Drawing.Point(24, 382);
             costPxLabel.Name = "costPxLabel";
-            costPxLabel.Size = new System.Drawing.Size(67, 20);
+            costPxLabel.Size = new System.Drawing.Size(74, 21);
             costPxLabel.TabIndex = 9;
             costPxLabel.Text = "Cost Px:";
             // 
             // departureLabel
             // 
             departureLabel.AutoSize = true;
-            departureLabel.Location = new System.Drawing.Point(45, 224);
+            departureLabel.BackColor = System.Drawing.Color.Transparent;
+            departureLabel.Font = new System.Drawing.Font("Cambria", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            departureLabel.ForeColor = System.Drawing.Color.WhiteSmoke;
+            departureLabel.Location = new System.Drawing.Point(24, 274);
             departureLabel.Name = "departureLabel";
-            departureLabel.Size = new System.Drawing.Size(85, 20);
+            departureLabel.Size = new System.Drawing.Size(103, 21);
             departureLabel.TabIndex = 11;
             departureLabel.Text = "Departure:";
             // 
             // arrivalLabel
             // 
             arrivalLabel.AutoSize = true;
-            arrivalLabel.Location = new System.Drawing.Point(45, 278);
+            arrivalLabel.BackColor = System.Drawing.Color.Transparent;
+            arrivalLabel.Font = new System.Drawing.Font("Cambria", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            arrivalLabel.ForeColor = System.Drawing.Color.WhiteSmoke;
+            arrivalLabel.Location = new System.Drawing.Point(24, 328);
             arrivalLabel.Name = "arrivalLabel";
-            arrivalLabel.Size = new System.Drawing.Size(56, 20);
+            arrivalLabel.Size = new System.Drawing.Size(75, 21);
             arrivalLabel.TabIndex = 13;
             arrivalLabel.Text = "Arrival:";
             // 
             // nRICLabel
             // 
             nRICLabel.AutoSize = true;
-            nRICLabel.Location = new System.Drawing.Point(45, 68);
+            nRICLabel.BackColor = System.Drawing.Color.Transparent;
+            nRICLabel.Font = new System.Drawing.Font("Cambria", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            nRICLabel.ForeColor = System.Drawing.Color.WhiteSmoke;
+            nRICLabel.Location = new System.Drawing.Point(24, 118);
             nRICLabel.Name = "nRICLabel";
-            nRICLabel.Size = new System.Drawing.Size(52, 20);
+            nRICLabel.Size = new System.Drawing.Size(55, 21);
             nRICLabel.TabIndex = 14;
             nRICLabel.Text = "NRIC:";
             // 
             // bookingTBBindingNavigator
             // 
             this.bookingTBBindingNavigator.AddNewItem = null;
+            this.bookingTBBindingNavigator.BackgroundImage = global::DabAgent.Properties.Resources.addBG;
             this.bookingTBBindingNavigator.BindingSource = this.bsBooking;
             this.bookingTBBindingNavigator.CountItem = this.bindingNavigatorCountItem;
             this.bookingTBBindingNavigator.DeleteItem = null;
@@ -143,14 +163,14 @@
             this.bindingNavigatorMoveLastItem,
             this.bindingNavigatorSeparator2,
             this.bookingTBBindingNavigatorSaveItem});
-            this.bookingTBBindingNavigator.Location = new System.Drawing.Point(0, 0);
+            this.bookingTBBindingNavigator.Location = new System.Drawing.Point(0, 55);
             this.bookingTBBindingNavigator.MoveFirstItem = this.bindingNavigatorMoveFirstItem;
             this.bookingTBBindingNavigator.MoveLastItem = this.bindingNavigatorMoveLastItem;
             this.bookingTBBindingNavigator.MoveNextItem = this.bindingNavigatorMoveNextItem;
             this.bookingTBBindingNavigator.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
             this.bookingTBBindingNavigator.Name = "bookingTBBindingNavigator";
             this.bookingTBBindingNavigator.PositionItem = this.bindingNavigatorPositionItem;
-            this.bookingTBBindingNavigator.Size = new System.Drawing.Size(390, 31);
+            this.bookingTBBindingNavigator.Size = new System.Drawing.Size(370, 31);
             this.bookingTBBindingNavigator.TabIndex = 0;
             this.bookingTBBindingNavigator.Text = "bindingNavigator1";
             // 
@@ -243,25 +263,25 @@
             // travelDateDateTimePicker
             // 
             this.travelDateDateTimePicker.DataBindings.Add(new System.Windows.Forms.Binding("Value", this.bsBooking, "TravelDate", true));
-            this.travelDateDateTimePicker.Location = new System.Drawing.Point(145, 117);
+            this.travelDateDateTimePicker.Location = new System.Drawing.Point(142, 168);
             this.travelDateDateTimePicker.Name = "travelDateDateTimePicker";
-            this.travelDateDateTimePicker.Size = new System.Drawing.Size(200, 26);
+            this.travelDateDateTimePicker.Size = new System.Drawing.Size(193, 26);
             this.travelDateDateTimePicker.TabIndex = 2;
             // 
             // paxTextBox
             // 
             this.paxTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bsBooking, "Pax", true));
-            this.paxTextBox.Location = new System.Drawing.Point(145, 169);
+            this.paxTextBox.Location = new System.Drawing.Point(142, 220);
             this.paxTextBox.Name = "paxTextBox";
-            this.paxTextBox.Size = new System.Drawing.Size(200, 26);
+            this.paxTextBox.Size = new System.Drawing.Size(193, 26);
             this.paxTextBox.TabIndex = 3;
             // 
             // costPxTextBox
             // 
             this.costPxTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bsBooking, "CostPx", true));
-            this.costPxTextBox.Location = new System.Drawing.Point(145, 329);
+            this.costPxTextBox.Location = new System.Drawing.Point(142, 380);
             this.costPxTextBox.Name = "costPxTextBox";
-            this.costPxTextBox.Size = new System.Drawing.Size(200, 26);
+            this.costPxTextBox.Size = new System.Drawing.Size(193, 26);
             this.costPxTextBox.TabIndex = 6;
             // 
             // departureComboBox
@@ -292,9 +312,9 @@
             "Japan",
             "Canada",
             "Morocco"});
-            this.departureComboBox.Location = new System.Drawing.Point(145, 221);
+            this.departureComboBox.Location = new System.Drawing.Point(142, 272);
             this.departureComboBox.Name = "departureComboBox";
-            this.departureComboBox.Size = new System.Drawing.Size(200, 28);
+            this.departureComboBox.Size = new System.Drawing.Size(193, 28);
             this.departureComboBox.TabIndex = 4;
             // 
             // arrivalComboBox
@@ -325,37 +345,49 @@
             "Japan",
             "Canada",
             "Morocco"});
-            this.arrivalComboBox.Location = new System.Drawing.Point(145, 275);
+            this.arrivalComboBox.Location = new System.Drawing.Point(142, 326);
             this.arrivalComboBox.Name = "arrivalComboBox";
-            this.arrivalComboBox.Size = new System.Drawing.Size(200, 28);
+            this.arrivalComboBox.Size = new System.Drawing.Size(193, 28);
             this.arrivalComboBox.TabIndex = 5;
             // 
             // nRICTextBox
             // 
             this.nRICTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bsBooking, "NRIC", true));
-            this.nRICTextBox.Location = new System.Drawing.Point(145, 65);
+            this.nRICTextBox.Location = new System.Drawing.Point(142, 116);
             this.nRICTextBox.Name = "nRICTextBox";
-            this.nRICTextBox.Size = new System.Drawing.Size(200, 26);
+            this.nRICTextBox.Size = new System.Drawing.Size(193, 26);
             this.nRICTextBox.TabIndex = 1;
             // 
             // SaveBtn
             // 
-            this.SaveBtn.Location = new System.Drawing.Point(220, 372);
+            this.SaveBtn.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.SaveBtn.BackColor = System.Drawing.Color.MediumSeaGreen;
+            this.SaveBtn.FlatAppearance.BorderSize = 0;
+            this.SaveBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.SaveBtn.Font = new System.Drawing.Font("Georgia", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SaveBtn.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.SaveBtn.Location = new System.Drawing.Point(0, 480);
             this.SaveBtn.Name = "SaveBtn";
-            this.SaveBtn.Size = new System.Drawing.Size(125, 42);
+            this.SaveBtn.Size = new System.Drawing.Size(186, 53);
             this.SaveBtn.TabIndex = 15;
             this.SaveBtn.Text = "Save Changes";
-            this.SaveBtn.UseVisualStyleBackColor = true;
+            this.SaveBtn.UseVisualStyleBackColor = false;
             this.SaveBtn.Click += new System.EventHandler(this.SaveBtn_Click);
             // 
             // ExitBtn
             // 
-            this.ExitBtn.Location = new System.Drawing.Point(220, 420);
+            this.ExitBtn.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.ExitBtn.BackColor = System.Drawing.Color.Red;
+            this.ExitBtn.FlatAppearance.BorderSize = 0;
+            this.ExitBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ExitBtn.Font = new System.Drawing.Font("Georgia", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ExitBtn.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.ExitBtn.Location = new System.Drawing.Point(184, 481);
             this.ExitBtn.Name = "ExitBtn";
-            this.ExitBtn.Size = new System.Drawing.Size(125, 42);
+            this.ExitBtn.Size = new System.Drawing.Size(186, 53);
             this.ExitBtn.TabIndex = 16;
             this.ExitBtn.Text = "Exit";
-            this.ExitBtn.UseVisualStyleBackColor = true;
+            this.ExitBtn.UseVisualStyleBackColor = false;
             this.ExitBtn.Click += new System.EventHandler(this.ExitBtn_Click);
             // 
             // taBooking
@@ -370,11 +402,25 @@
             this.tam.HolidayTBTableAdapter = null;
             this.tam.UpdateOrder = DabAgent.DabAgencyDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
             // 
+            // label1
+            // 
+            this.label1.BackColor = System.Drawing.Color.DodgerBlue;
+            this.label1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.label1.Font = new System.Drawing.Font("Georgia", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.label1.Location = new System.Drawing.Point(0, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(370, 55);
+            this.label1.TabIndex = 17;
+            this.label1.Text = "Edit Booking";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // EditBooking
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(390, 481);
+            this.BackgroundImage = global::DabAgent.Properties.Resources.addBG;
+            this.ClientSize = new System.Drawing.Size(370, 533);
             this.Controls.Add(this.ExitBtn);
             this.Controls.Add(this.SaveBtn);
             this.Controls.Add(nRICLabel);
@@ -390,8 +436,10 @@
             this.Controls.Add(arrivalLabel);
             this.Controls.Add(this.arrivalComboBox);
             this.Controls.Add(this.bookingTBBindingNavigator);
+            this.Controls.Add(this.label1);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "EditBooking";
-            this.Text = "Booking Edit";
             this.Load += new System.EventHandler(this.EditForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.bookingTBBindingNavigator)).EndInit();
             this.bookingTBBindingNavigator.ResumeLayout(false);
@@ -428,5 +476,6 @@
         private System.Windows.Forms.TextBox nRICTextBox;
         private System.Windows.Forms.Button SaveBtn;
         private System.Windows.Forms.Button ExitBtn;
+        private System.Windows.Forms.Label label1;
     }
 }
