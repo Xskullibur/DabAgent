@@ -78,7 +78,7 @@
             travelDateLabel.BackColor = System.Drawing.Color.Transparent;
             travelDateLabel.Font = new System.Drawing.Font("Cambria", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             travelDateLabel.ForeColor = System.Drawing.Color.WhiteSmoke;
-            travelDateLabel.Location = new System.Drawing.Point(41, 179);
+            travelDateLabel.Location = new System.Drawing.Point(41, 172);
             travelDateLabel.Name = "travelDateLabel";
             travelDateLabel.Size = new System.Drawing.Size(109, 21);
             travelDateLabel.TabIndex = 5;
@@ -90,7 +90,7 @@
             paxLabel.BackColor = System.Drawing.Color.Transparent;
             paxLabel.Font = new System.Drawing.Font("Cambria", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             paxLabel.ForeColor = System.Drawing.Color.WhiteSmoke;
-            paxLabel.Location = new System.Drawing.Point(41, 246);
+            paxLabel.Location = new System.Drawing.Point(41, 239);
             paxLabel.Name = "paxLabel";
             paxLabel.Size = new System.Drawing.Size(45, 21);
             paxLabel.TabIndex = 7;
@@ -102,7 +102,7 @@
             costPxLabel.BackColor = System.Drawing.Color.Transparent;
             costPxLabel.Font = new System.Drawing.Font("Cambria", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             costPxLabel.ForeColor = System.Drawing.Color.WhiteSmoke;
-            costPxLabel.Location = new System.Drawing.Point(41, 451);
+            costPxLabel.Location = new System.Drawing.Point(41, 447);
             costPxLabel.Name = "costPxLabel";
             costPxLabel.Size = new System.Drawing.Size(74, 21);
             costPxLabel.TabIndex = 9;
@@ -114,7 +114,7 @@
             departureLabel.BackColor = System.Drawing.Color.Transparent;
             departureLabel.Font = new System.Drawing.Font("Cambria", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             departureLabel.ForeColor = System.Drawing.Color.WhiteSmoke;
-            departureLabel.Location = new System.Drawing.Point(41, 313);
+            departureLabel.Location = new System.Drawing.Point(41, 306);
             departureLabel.Name = "departureLabel";
             departureLabel.Size = new System.Drawing.Size(99, 21);
             departureLabel.TabIndex = 11;
@@ -126,7 +126,7 @@
             arrivalLabel.BackColor = System.Drawing.Color.Transparent;
             arrivalLabel.Font = new System.Drawing.Font("Cambria", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             arrivalLabel.ForeColor = System.Drawing.Color.WhiteSmoke;
-            arrivalLabel.Location = new System.Drawing.Point(41, 382);
+            arrivalLabel.Location = new System.Drawing.Point(41, 375);
             arrivalLabel.Name = "arrivalLabel";
             arrivalLabel.Size = new System.Drawing.Size(71, 21);
             arrivalLabel.TabIndex = 13;
@@ -138,7 +138,7 @@
             nRICLabel.BackColor = System.Drawing.Color.Transparent;
             nRICLabel.Font = new System.Drawing.Font("Cambria", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             nRICLabel.ForeColor = System.Drawing.Color.WhiteSmoke;
-            nRICLabel.Location = new System.Drawing.Point(41, 112);
+            nRICLabel.Location = new System.Drawing.Point(41, 105);
             nRICLabel.Name = "nRICLabel";
             nRICLabel.Size = new System.Drawing.Size(54, 21);
             nRICLabel.TabIndex = 14;
@@ -263,7 +263,7 @@
             // travelDateDateTimePicker
             // 
             this.travelDateDateTimePicker.DataBindings.Add(new System.Windows.Forms.Binding("Value", this.bsBooking, "TravelDate", true));
-            this.travelDateDateTimePicker.Location = new System.Drawing.Point(45, 203);
+            this.travelDateDateTimePicker.Location = new System.Drawing.Point(45, 196);
             this.travelDateDateTimePicker.Name = "travelDateDateTimePicker";
             this.travelDateDateTimePicker.Size = new System.Drawing.Size(304, 26);
             this.travelDateDateTimePicker.TabIndex = 2;
@@ -271,7 +271,7 @@
             // paxTextBox
             // 
             this.paxTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bsBooking, "Pax", true));
-            this.paxTextBox.Location = new System.Drawing.Point(45, 270);
+            this.paxTextBox.Location = new System.Drawing.Point(45, 263);
             this.paxTextBox.Name = "paxTextBox";
             this.paxTextBox.Size = new System.Drawing.Size(304, 26);
             this.paxTextBox.TabIndex = 3;
@@ -279,7 +279,7 @@
             // costPxTextBox
             // 
             this.costPxTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bsBooking, "CostPx", true));
-            this.costPxTextBox.Location = new System.Drawing.Point(45, 475);
+            this.costPxTextBox.Location = new System.Drawing.Point(45, 471);
             this.costPxTextBox.Name = "costPxTextBox";
             this.costPxTextBox.Size = new System.Drawing.Size(304, 26);
             this.costPxTextBox.TabIndex = 6;
@@ -312,7 +312,7 @@
             "Japan",
             "Canada",
             "Morocco"});
-            this.departureComboBox.Location = new System.Drawing.Point(45, 337);
+            this.departureComboBox.Location = new System.Drawing.Point(45, 330);
             this.departureComboBox.Name = "departureComboBox";
             this.departureComboBox.Size = new System.Drawing.Size(304, 28);
             this.departureComboBox.TabIndex = 4;
@@ -353,7 +353,7 @@
             // nRICTextBox
             // 
             this.nRICTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bsBooking, "NRIC", true));
-            this.nRICTextBox.Location = new System.Drawing.Point(45, 136);
+            this.nRICTextBox.Location = new System.Drawing.Point(45, 129);
             this.nRICTextBox.Name = "nRICTextBox";
             this.nRICTextBox.Size = new System.Drawing.Size(304, 26);
             this.nRICTextBox.TabIndex = 1;
@@ -366,7 +366,7 @@
             this.SaveBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.SaveBtn.Font = new System.Drawing.Font("Georgia", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.SaveBtn.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.SaveBtn.Location = new System.Drawing.Point(0, 564);
+            this.SaveBtn.Location = new System.Drawing.Point(0, 583);
             this.SaveBtn.Name = "SaveBtn";
             this.SaveBtn.Size = new System.Drawing.Size(200, 58);
             this.SaveBtn.TabIndex = 15;
@@ -382,7 +382,7 @@
             this.ExitBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.ExitBtn.Font = new System.Drawing.Font("Georgia", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ExitBtn.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.ExitBtn.Location = new System.Drawing.Point(198, 564);
+            this.ExitBtn.Location = new System.Drawing.Point(198, 583);
             this.ExitBtn.Name = "ExitBtn";
             this.ExitBtn.Size = new System.Drawing.Size(200, 58);
             this.ExitBtn.TabIndex = 16;
@@ -420,7 +420,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::DabAgent.Properties.Resources.addBG;
-            this.ClientSize = new System.Drawing.Size(398, 622);
+            this.ClientSize = new System.Drawing.Size(398, 641);
             this.ControlBox = false;
             this.Controls.Add(this.ExitBtn);
             this.Controls.Add(this.SaveBtn);
