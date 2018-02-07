@@ -220,7 +220,7 @@
             // btnAddCust
             // 
             this.btnAddCust.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.btnAddCust.BackColor = System.Drawing.Color.MediumSeaGreen;
+            this.btnAddCust.BackColor = System.Drawing.Color.LimeGreen;
             this.btnAddCust.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.btnAddCust.FlatAppearance.BorderSize = 0;
             this.btnAddCust.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
