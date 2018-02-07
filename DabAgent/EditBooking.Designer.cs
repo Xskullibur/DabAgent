@@ -78,7 +78,7 @@
             travelDateLabel.BackColor = System.Drawing.Color.Transparent;
             travelDateLabel.Font = new System.Drawing.Font("Cambria", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             travelDateLabel.ForeColor = System.Drawing.Color.WhiteSmoke;
-            travelDateLabel.Location = new System.Drawing.Point(28, 179);
+            travelDateLabel.Location = new System.Drawing.Point(41, 179);
             travelDateLabel.Name = "travelDateLabel";
             travelDateLabel.Size = new System.Drawing.Size(109, 21);
             travelDateLabel.TabIndex = 5;
@@ -90,7 +90,7 @@
             paxLabel.BackColor = System.Drawing.Color.Transparent;
             paxLabel.Font = new System.Drawing.Font("Cambria", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             paxLabel.ForeColor = System.Drawing.Color.WhiteSmoke;
-            paxLabel.Location = new System.Drawing.Point(28, 246);
+            paxLabel.Location = new System.Drawing.Point(41, 246);
             paxLabel.Name = "paxLabel";
             paxLabel.Size = new System.Drawing.Size(45, 21);
             paxLabel.TabIndex = 7;
@@ -102,7 +102,7 @@
             costPxLabel.BackColor = System.Drawing.Color.Transparent;
             costPxLabel.Font = new System.Drawing.Font("Cambria", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             costPxLabel.ForeColor = System.Drawing.Color.WhiteSmoke;
-            costPxLabel.Location = new System.Drawing.Point(28, 451);
+            costPxLabel.Location = new System.Drawing.Point(41, 451);
             costPxLabel.Name = "costPxLabel";
             costPxLabel.Size = new System.Drawing.Size(74, 21);
             costPxLabel.TabIndex = 9;
@@ -114,7 +114,7 @@
             departureLabel.BackColor = System.Drawing.Color.Transparent;
             departureLabel.Font = new System.Drawing.Font("Cambria", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             departureLabel.ForeColor = System.Drawing.Color.WhiteSmoke;
-            departureLabel.Location = new System.Drawing.Point(28, 313);
+            departureLabel.Location = new System.Drawing.Point(41, 313);
             departureLabel.Name = "departureLabel";
             departureLabel.Size = new System.Drawing.Size(99, 21);
             departureLabel.TabIndex = 11;
@@ -126,7 +126,7 @@
             arrivalLabel.BackColor = System.Drawing.Color.Transparent;
             arrivalLabel.Font = new System.Drawing.Font("Cambria", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             arrivalLabel.ForeColor = System.Drawing.Color.WhiteSmoke;
-            arrivalLabel.Location = new System.Drawing.Point(28, 382);
+            arrivalLabel.Location = new System.Drawing.Point(41, 382);
             arrivalLabel.Name = "arrivalLabel";
             arrivalLabel.Size = new System.Drawing.Size(71, 21);
             arrivalLabel.TabIndex = 13;
@@ -138,7 +138,7 @@
             nRICLabel.BackColor = System.Drawing.Color.Transparent;
             nRICLabel.Font = new System.Drawing.Font("Cambria", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             nRICLabel.ForeColor = System.Drawing.Color.WhiteSmoke;
-            nRICLabel.Location = new System.Drawing.Point(28, 112);
+            nRICLabel.Location = new System.Drawing.Point(41, 112);
             nRICLabel.Name = "nRICLabel";
             nRICLabel.Size = new System.Drawing.Size(54, 21);
             nRICLabel.TabIndex = 14;
@@ -170,7 +170,7 @@
             this.bookingTBBindingNavigator.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
             this.bookingTBBindingNavigator.Name = "bookingTBBindingNavigator";
             this.bookingTBBindingNavigator.PositionItem = this.bindingNavigatorPositionItem;
-            this.bookingTBBindingNavigator.Size = new System.Drawing.Size(370, 31);
+            this.bookingTBBindingNavigator.Size = new System.Drawing.Size(398, 31);
             this.bookingTBBindingNavigator.TabIndex = 0;
             this.bookingTBBindingNavigator.Text = "bindingNavigator1";
             // 
@@ -263,7 +263,7 @@
             // travelDateDateTimePicker
             // 
             this.travelDateDateTimePicker.DataBindings.Add(new System.Windows.Forms.Binding("Value", this.bsBooking, "TravelDate", true));
-            this.travelDateDateTimePicker.Location = new System.Drawing.Point(32, 203);
+            this.travelDateDateTimePicker.Location = new System.Drawing.Point(45, 203);
             this.travelDateDateTimePicker.Name = "travelDateDateTimePicker";
             this.travelDateDateTimePicker.Size = new System.Drawing.Size(304, 26);
             this.travelDateDateTimePicker.TabIndex = 2;
@@ -271,7 +271,7 @@
             // paxTextBox
             // 
             this.paxTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bsBooking, "Pax", true));
-            this.paxTextBox.Location = new System.Drawing.Point(32, 270);
+            this.paxTextBox.Location = new System.Drawing.Point(45, 270);
             this.paxTextBox.Name = "paxTextBox";
             this.paxTextBox.Size = new System.Drawing.Size(304, 26);
             this.paxTextBox.TabIndex = 3;
@@ -279,7 +279,7 @@
             // costPxTextBox
             // 
             this.costPxTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bsBooking, "CostPx", true));
-            this.costPxTextBox.Location = new System.Drawing.Point(32, 475);
+            this.costPxTextBox.Location = new System.Drawing.Point(45, 475);
             this.costPxTextBox.Name = "costPxTextBox";
             this.costPxTextBox.Size = new System.Drawing.Size(304, 26);
             this.costPxTextBox.TabIndex = 6;
@@ -312,7 +312,7 @@
             "Japan",
             "Canada",
             "Morocco"});
-            this.departureComboBox.Location = new System.Drawing.Point(32, 337);
+            this.departureComboBox.Location = new System.Drawing.Point(45, 337);
             this.departureComboBox.Name = "departureComboBox";
             this.departureComboBox.Size = new System.Drawing.Size(304, 28);
             this.departureComboBox.TabIndex = 4;
@@ -345,7 +345,7 @@
             "Japan",
             "Canada",
             "Morocco"});
-            this.arrivalComboBox.Location = new System.Drawing.Point(32, 406);
+            this.arrivalComboBox.Location = new System.Drawing.Point(45, 406);
             this.arrivalComboBox.Name = "arrivalComboBox";
             this.arrivalComboBox.Size = new System.Drawing.Size(304, 28);
             this.arrivalComboBox.TabIndex = 5;
@@ -353,7 +353,7 @@
             // nRICTextBox
             // 
             this.nRICTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bsBooking, "NRIC", true));
-            this.nRICTextBox.Location = new System.Drawing.Point(32, 136);
+            this.nRICTextBox.Location = new System.Drawing.Point(45, 136);
             this.nRICTextBox.Name = "nRICTextBox";
             this.nRICTextBox.Size = new System.Drawing.Size(304, 26);
             this.nRICTextBox.TabIndex = 1;
@@ -366,9 +366,9 @@
             this.SaveBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.SaveBtn.Font = new System.Drawing.Font("Georgia", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.SaveBtn.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.SaveBtn.Location = new System.Drawing.Point(0, 569);
+            this.SaveBtn.Location = new System.Drawing.Point(0, 564);
             this.SaveBtn.Name = "SaveBtn";
-            this.SaveBtn.Size = new System.Drawing.Size(186, 53);
+            this.SaveBtn.Size = new System.Drawing.Size(200, 58);
             this.SaveBtn.TabIndex = 15;
             this.SaveBtn.Text = "Save Changes";
             this.SaveBtn.UseVisualStyleBackColor = false;
@@ -382,9 +382,9 @@
             this.ExitBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.ExitBtn.Font = new System.Drawing.Font("Georgia", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ExitBtn.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.ExitBtn.Location = new System.Drawing.Point(184, 570);
+            this.ExitBtn.Location = new System.Drawing.Point(198, 564);
             this.ExitBtn.Name = "ExitBtn";
-            this.ExitBtn.Size = new System.Drawing.Size(186, 53);
+            this.ExitBtn.Size = new System.Drawing.Size(200, 58);
             this.ExitBtn.TabIndex = 16;
             this.ExitBtn.Text = "Exit";
             this.ExitBtn.UseVisualStyleBackColor = false;
@@ -410,7 +410,7 @@
             this.label1.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.label1.Location = new System.Drawing.Point(0, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(370, 55);
+            this.label1.Size = new System.Drawing.Size(398, 55);
             this.label1.TabIndex = 17;
             this.label1.Text = "Edit Booking";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -420,7 +420,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::DabAgent.Properties.Resources.addBG;
-            this.ClientSize = new System.Drawing.Size(370, 622);
+            this.ClientSize = new System.Drawing.Size(398, 622);
             this.ControlBox = false;
             this.Controls.Add(this.ExitBtn);
             this.Controls.Add(this.SaveBtn);
