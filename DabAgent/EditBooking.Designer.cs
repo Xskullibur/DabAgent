@@ -76,11 +76,11 @@
             // 
             travelDateLabel.AutoSize = true;
             travelDateLabel.BackColor = System.Drawing.Color.Transparent;
-            travelDateLabel.Font = new System.Drawing.Font("Cambria", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            travelDateLabel.Font = new System.Drawing.Font("Cambria", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             travelDateLabel.ForeColor = System.Drawing.Color.WhiteSmoke;
             travelDateLabel.Location = new System.Drawing.Point(28, 179);
             travelDateLabel.Name = "travelDateLabel";
-            travelDateLabel.Size = new System.Drawing.Size(112, 21);
+            travelDateLabel.Size = new System.Drawing.Size(109, 21);
             travelDateLabel.TabIndex = 5;
             travelDateLabel.Text = "Travel Date:";
             // 
@@ -88,7 +88,7 @@
             // 
             paxLabel.AutoSize = true;
             paxLabel.BackColor = System.Drawing.Color.Transparent;
-            paxLabel.Font = new System.Drawing.Font("Cambria", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            paxLabel.Font = new System.Drawing.Font("Cambria", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             paxLabel.ForeColor = System.Drawing.Color.WhiteSmoke;
             paxLabel.Location = new System.Drawing.Point(28, 246);
             paxLabel.Name = "paxLabel";
@@ -100,7 +100,7 @@
             // 
             costPxLabel.AutoSize = true;
             costPxLabel.BackColor = System.Drawing.Color.Transparent;
-            costPxLabel.Font = new System.Drawing.Font("Cambria", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            costPxLabel.Font = new System.Drawing.Font("Cambria", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             costPxLabel.ForeColor = System.Drawing.Color.WhiteSmoke;
             costPxLabel.Location = new System.Drawing.Point(28, 451);
             costPxLabel.Name = "costPxLabel";
@@ -112,11 +112,11 @@
             // 
             departureLabel.AutoSize = true;
             departureLabel.BackColor = System.Drawing.Color.Transparent;
-            departureLabel.Font = new System.Drawing.Font("Cambria", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            departureLabel.Font = new System.Drawing.Font("Cambria", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             departureLabel.ForeColor = System.Drawing.Color.WhiteSmoke;
             departureLabel.Location = new System.Drawing.Point(28, 313);
             departureLabel.Name = "departureLabel";
-            departureLabel.Size = new System.Drawing.Size(103, 21);
+            departureLabel.Size = new System.Drawing.Size(99, 21);
             departureLabel.TabIndex = 11;
             departureLabel.Text = "Departure:";
             // 
@@ -124,11 +124,11 @@
             // 
             arrivalLabel.AutoSize = true;
             arrivalLabel.BackColor = System.Drawing.Color.Transparent;
-            arrivalLabel.Font = new System.Drawing.Font("Cambria", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            arrivalLabel.Font = new System.Drawing.Font("Cambria", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             arrivalLabel.ForeColor = System.Drawing.Color.WhiteSmoke;
             arrivalLabel.Location = new System.Drawing.Point(28, 382);
             arrivalLabel.Name = "arrivalLabel";
-            arrivalLabel.Size = new System.Drawing.Size(75, 21);
+            arrivalLabel.Size = new System.Drawing.Size(71, 21);
             arrivalLabel.TabIndex = 13;
             arrivalLabel.Text = "Arrival:";
             // 
@@ -136,11 +136,11 @@
             // 
             nRICLabel.AutoSize = true;
             nRICLabel.BackColor = System.Drawing.Color.Transparent;
-            nRICLabel.Font = new System.Drawing.Font("Cambria", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            nRICLabel.Font = new System.Drawing.Font("Cambria", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             nRICLabel.ForeColor = System.Drawing.Color.WhiteSmoke;
             nRICLabel.Location = new System.Drawing.Point(28, 112);
             nRICLabel.Name = "nRICLabel";
-            nRICLabel.Size = new System.Drawing.Size(55, 21);
+            nRICLabel.Size = new System.Drawing.Size(54, 21);
             nRICLabel.TabIndex = 14;
             nRICLabel.Text = "NRIC:";
             // 
