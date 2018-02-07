@@ -46,6 +46,8 @@
             this.date_of_BirthDateTimePicker = new System.Windows.Forms.DateTimePicker();
             this.countryTextBox = new System.Windows.Forms.TextBox();
             this.btnAddCust = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.CancelBtn = new System.Windows.Forms.Button();
             nRICLabel = new System.Windows.Forms.Label();
             nameLabel = new System.Windows.Forms.Label();
             contactLabel = new System.Windows.Forms.Label();
@@ -58,79 +60,79 @@
             // 
             // nRICLabel
             // 
-            nRICLabel.AutoSize = true;
-            nRICLabel.BackColor = System.Drawing.Color.WhiteSmoke;
-            nRICLabel.Font = new System.Drawing.Font("Cambria", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            nRICLabel.ForeColor = System.Drawing.Color.Black;
-            nRICLabel.Location = new System.Drawing.Point(29, 33);
+            nRICLabel.BackColor = System.Drawing.Color.Transparent;
+            nRICLabel.Font = new System.Drawing.Font("Cambria", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            nRICLabel.ForeColor = System.Drawing.Color.WhiteSmoke;
+            nRICLabel.Location = new System.Drawing.Point(44, 82);
             nRICLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             nRICLabel.Name = "nRICLabel";
-            nRICLabel.Size = new System.Drawing.Size(50, 19);
+            nRICLabel.Size = new System.Drawing.Size(62, 24);
             nRICLabel.TabIndex = 1;
             nRICLabel.Text = "NRIC:";
+            nRICLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // nameLabel
             // 
             nameLabel.AutoSize = true;
-            nameLabel.BackColor = System.Drawing.Color.WhiteSmoke;
-            nameLabel.Font = new System.Drawing.Font("Cambria", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            nameLabel.ForeColor = System.Drawing.Color.Black;
-            nameLabel.Location = new System.Drawing.Point(29, 78);
+            nameLabel.BackColor = System.Drawing.Color.Transparent;
+            nameLabel.Font = new System.Drawing.Font("Cambria", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            nameLabel.ForeColor = System.Drawing.Color.WhiteSmoke;
+            nameLabel.Location = new System.Drawing.Point(44, 158);
             nameLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             nameLabel.Name = "nameLabel";
-            nameLabel.Size = new System.Drawing.Size(55, 19);
+            nameLabel.Size = new System.Drawing.Size(62, 21);
             nameLabel.TabIndex = 3;
             nameLabel.Text = "Name:";
             // 
             // contactLabel
             // 
             contactLabel.AutoSize = true;
-            contactLabel.BackColor = System.Drawing.Color.WhiteSmoke;
-            contactLabel.Font = new System.Drawing.Font("Cambria", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            contactLabel.ForeColor = System.Drawing.Color.Black;
-            contactLabel.Location = new System.Drawing.Point(29, 124);
+            contactLabel.BackColor = System.Drawing.Color.Transparent;
+            contactLabel.Font = new System.Drawing.Font("Cambria", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            contactLabel.ForeColor = System.Drawing.Color.WhiteSmoke;
+            contactLabel.Location = new System.Drawing.Point(44, 238);
             contactLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             contactLabel.Name = "contactLabel";
-            contactLabel.Size = new System.Drawing.Size(70, 19);
+            contactLabel.Size = new System.Drawing.Size(78, 21);
             contactLabel.TabIndex = 5;
             contactLabel.Text = "Contact:";
             // 
             // addressLabel
             // 
             addressLabel.AutoSize = true;
-            addressLabel.BackColor = System.Drawing.Color.WhiteSmoke;
-            addressLabel.Font = new System.Drawing.Font("Cambria", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            addressLabel.ForeColor = System.Drawing.Color.Black;
-            addressLabel.Location = new System.Drawing.Point(29, 169);
+            addressLabel.BackColor = System.Drawing.Color.Transparent;
+            addressLabel.Font = new System.Drawing.Font("Cambria", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            addressLabel.ForeColor = System.Drawing.Color.WhiteSmoke;
+            addressLabel.Location = new System.Drawing.Point(44, 317);
             addressLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             addressLabel.Name = "addressLabel";
-            addressLabel.Size = new System.Drawing.Size(72, 19);
+            addressLabel.Size = new System.Drawing.Size(79, 21);
             addressLabel.TabIndex = 7;
             addressLabel.Text = "Address:";
             // 
             // date_of_BirthLabel
             // 
             date_of_BirthLabel.AutoSize = true;
-            date_of_BirthLabel.BackColor = System.Drawing.Color.WhiteSmoke;
-            date_of_BirthLabel.Font = new System.Drawing.Font("Cambria", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            date_of_BirthLabel.ForeColor = System.Drawing.Color.Black;
-            date_of_BirthLabel.Location = new System.Drawing.Point(29, 216);
+            date_of_BirthLabel.BackColor = System.Drawing.Color.Transparent;
+            date_of_BirthLabel.Font = new System.Drawing.Font("Cambria", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            date_of_BirthLabel.ForeColor = System.Drawing.Color.WhiteSmoke;
+            date_of_BirthLabel.Location = new System.Drawing.Point(44, 396);
             date_of_BirthLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             date_of_BirthLabel.Name = "date_of_BirthLabel";
-            date_of_BirthLabel.Size = new System.Drawing.Size(107, 19);
+            date_of_BirthLabel.Size = new System.Drawing.Size(118, 21);
             date_of_BirthLabel.TabIndex = 9;
             date_of_BirthLabel.Text = "Date of Birth:";
             // 
             // countryLabel
             // 
             countryLabel.AutoSize = true;
-            countryLabel.BackColor = System.Drawing.Color.WhiteSmoke;
-            countryLabel.Font = new System.Drawing.Font("Cambria", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            countryLabel.ForeColor = System.Drawing.Color.Black;
-            countryLabel.Location = new System.Drawing.Point(32, 259);
+            countryLabel.BackColor = System.Drawing.Color.Transparent;
+            countryLabel.Font = new System.Drawing.Font("Cambria", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            countryLabel.ForeColor = System.Drawing.Color.WhiteSmoke;
+            countryLabel.Location = new System.Drawing.Point(44, 475);
             countryLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             countryLabel.Name = "countryLabel";
-            countryLabel.Size = new System.Drawing.Size(72, 19);
+            countryLabel.Size = new System.Drawing.Size(81, 21);
             countryLabel.TabIndex = 11;
             countryLabel.Text = "Country:";
             // 
@@ -158,8 +160,9 @@
             // 
             // nRICTextBox
             // 
+            this.nRICTextBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.nRICTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.customerBS, "NRIC", true));
-            this.nRICTextBox.Location = new System.Drawing.Point(149, 29);
+            this.nRICTextBox.Location = new System.Drawing.Point(48, 108);
             this.nRICTextBox.Margin = new System.Windows.Forms.Padding(2);
             this.nRICTextBox.Name = "nRICTextBox";
             this.nRICTextBox.Size = new System.Drawing.Size(295, 26);
@@ -167,8 +170,9 @@
             // 
             // nameTextBox
             // 
+            this.nameTextBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.nameTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.customerBS, "Name", true));
-            this.nameTextBox.Location = new System.Drawing.Point(149, 75);
+            this.nameTextBox.Location = new System.Drawing.Point(48, 181);
             this.nameTextBox.Margin = new System.Windows.Forms.Padding(2);
             this.nameTextBox.Name = "nameTextBox";
             this.nameTextBox.Size = new System.Drawing.Size(295, 26);
@@ -176,8 +180,9 @@
             // 
             // contactTextBox
             // 
+            this.contactTextBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.contactTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.customerBS, "Contact", true));
-            this.contactTextBox.Location = new System.Drawing.Point(149, 120);
+            this.contactTextBox.Location = new System.Drawing.Point(48, 261);
             this.contactTextBox.Margin = new System.Windows.Forms.Padding(2);
             this.contactTextBox.Name = "contactTextBox";
             this.contactTextBox.Size = new System.Drawing.Size(295, 26);
@@ -185,8 +190,9 @@
             // 
             // addressTextBox
             // 
+            this.addressTextBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.addressTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.customerBS, "Address", true));
-            this.addressTextBox.Location = new System.Drawing.Point(149, 165);
+            this.addressTextBox.Location = new System.Drawing.Point(48, 340);
             this.addressTextBox.Margin = new System.Windows.Forms.Padding(2);
             this.addressTextBox.Name = "addressTextBox";
             this.addressTextBox.Size = new System.Drawing.Size(295, 26);
@@ -195,7 +201,7 @@
             // date_of_BirthDateTimePicker
             // 
             this.date_of_BirthDateTimePicker.DataBindings.Add(new System.Windows.Forms.Binding("Value", this.customerBS, "Date of Birth", true));
-            this.date_of_BirthDateTimePicker.Location = new System.Drawing.Point(149, 210);
+            this.date_of_BirthDateTimePicker.Location = new System.Drawing.Point(48, 419);
             this.date_of_BirthDateTimePicker.Margin = new System.Windows.Forms.Padding(2);
             this.date_of_BirthDateTimePicker.Name = "date_of_BirthDateTimePicker";
             this.date_of_BirthDateTimePicker.Size = new System.Drawing.Size(295, 26);
@@ -203,8 +209,9 @@
             // 
             // countryTextBox
             // 
+            this.countryTextBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.countryTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.customerBS, "Country", true));
-            this.countryTextBox.Location = new System.Drawing.Point(149, 255);
+            this.countryTextBox.Location = new System.Drawing.Point(48, 499);
             this.countryTextBox.Margin = new System.Windows.Forms.Padding(2);
             this.countryTextBox.Name = "countryTextBox";
             this.countryTextBox.Size = new System.Drawing.Size(295, 26);
@@ -212,25 +219,60 @@
             // 
             // btnAddCust
             // 
-            this.btnAddCust.BackColor = System.Drawing.SystemColors.Control;
+            this.btnAddCust.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.btnAddCust.BackColor = System.Drawing.Color.MediumSeaGreen;
             this.btnAddCust.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.btnAddCust.FlatAppearance.BorderSize = 0;
-            this.btnAddCust.Location = new System.Drawing.Point(307, 295);
+            this.btnAddCust.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAddCust.Font = new System.Drawing.Font("Georgia", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAddCust.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.btnAddCust.Location = new System.Drawing.Point(0, 566);
             this.btnAddCust.Margin = new System.Windows.Forms.Padding(2);
             this.btnAddCust.Name = "btnAddCust";
-            this.btnAddCust.Size = new System.Drawing.Size(137, 42);
+            this.btnAddCust.Size = new System.Drawing.Size(196, 56);
             this.btnAddCust.TabIndex = 13;
             this.btnAddCust.Text = "Add Customer";
             this.btnAddCust.UseVisualStyleBackColor = false;
             this.btnAddCust.Click += new System.EventHandler(this.btnAddCust_Click);
             // 
+            // label1
+            // 
+            this.label1.BackColor = System.Drawing.Color.DodgerBlue;
+            this.label1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.label1.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.label1.Location = new System.Drawing.Point(0, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(390, 55);
+            this.label1.TabIndex = 14;
+            this.label1.Text = "New Customer Details";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // CancelBtn
+            // 
+            this.CancelBtn.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.CancelBtn.BackColor = System.Drawing.Color.Red;
+            this.CancelBtn.FlatAppearance.BorderSize = 0;
+            this.CancelBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.CancelBtn.Font = new System.Drawing.Font("Georgia", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CancelBtn.ForeColor = System.Drawing.Color.White;
+            this.CancelBtn.Location = new System.Drawing.Point(194, 566);
+            this.CancelBtn.Name = "CancelBtn";
+            this.CancelBtn.Size = new System.Drawing.Size(196, 56);
+            this.CancelBtn.TabIndex = 15;
+            this.CancelBtn.Text = "Cancel";
+            this.CancelBtn.UseVisualStyleBackColor = false;
+            this.CancelBtn.Click += new System.EventHandler(this.CancelBtn_Click);
+            // 
             // CustAdd
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::DabAgent.Properties.Resources.sky;
+            this.BackgroundImage = global::DabAgent.Properties.Resources.addBG;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(461, 348);
+            this.ClientSize = new System.Drawing.Size(390, 622);
+            this.ControlBox = false;
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.btnAddCust);
             this.Controls.Add(nRICLabel);
             this.Controls.Add(this.nRICTextBox);
@@ -244,11 +286,13 @@
             this.Controls.Add(this.date_of_BirthDateTimePicker);
             this.Controls.Add(countryLabel);
             this.Controls.Add(this.countryTextBox);
+            this.Controls.Add(this.CancelBtn);
+            this.DoubleBuffered = true;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Margin = new System.Windows.Forms.Padding(2);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "CustAdd";
-            this.Text = "Add Customer";
             this.Load += new System.EventHandler(this.CustAdd_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dabAgencyDS)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.customerBS)).EndInit();
@@ -270,5 +314,7 @@
         private System.Windows.Forms.DateTimePicker date_of_BirthDateTimePicker;
         private System.Windows.Forms.TextBox countryTextBox;
         private System.Windows.Forms.Button btnAddCust;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button CancelBtn;
     }
 }

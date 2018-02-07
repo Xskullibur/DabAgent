@@ -204,6 +204,7 @@
       <DependentUpon>DabAgency.mdf</DependentUpon>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <None Include="Resources\addBG.jpg" />
     <None Include="Resources\sky.jpg" />
     <None Include="Resources\5861589_orig.jpg" />
     <None Include="Resources\abt.png" />
