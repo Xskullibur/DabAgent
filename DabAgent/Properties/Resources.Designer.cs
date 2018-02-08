@@ -73,6 +73,26 @@ namespace DabAgent.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _5861589_orig1 {
+            get {
+                object obj = ResourceManager.GetObject("5861589_orig1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap AboutUs {
+            get {
+                object obj = ResourceManager.GetObject("AboutUs", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap abt {
             get {
                 object obj = ResourceManager.GetObject("abt", resourceCulture);
@@ -146,6 +166,16 @@ namespace DabAgent.Properties {
         internal static System.Drawing.Bitmap ToolbarSkin_onno1 {
             get {
                 object obj = ResourceManager.GetObject("ToolbarSkin onno1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap world_travel_awards {
+            get {
+                object obj = ResourceManager.GetObject("world-travel-awards", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

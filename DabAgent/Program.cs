@@ -16,7 +16,7 @@ namespace DabAgent
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new HolidayDest());
+            Application.Run(new Info());
         }
     }
 }

@@ -40,7 +40,7 @@
             this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.CreateBtn = new System.Windows.Forms.Button();
+            this.AddBtn = new System.Windows.Forms.Button();
             this.EditBtn = new System.Windows.Forms.Button();
             this.DeleteBtn = new System.Windows.Forms.Button();
             this.SearchBtn = new System.Windows.Forms.Button();
@@ -89,8 +89,10 @@
             this.holidayTBDataGridView.Dock = System.Windows.Forms.DockStyle.Fill;
             this.holidayTBDataGridView.Location = new System.Drawing.Point(0, 72);
             this.holidayTBDataGridView.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.holidayTBDataGridView.MultiSelect = false;
             this.holidayTBDataGridView.Name = "holidayTBDataGridView";
             this.holidayTBDataGridView.ReadOnly = true;
+            this.holidayTBDataGridView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.holidayTBDataGridView.Size = new System.Drawing.Size(692, 306);
             this.holidayTBDataGridView.TabIndex = 1;
             // 
@@ -142,29 +144,29 @@
             this.panel1.Controls.Add(this.SearchBtn);
             this.panel1.Controls.Add(this.DeleteBtn);
             this.panel1.Controls.Add(this.EditBtn);
-            this.panel1.Controls.Add(this.CreateBtn);
+            this.panel1.Controls.Add(this.AddBtn);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel1.Location = new System.Drawing.Point(0, 378);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(692, 65);
             this.panel1.TabIndex = 3;
             // 
-            // CreateBtn
+            // AddBtn
             // 
-            this.CreateBtn.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.CreateBtn.BackColor = System.Drawing.SystemColors.Control;
-            this.CreateBtn.Location = new System.Drawing.Point(572, 13);
-            this.CreateBtn.Name = "CreateBtn";
-            this.CreateBtn.Size = new System.Drawing.Size(108, 40);
-            this.CreateBtn.TabIndex = 0;
-            this.CreateBtn.Text = "Create";
-            this.CreateBtn.UseVisualStyleBackColor = false;
+            this.AddBtn.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.AddBtn.BackColor = System.Drawing.SystemColors.Control;
+            this.AddBtn.Location = new System.Drawing.Point(344, 13);
+            this.AddBtn.Name = "AddBtn";
+            this.AddBtn.Size = new System.Drawing.Size(108, 40);
+            this.AddBtn.TabIndex = 0;
+            this.AddBtn.Text = "Add";
+            this.AddBtn.UseVisualStyleBackColor = false;
             // 
             // EditBtn
             // 
             this.EditBtn.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.EditBtn.BackColor = System.Drawing.SystemColors.Control;
-            this.EditBtn.Location = new System.Drawing.Point(458, 12);
+            this.EditBtn.Location = new System.Drawing.Point(572, 13);
             this.EditBtn.Name = "EditBtn";
             this.EditBtn.Size = new System.Drawing.Size(108, 40);
             this.EditBtn.TabIndex = 1;
@@ -175,7 +177,7 @@
             // 
             this.DeleteBtn.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.DeleteBtn.BackColor = System.Drawing.SystemColors.Control;
-            this.DeleteBtn.Location = new System.Drawing.Point(344, 13);
+            this.DeleteBtn.Location = new System.Drawing.Point(458, 13);
             this.DeleteBtn.Name = "DeleteBtn";
             this.DeleteBtn.Size = new System.Drawing.Size(108, 40);
             this.DeleteBtn.TabIndex = 2;
@@ -240,6 +242,6 @@
         private System.Windows.Forms.Button SearchBtn;
         private System.Windows.Forms.Button DeleteBtn;
         private System.Windows.Forms.Button EditBtn;
-        private System.Windows.Forms.Button CreateBtn;
+        private System.Windows.Forms.Button AddBtn;
     }
 }
