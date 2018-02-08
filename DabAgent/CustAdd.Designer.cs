@@ -226,7 +226,7 @@
             this.btnAddCust.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAddCust.Font = new System.Drawing.Font("Georgia", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAddCust.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.btnAddCust.Location = new System.Drawing.Point(0, 566);
+            this.btnAddCust.Location = new System.Drawing.Point(0, 598);
             this.btnAddCust.Margin = new System.Windows.Forms.Padding(2);
             this.btnAddCust.Name = "btnAddCust";
             this.btnAddCust.Size = new System.Drawing.Size(196, 56);
@@ -256,12 +256,13 @@
             this.CancelBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.CancelBtn.Font = new System.Drawing.Font("Georgia", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CancelBtn.ForeColor = System.Drawing.Color.White;
-            this.CancelBtn.Location = new System.Drawing.Point(194, 566);
+            this.CancelBtn.Location = new System.Drawing.Point(194, 599);
             this.CancelBtn.Name = "CancelBtn";
             this.CancelBtn.Size = new System.Drawing.Size(196, 56);
             this.CancelBtn.TabIndex = 15;
             this.CancelBtn.Text = "Cancel";
             this.CancelBtn.UseVisualStyleBackColor = false;
+            this.CancelBtn.Click += new System.EventHandler(this.CancelBtn_Click);
             // 
             // CustAdd
             // 
@@ -269,7 +270,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::DabAgent.Properties.Resources.addBG;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(390, 622);
+            this.ClientSize = new System.Drawing.Size(390, 655);
             this.ControlBox = false;
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnAddCust);

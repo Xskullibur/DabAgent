@@ -19,23 +19,10 @@ namespace DabAgent
             InitializeComponent();
         }
 
-        private void bookingTBBindingNavigatorSaveItem_Click(object sender, EventArgs e)
-        {
-            this.Validate();
-            this.bsBooking.EndEdit();
-            this.tam.UpdateAll(this.ds);
-
-        }
-
-        private void bookingTBBindingNavigatorSaveItem_Click_2(object sender, EventArgs e)
-        {
-            bsBooking.EndEdit();
-            taBooking.Update(ds.BookingTB);
-            MessageBox.Show("Successfully Saved Changes!");
-        }
-
         private void EditForm_Load(object sender, EventArgs e)
         {
+            TitleLbl.Text = "Editing Booking ID: " + id;
+
             travelDateDateTimePicker.Format = DateTimePickerFormat.Custom;
             travelDateDateTimePicker.CustomFormat = "dd MMMM yyyy";
 
@@ -74,6 +61,13 @@ namespace DabAgent
         private void ExitBtn_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void bookingTBBindingNavigatorSaveItem_Click(object sender, EventArgs e)
+        {
+            bsBooking.EndEdit();
+            taBooking.Update(ds.BookingTB);
+            MessageBox.Show("Successfully Saved Changes!");
         }
     }
 }
