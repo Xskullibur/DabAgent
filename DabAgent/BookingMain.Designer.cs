@@ -32,6 +32,7 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(BookingMain));
             this.ds = new DabAgent.DabAgencyDataSet();
             this.taBooking = new DabAgent.DabAgencyDataSetTableAdapters.BookingTBTableAdapter();
             this.tam = new DabAgent.DabAgencyDataSetTableAdapters.TableAdapterManager();
@@ -214,6 +215,7 @@
             // 
             this.SearchBtn.BackColor = System.Drawing.SystemColors.Control;
             this.SearchBtn.FlatAppearance.BorderSize = 0;
+            this.SearchBtn.Image = global::DabAgent.Properties.Resources._113445;
             this.SearchBtn.Location = new System.Drawing.Point(201, 11);
             this.SearchBtn.Name = "SearchBtn";
             this.SearchBtn.Size = new System.Drawing.Size(134, 43);
@@ -232,9 +234,9 @@
             // EditBtn
             // 
             this.EditBtn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.EditBtn.AutoSize = true;
             this.EditBtn.BackColor = System.Drawing.SystemColors.Control;
             this.EditBtn.FlatAppearance.BorderSize = 0;
+            this.EditBtn.Image = ((System.Drawing.Image)(resources.GetObject("EditBtn.Image")));
             this.EditBtn.Location = new System.Drawing.Point(782, 11);
             this.EditBtn.Name = "EditBtn";
             this.EditBtn.Size = new System.Drawing.Size(134, 43);
@@ -246,9 +248,9 @@
             // AddBtn
             // 
             this.AddBtn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.AddBtn.AutoSize = true;
             this.AddBtn.BackColor = System.Drawing.SystemColors.Control;
             this.AddBtn.FlatAppearance.BorderSize = 0;
+            this.AddBtn.Image = ((System.Drawing.Image)(resources.GetObject("AddBtn.Image")));
             this.AddBtn.Location = new System.Drawing.Point(502, 11);
             this.AddBtn.Name = "AddBtn";
             this.AddBtn.Size = new System.Drawing.Size(134, 43);
@@ -260,9 +262,9 @@
             // RemoveBtn
             // 
             this.RemoveBtn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.RemoveBtn.AutoSize = true;
             this.RemoveBtn.BackColor = System.Drawing.SystemColors.Control;
             this.RemoveBtn.FlatAppearance.BorderSize = 0;
+            this.RemoveBtn.Image = ((System.Drawing.Image)(resources.GetObject("RemoveBtn.Image")));
             this.RemoveBtn.Location = new System.Drawing.Point(642, 11);
             this.RemoveBtn.Name = "RemoveBtn";
             this.RemoveBtn.Size = new System.Drawing.Size(134, 43);
