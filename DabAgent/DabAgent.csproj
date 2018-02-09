@@ -204,6 +204,8 @@
       <DependentUpon>DabAgency.mdf</DependentUpon>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <None Include="Resources\113445.jpg" />
+    <None Include="Resources\555915.jpg" />
     <None Include="Resources\background-rakyat-travel.png" />
     <None Include="Resources\AboutUs.png" />
     <None Include="Resources\world-travel-awards.png" />

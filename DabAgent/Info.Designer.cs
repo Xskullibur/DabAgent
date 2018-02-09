@@ -146,7 +146,7 @@
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Georgia", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.Black;
-            this.label4.Location = new System.Drawing.Point(169, 179);
+            this.label4.Location = new System.Drawing.Point(158, 181);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(711, 221);
             this.label4.TabIndex = 6;
