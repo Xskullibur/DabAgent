@@ -31,5 +31,32 @@ namespace DabAgent
             this.taDest.Fill(this.ds.HolidayTB);
 
         }
+
+        private void btnAddCust_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                bsDest.EndEdit();
+            }
+            catch (ArgumentException)
+            {
+                MessageBox.Show("Holiday ID Does Not Exist!");
+            }
+            try
+            {
+                taDest.Update(ds.HolidayTB);
+                MessageBox.Show("Record Added!");
+                this.Close();
+            }
+            catch (NoNullAllowedException)
+            {
+                MessageBox.Show("Please Fill in All Fields Before Adding...");
+            }
+        }
+
+        private void CancelBtn_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

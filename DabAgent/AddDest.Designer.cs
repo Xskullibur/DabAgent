@@ -52,6 +52,58 @@
             ((System.ComponentModel.ISupportInitialize)(this.bsDest)).BeginInit();
             this.SuspendLayout();
             // 
+            // holidayIDLabel
+            // 
+            holidayIDLabel.AutoSize = true;
+            holidayIDLabel.BackColor = System.Drawing.Color.Transparent;
+            holidayIDLabel.Font = new System.Drawing.Font("Cambria", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            holidayIDLabel.ForeColor = System.Drawing.Color.WhiteSmoke;
+            holidayIDLabel.Location = new System.Drawing.Point(29, 65);
+            holidayIDLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            holidayIDLabel.Name = "holidayIDLabel";
+            holidayIDLabel.Size = new System.Drawing.Size(67, 14);
+            holidayIDLabel.TabIndex = 2;
+            holidayIDLabel.Text = "Holiday ID:";
+            // 
+            // countryLabel
+            // 
+            countryLabel.AutoSize = true;
+            countryLabel.BackColor = System.Drawing.Color.Transparent;
+            countryLabel.Font = new System.Drawing.Font("Cambria", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            countryLabel.ForeColor = System.Drawing.Color.WhiteSmoke;
+            countryLabel.Location = new System.Drawing.Point(29, 114);
+            countryLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            countryLabel.Name = "countryLabel";
+            countryLabel.Size = new System.Drawing.Size(52, 14);
+            countryLabel.TabIndex = 4;
+            countryLabel.Text = "Country:";
+            // 
+            // cityLabel
+            // 
+            cityLabel.AutoSize = true;
+            cityLabel.BackColor = System.Drawing.Color.Transparent;
+            cityLabel.Font = new System.Drawing.Font("Cambria", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            cityLabel.ForeColor = System.Drawing.Color.WhiteSmoke;
+            cityLabel.Location = new System.Drawing.Point(29, 162);
+            cityLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            cityLabel.Name = "cityLabel";
+            cityLabel.Size = new System.Drawing.Size(31, 14);
+            cityLabel.TabIndex = 6;
+            cityLabel.Text = "City:";
+            // 
+            // costPxLabel
+            // 
+            costPxLabel.AutoSize = true;
+            costPxLabel.BackColor = System.Drawing.Color.Transparent;
+            costPxLabel.Font = new System.Drawing.Font("Cambria", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            costPxLabel.ForeColor = System.Drawing.Color.WhiteSmoke;
+            costPxLabel.Location = new System.Drawing.Point(29, 211);
+            costPxLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            costPxLabel.Name = "costPxLabel";
+            costPxLabel.Size = new System.Drawing.Size(48, 14);
+            costPxLabel.TabIndex = 8;
+            costPxLabel.Text = "Cost Px:";
+            // 
             // label1
             // 
             this.label1.BackColor = System.Drawing.Color.DodgerBlue;
@@ -59,8 +111,9 @@
             this.label1.Font = new System.Drawing.Font("Georgia", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.label1.Location = new System.Drawing.Point(0, 0);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(378, 68);
+            this.label1.Size = new System.Drawing.Size(252, 44);
             this.label1.TabIndex = 0;
             this.label1.Text = "Add New Holiday Destination";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -87,84 +140,40 @@
             this.tam.HolidayTBTableAdapter = this.taDest;
             this.tam.UpdateOrder = DabAgent.DabAgencyDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
             // 
-            // holidayIDLabel
-            // 
-            holidayIDLabel.AutoSize = true;
-            holidayIDLabel.BackColor = System.Drawing.Color.Transparent;
-            holidayIDLabel.Font = new System.Drawing.Font("Cambria", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            holidayIDLabel.ForeColor = System.Drawing.Color.WhiteSmoke;
-            holidayIDLabel.Location = new System.Drawing.Point(43, 100);
-            holidayIDLabel.Name = "holidayIDLabel";
-            holidayIDLabel.Size = new System.Drawing.Size(98, 21);
-            holidayIDLabel.TabIndex = 2;
-            holidayIDLabel.Text = "Holiday ID:";
-            // 
             // holidayIDTextBox
             // 
             this.holidayIDTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bsDest, "HolidayID", true));
-            this.holidayIDTextBox.Location = new System.Drawing.Point(47, 124);
+            this.holidayIDTextBox.Location = new System.Drawing.Point(31, 81);
+            this.holidayIDTextBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.holidayIDTextBox.Name = "holidayIDTextBox";
-            this.holidayIDTextBox.Size = new System.Drawing.Size(278, 26);
+            this.holidayIDTextBox.Size = new System.Drawing.Size(187, 20);
             this.holidayIDTextBox.TabIndex = 3;
-            // 
-            // countryLabel
-            // 
-            countryLabel.AutoSize = true;
-            countryLabel.BackColor = System.Drawing.Color.Transparent;
-            countryLabel.Font = new System.Drawing.Font("Cambria", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            countryLabel.ForeColor = System.Drawing.Color.WhiteSmoke;
-            countryLabel.Location = new System.Drawing.Point(43, 175);
-            countryLabel.Name = "countryLabel";
-            countryLabel.Size = new System.Drawing.Size(81, 21);
-            countryLabel.TabIndex = 4;
-            countryLabel.Text = "Country:";
             // 
             // countryTextBox
             // 
             this.countryTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bsDest, "Country", true));
-            this.countryTextBox.Location = new System.Drawing.Point(47, 199);
+            this.countryTextBox.Location = new System.Drawing.Point(31, 129);
+            this.countryTextBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.countryTextBox.Name = "countryTextBox";
-            this.countryTextBox.Size = new System.Drawing.Size(278, 26);
+            this.countryTextBox.Size = new System.Drawing.Size(187, 20);
             this.countryTextBox.TabIndex = 5;
-            // 
-            // cityLabel
-            // 
-            cityLabel.AutoSize = true;
-            cityLabel.BackColor = System.Drawing.Color.Transparent;
-            cityLabel.Font = new System.Drawing.Font("Cambria", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            cityLabel.ForeColor = System.Drawing.Color.WhiteSmoke;
-            cityLabel.Location = new System.Drawing.Point(43, 250);
-            cityLabel.Name = "cityLabel";
-            cityLabel.Size = new System.Drawing.Size(46, 21);
-            cityLabel.TabIndex = 6;
-            cityLabel.Text = "City:";
             // 
             // cityTextBox
             // 
             this.cityTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bsDest, "City", true));
-            this.cityTextBox.Location = new System.Drawing.Point(47, 274);
+            this.cityTextBox.Location = new System.Drawing.Point(31, 178);
+            this.cityTextBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.cityTextBox.Name = "cityTextBox";
-            this.cityTextBox.Size = new System.Drawing.Size(278, 26);
+            this.cityTextBox.Size = new System.Drawing.Size(187, 20);
             this.cityTextBox.TabIndex = 7;
-            // 
-            // costPxLabel
-            // 
-            costPxLabel.AutoSize = true;
-            costPxLabel.BackColor = System.Drawing.Color.Transparent;
-            costPxLabel.Font = new System.Drawing.Font("Cambria", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            costPxLabel.ForeColor = System.Drawing.Color.WhiteSmoke;
-            costPxLabel.Location = new System.Drawing.Point(43, 325);
-            costPxLabel.Name = "costPxLabel";
-            costPxLabel.Size = new System.Drawing.Size(74, 21);
-            costPxLabel.TabIndex = 8;
-            costPxLabel.Text = "Cost Px:";
             // 
             // costPxTextBox
             // 
             this.costPxTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bsDest, "CostPx", true));
-            this.costPxTextBox.Location = new System.Drawing.Point(47, 349);
+            this.costPxTextBox.Location = new System.Drawing.Point(31, 227);
+            this.costPxTextBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.costPxTextBox.Name = "costPxTextBox";
-            this.costPxTextBox.Size = new System.Drawing.Size(278, 26);
+            this.costPxTextBox.Size = new System.Drawing.Size(187, 20);
             this.costPxTextBox.TabIndex = 9;
             // 
             // btnAddCust
@@ -176,13 +185,14 @@
             this.btnAddCust.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAddCust.Font = new System.Drawing.Font("Georgia", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAddCust.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.btnAddCust.Location = new System.Drawing.Point(0, 502);
-            this.btnAddCust.Margin = new System.Windows.Forms.Padding(2);
+            this.btnAddCust.Location = new System.Drawing.Point(0, 326);
+            this.btnAddCust.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
             this.btnAddCust.Name = "btnAddCust";
-            this.btnAddCust.Size = new System.Drawing.Size(190, 50);
+            this.btnAddCust.Size = new System.Drawing.Size(127, 32);
             this.btnAddCust.TabIndex = 16;
             this.btnAddCust.Text = "Add Destination";
             this.btnAddCust.UseVisualStyleBackColor = false;
+            this.btnAddCust.Click += new System.EventHandler(this.btnAddCust_Click);
             // 
             // CancelBtn
             // 
@@ -192,20 +202,22 @@
             this.CancelBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.CancelBtn.Font = new System.Drawing.Font("Georgia", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CancelBtn.ForeColor = System.Drawing.Color.White;
-            this.CancelBtn.Location = new System.Drawing.Point(188, 502);
+            this.CancelBtn.Location = new System.Drawing.Point(125, 326);
+            this.CancelBtn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.CancelBtn.Name = "CancelBtn";
-            this.CancelBtn.Size = new System.Drawing.Size(190, 50);
+            this.CancelBtn.Size = new System.Drawing.Size(127, 32);
             this.CancelBtn.TabIndex = 17;
             this.CancelBtn.Text = "Cancel";
             this.CancelBtn.UseVisualStyleBackColor = false;
+            this.CancelBtn.Click += new System.EventHandler(this.CancelBtn_Click);
             // 
             // AddDest
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::DabAgent.Properties.Resources.addBG;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(378, 554);
+            this.ClientSize = new System.Drawing.Size(252, 360);
             this.ControlBox = false;
             this.Controls.Add(this.btnAddCust);
             this.Controls.Add(this.CancelBtn);
@@ -219,6 +231,7 @@
             this.Controls.Add(this.costPxTextBox);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "AddDest";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Load += new System.EventHandler(this.AddDest_Load);

@@ -95,7 +95,7 @@
             this.bookingTBDataGridView.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(25)))), ((int)(((byte)(72)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("MS Reference Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
             dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
@@ -123,7 +123,8 @@
             this.bookingTBDataGridView.Dock = System.Windows.Forms.DockStyle.Fill;
             this.bookingTBDataGridView.EnableHeadersVisualStyles = false;
             this.bookingTBDataGridView.GridColor = System.Drawing.Color.LightGray;
-            this.bookingTBDataGridView.Location = new System.Drawing.Point(0, 65);
+            this.bookingTBDataGridView.Location = new System.Drawing.Point(0, 42);
+            this.bookingTBDataGridView.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.bookingTBDataGridView.MultiSelect = false;
             this.bookingTBDataGridView.Name = "bookingTBDataGridView";
             this.bookingTBDataGridView.ReadOnly = true;
@@ -131,7 +132,7 @@
             this.bookingTBDataGridView.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             this.bookingTBDataGridView.RowTemplate.Height = 40;
             this.bookingTBDataGridView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.bookingTBDataGridView.Size = new System.Drawing.Size(935, 286);
+            this.bookingTBDataGridView.Size = new System.Drawing.Size(623, 186);
             this.bookingTBDataGridView.TabIndex = 1;
             this.bookingTBDataGridView.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.bookingTBDataGridView_CellDoubleClick);
             // 
@@ -191,8 +192,9 @@
             this.label1.Font = new System.Drawing.Font("Cambria", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(0, 0);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(935, 65);
+            this.label1.Size = new System.Drawing.Size(623, 42);
             this.label1.TabIndex = 0;
             this.label1.Text = "Booking Records";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -206,9 +208,10 @@
             this.panel1.Controls.Add(this.AddBtn);
             this.panel1.Controls.Add(this.RemoveBtn);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel1.Location = new System.Drawing.Point(0, 351);
+            this.panel1.Location = new System.Drawing.Point(0, 228);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(935, 64);
+            this.panel1.Size = new System.Drawing.Size(623, 42);
             this.panel1.TabIndex = 7;
             // 
             // SearchBtn
@@ -217,9 +220,10 @@
             this.SearchBtn.FlatAppearance.BorderSize = 0;
             this.SearchBtn.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.SearchBtn.Image = global::DabAgent.Properties.Resources._113445;
-            this.SearchBtn.Location = new System.Drawing.Point(201, 11);
+            this.SearchBtn.Location = new System.Drawing.Point(134, 7);
+            this.SearchBtn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.SearchBtn.Name = "SearchBtn";
-            this.SearchBtn.Size = new System.Drawing.Size(134, 43);
+            this.SearchBtn.Size = new System.Drawing.Size(89, 28);
             this.SearchBtn.TabIndex = 11;
             this.SearchBtn.Text = "Search NRIC";
             this.SearchBtn.UseVisualStyleBackColor = false;
@@ -227,9 +231,10 @@
             // 
             // SearchTxt
             // 
-            this.SearchTxt.Location = new System.Drawing.Point(19, 19);
+            this.SearchTxt.Location = new System.Drawing.Point(13, 12);
+            this.SearchTxt.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.SearchTxt.Name = "SearchTxt";
-            this.SearchTxt.Size = new System.Drawing.Size(176, 26);
+            this.SearchTxt.Size = new System.Drawing.Size(119, 20);
             this.SearchTxt.TabIndex = 10;
             // 
             // EditBtn
@@ -239,9 +244,10 @@
             this.EditBtn.FlatAppearance.BorderSize = 0;
             this.EditBtn.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.EditBtn.Image = ((System.Drawing.Image)(resources.GetObject("EditBtn.Image")));
-            this.EditBtn.Location = new System.Drawing.Point(782, 11);
+            this.EditBtn.Location = new System.Drawing.Point(521, 7);
+            this.EditBtn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.EditBtn.Name = "EditBtn";
-            this.EditBtn.Size = new System.Drawing.Size(134, 43);
+            this.EditBtn.Size = new System.Drawing.Size(89, 28);
             this.EditBtn.TabIndex = 9;
             this.EditBtn.Text = "Edit Records";
             this.EditBtn.UseVisualStyleBackColor = false;
@@ -254,9 +260,10 @@
             this.AddBtn.FlatAppearance.BorderSize = 0;
             this.AddBtn.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.AddBtn.Image = ((System.Drawing.Image)(resources.GetObject("AddBtn.Image")));
-            this.AddBtn.Location = new System.Drawing.Point(502, 11);
+            this.AddBtn.Location = new System.Drawing.Point(335, 7);
+            this.AddBtn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.AddBtn.Name = "AddBtn";
-            this.AddBtn.Size = new System.Drawing.Size(134, 43);
+            this.AddBtn.Size = new System.Drawing.Size(89, 28);
             this.AddBtn.TabIndex = 8;
             this.AddBtn.Text = "Add";
             this.AddBtn.UseVisualStyleBackColor = false;
@@ -269,9 +276,10 @@
             this.RemoveBtn.FlatAppearance.BorderSize = 0;
             this.RemoveBtn.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.RemoveBtn.Image = ((System.Drawing.Image)(resources.GetObject("RemoveBtn.Image")));
-            this.RemoveBtn.Location = new System.Drawing.Point(642, 11);
+            this.RemoveBtn.Location = new System.Drawing.Point(428, 7);
+            this.RemoveBtn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.RemoveBtn.Name = "RemoveBtn";
-            this.RemoveBtn.Size = new System.Drawing.Size(134, 43);
+            this.RemoveBtn.Size = new System.Drawing.Size(89, 28);
             this.RemoveBtn.TabIndex = 7;
             this.RemoveBtn.Text = "Delete";
             this.RemoveBtn.UseVisualStyleBackColor = false;
@@ -279,13 +287,14 @@
             // 
             // BookingMain
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(935, 415);
+            this.ClientSize = new System.Drawing.Size(623, 270);
             this.Controls.Add(this.bookingTBDataGridView);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "BookingMain";
