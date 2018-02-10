@@ -16,5 +16,20 @@ namespace DabAgent
         {
             InitializeComponent();
         }
+
+        private void holidayTBBindingNavigatorSaveItem_Click(object sender, EventArgs e)
+        {
+            this.Validate();
+            this.bsDest.EndEdit();
+            this.tam.UpdateAll(this.ds);
+
+        }
+
+        private void AddDest_Load(object sender, EventArgs e)
+        {
+            // TODO: This line of code loads data into the 'dabAgencyDataSet.HolidayTB' table. You can move, or remove it, as needed.
+            this.taDest.Fill(this.ds.HolidayTB);
+
+        }
     }
 }

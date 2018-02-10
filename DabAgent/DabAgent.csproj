@@ -147,6 +147,9 @@
     <EmbeddedResource Include="AddBooking.resx">
       <DependentUpon>AddBooking.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="AddDest.resx">
+      <DependentUpon>AddDest.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="BookingDisplay.resx">
       <DependentUpon>BookingDisplay.cs</DependentUpon>
     </EmbeddedResource>
