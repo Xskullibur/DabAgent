@@ -215,6 +215,7 @@
             // 
             this.SearchBtn.BackColor = System.Drawing.SystemColors.Control;
             this.SearchBtn.FlatAppearance.BorderSize = 0;
+            this.SearchBtn.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.SearchBtn.Image = global::DabAgent.Properties.Resources._113445;
             this.SearchBtn.Location = new System.Drawing.Point(201, 11);
             this.SearchBtn.Name = "SearchBtn";
@@ -236,6 +237,7 @@
             this.EditBtn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.EditBtn.BackColor = System.Drawing.SystemColors.Control;
             this.EditBtn.FlatAppearance.BorderSize = 0;
+            this.EditBtn.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.EditBtn.Image = ((System.Drawing.Image)(resources.GetObject("EditBtn.Image")));
             this.EditBtn.Location = new System.Drawing.Point(782, 11);
             this.EditBtn.Name = "EditBtn";
@@ -250,6 +252,7 @@
             this.AddBtn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.AddBtn.BackColor = System.Drawing.SystemColors.Control;
             this.AddBtn.FlatAppearance.BorderSize = 0;
+            this.AddBtn.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.AddBtn.Image = ((System.Drawing.Image)(resources.GetObject("AddBtn.Image")));
             this.AddBtn.Location = new System.Drawing.Point(502, 11);
             this.AddBtn.Name = "AddBtn";
@@ -264,6 +267,7 @@
             this.RemoveBtn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.RemoveBtn.BackColor = System.Drawing.SystemColors.Control;
             this.RemoveBtn.FlatAppearance.BorderSize = 0;
+            this.RemoveBtn.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.RemoveBtn.Image = ((System.Drawing.Image)(resources.GetObject("RemoveBtn.Image")));
             this.RemoveBtn.Location = new System.Drawing.Point(642, 11);
             this.RemoveBtn.Name = "RemoveBtn";
