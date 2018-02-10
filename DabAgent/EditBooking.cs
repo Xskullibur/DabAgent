@@ -35,6 +35,7 @@ namespace DabAgent
                 else
                 {
                     MessageBox.Show("No Records Found!");
+                    this.Close();
                 }
             }
             else
