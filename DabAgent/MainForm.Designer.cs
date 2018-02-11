@@ -124,7 +124,7 @@
             this.HolidayBtn.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.HolidayBtn.Font = new System.Drawing.Font("Monotype Corsiva", 14.1F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.HolidayBtn.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.HolidayBtn.Location = new System.Drawing.Point(411, 5);
+            this.HolidayBtn.Location = new System.Drawing.Point(413, 5);
             this.HolidayBtn.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.HolidayBtn.Name = "HolidayBtn";
             this.HolidayBtn.Size = new System.Drawing.Size(197, 178);
@@ -142,7 +142,7 @@
             this.AbtBtn.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.AbtBtn.Location = new System.Drawing.Point(3, 5);
             this.AbtBtn.Name = "AbtBtn";
-            this.AbtBtn.Size = new System.Drawing.Size(401, 180);
+            this.AbtBtn.Size = new System.Drawing.Size(403, 180);
             this.AbtBtn.TabIndex = 0;
             this.AbtBtn.UseVisualStyleBackColor = false;
             this.AbtBtn.Click += new System.EventHandler(this.AbtBtn_Click);
