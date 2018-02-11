@@ -46,10 +46,10 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(BookingDisplay));
             this.bsBooking = new System.Windows.Forms.BindingSource(this.components);
             this.ds = new DabAgent.DabAgencyDataSet();
-            this.customerTBBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.bsCustomer = new System.Windows.Forms.BindingSource(this.components);
             this.taBooking = new DabAgent.DabAgencyDataSetTableAdapters.BookingTBTableAdapter();
             this.tam = new DabAgent.DabAgencyDataSetTableAdapters.TableAdapterManager();
-            this.customerTBTableAdapter = new DabAgent.DabAgencyDataSetTableAdapters.CustomerTBTableAdapter();
+            this.taCusomter = new DabAgent.DabAgencyDataSetTableAdapters.CustomerTBTableAdapter();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.arrivalTextBox = new System.Windows.Forms.TextBox();
@@ -105,7 +105,7 @@
             countryLabel = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.bsBooking)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ds)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.customerTBBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bsCustomer)).BeginInit();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bookingTBBindingNavigator)).BeginInit();
@@ -279,10 +279,10 @@
             this.ds.DataSetName = "DabAgencyDataSet";
             this.ds.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
-            // customerTBBindingSource
+            // bsCustomer
             // 
-            this.customerTBBindingSource.DataMember = "CustomerTB";
-            this.customerTBBindingSource.DataSource = this.ds;
+            this.bsCustomer.DataMember = "CustomerTB";
+            this.bsCustomer.DataSource = this.ds;
             // 
             // taBooking
             // 
@@ -296,9 +296,9 @@
             this.tam.HolidayTBTableAdapter = null;
             this.tam.UpdateOrder = DabAgent.DabAgencyDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
             // 
-            // customerTBTableAdapter
+            // taCusomter
             // 
-            this.customerTBTableAdapter.ClearBeforeFill = true;
+            this.taCusomter.ClearBeforeFill = true;
             // 
             // tabControl1
             // 
@@ -534,7 +534,7 @@
             // 
             // DOBtxt
             // 
-            this.DOBtxt.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.customerTBBindingSource, "Date of Birth", true));
+            this.DOBtxt.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bsCustomer, "Date of Birth", true));
             this.DOBtxt.Location = new System.Drawing.Point(149, 268);
             this.DOBtxt.Name = "DOBtxt";
             this.DOBtxt.ReadOnly = true;
@@ -544,7 +544,7 @@
             // CustomerbindingNavigator1
             // 
             this.CustomerbindingNavigator1.AddNewItem = null;
-            this.CustomerbindingNavigator1.BindingSource = this.customerTBBindingSource;
+            this.CustomerbindingNavigator1.BindingSource = this.bsCustomer;
             this.CustomerbindingNavigator1.CountItem = this.bindingNavigatorCountItem1;
             this.CustomerbindingNavigator1.DeleteItem = null;
             this.CustomerbindingNavigator1.ImageScalingSize = new System.Drawing.Size(24, 24);
@@ -638,7 +638,7 @@
             // 
             // nRICTextBox1
             // 
-            this.nRICTextBox1.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.customerTBBindingSource, "NRIC", true));
+            this.nRICTextBox1.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bsCustomer, "NRIC", true));
             this.nRICTextBox1.Location = new System.Drawing.Point(149, 58);
             this.nRICTextBox1.Name = "nRICTextBox1";
             this.nRICTextBox1.ReadOnly = true;
@@ -647,7 +647,7 @@
             // 
             // nameTextBox
             // 
-            this.nameTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.customerTBBindingSource, "Name", true));
+            this.nameTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bsCustomer, "Name", true));
             this.nameTextBox.Location = new System.Drawing.Point(149, 110);
             this.nameTextBox.Name = "nameTextBox";
             this.nameTextBox.ReadOnly = true;
@@ -656,7 +656,7 @@
             // 
             // contactTextBox
             // 
-            this.contactTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.customerTBBindingSource, "Contact", true));
+            this.contactTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bsCustomer, "Contact", true));
             this.contactTextBox.Location = new System.Drawing.Point(149, 162);
             this.contactTextBox.Name = "contactTextBox";
             this.contactTextBox.ReadOnly = true;
@@ -665,7 +665,7 @@
             // 
             // addressTextBox
             // 
-            this.addressTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.customerTBBindingSource, "Address", true));
+            this.addressTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bsCustomer, "Address", true));
             this.addressTextBox.Location = new System.Drawing.Point(149, 214);
             this.addressTextBox.Name = "addressTextBox";
             this.addressTextBox.ReadOnly = true;
@@ -674,7 +674,7 @@
             // 
             // countryTextBox
             // 
-            this.countryTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.customerTBBindingSource, "Country", true));
+            this.countryTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bsCustomer, "Country", true));
             this.countryTextBox.Location = new System.Drawing.Point(149, 318);
             this.countryTextBox.Name = "countryTextBox";
             this.countryTextBox.ReadOnly = true;
@@ -726,7 +726,7 @@
             this.Load += new System.EventHandler(this.BookingDisplay_Load);
             ((System.ComponentModel.ISupportInitialize)(this.bsBooking)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ds)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.customerTBBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bsCustomer)).EndInit();
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();
@@ -748,8 +748,8 @@
         private System.Windows.Forms.BindingSource bsBooking;
         private DabAgencyDataSetTableAdapters.BookingTBTableAdapter taBooking;
         private DabAgencyDataSetTableAdapters.TableAdapterManager tam;
-        private System.Windows.Forms.BindingSource customerTBBindingSource;
-        private DabAgencyDataSetTableAdapters.CustomerTBTableAdapter customerTBTableAdapter;
+        private System.Windows.Forms.BindingSource bsCustomer;
+        private DabAgencyDataSetTableAdapters.CustomerTBTableAdapter taCusomter;
         private System.Windows.Forms.TabControl tabControl1;
         private System.Windows.Forms.TabPage tabPage1;
         private System.Windows.Forms.TextBox arrivalTextBox;
