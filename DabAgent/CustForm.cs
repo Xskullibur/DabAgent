@@ -26,7 +26,7 @@ namespace DabAgent
 
         private void CustForm_Load(object sender, EventArgs e)
         {
-            
+            customerTA.Fill(dabAgencyDS.CustomerTB);
         }
 
         private void btnAdd_Click(object sender, EventArgs e)

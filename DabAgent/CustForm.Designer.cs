@@ -82,6 +82,7 @@
             // countryLabel
             // 
             countryLabel.AutoSize = true;
+            countryLabel.BackColor = System.Drawing.Color.Transparent;
             countryLabel.Font = new System.Drawing.Font("Cambria", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             countryLabel.ForeColor = System.Drawing.Color.WhiteSmoke;
             countryLabel.Location = new System.Drawing.Point(11, 244);
@@ -94,6 +95,7 @@
             // date_of_BirthLabel
             // 
             date_of_BirthLabel.AutoSize = true;
+            date_of_BirthLabel.BackColor = System.Drawing.Color.Transparent;
             date_of_BirthLabel.Font = new System.Drawing.Font("Cambria", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             date_of_BirthLabel.ForeColor = System.Drawing.Color.WhiteSmoke;
             date_of_BirthLabel.Location = new System.Drawing.Point(11, 205);
@@ -106,6 +108,7 @@
             // nRICLabel
             // 
             nRICLabel.AutoSize = true;
+            nRICLabel.BackColor = System.Drawing.Color.Transparent;
             nRICLabel.Font = new System.Drawing.Font("Cambria", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             nRICLabel.ForeColor = System.Drawing.Color.WhiteSmoke;
             nRICLabel.Location = new System.Drawing.Point(11, 44);
@@ -118,6 +121,7 @@
             // contactLabel
             // 
             contactLabel.AutoSize = true;
+            contactLabel.BackColor = System.Drawing.Color.Transparent;
             contactLabel.Font = new System.Drawing.Font("Cambria", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             contactLabel.ForeColor = System.Drawing.Color.WhiteSmoke;
             contactLabel.Location = new System.Drawing.Point(11, 124);
@@ -130,6 +134,7 @@
             // addressLabel
             // 
             addressLabel.AutoSize = true;
+            addressLabel.BackColor = System.Drawing.Color.Transparent;
             addressLabel.Font = new System.Drawing.Font("Cambria", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             addressLabel.ForeColor = System.Drawing.Color.WhiteSmoke;
             addressLabel.Location = new System.Drawing.Point(11, 164);
@@ -142,6 +147,7 @@
             // nameLabel
             // 
             nameLabel.AutoSize = true;
+            nameLabel.BackColor = System.Drawing.Color.Transparent;
             nameLabel.Font = new System.Drawing.Font("Cambria", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             nameLabel.ForeColor = System.Drawing.Color.WhiteSmoke;
             nameLabel.Location = new System.Drawing.Point(11, 84);
@@ -293,8 +299,8 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.BackColor = System.Drawing.Color.Transparent;
-            this.groupBox1.BackgroundImage = global::DabAgent.Properties.Resources.addBG;
+            this.groupBox1.BackColor = System.Drawing.SystemColors.Control;
+            this.groupBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("groupBox1.BackgroundImage")));
             this.groupBox1.Controls.Add(this.btnViewAll);
             this.groupBox1.Controls.Add(this.btnAdd);
             this.groupBox1.Controls.Add(this.btnSearch);
@@ -309,6 +315,9 @@
             // 
             // btnViewAll
             // 
+            this.btnViewAll.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnViewAll.BackgroundImage")));
+            this.btnViewAll.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnViewAll.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnViewAll.ForeColor = System.Drawing.Color.Black;
             this.btnViewAll.Location = new System.Drawing.Point(7, 81);
             this.btnViewAll.Margin = new System.Windows.Forms.Padding(2);
@@ -321,6 +330,9 @@
             // 
             // btnAdd
             // 
+            this.btnAdd.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnAdd.BackgroundImage")));
+            this.btnAdd.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnAdd.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnAdd.ForeColor = System.Drawing.Color.Black;
             this.btnAdd.Location = new System.Drawing.Point(191, 81);
             this.btnAdd.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
@@ -333,6 +345,9 @@
             // 
             // btnSearch
             // 
+            this.btnSearch.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnSearch.BackgroundImage")));
+            this.btnSearch.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnSearch.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnSearch.ForeColor = System.Drawing.Color.Black;
             this.btnSearch.Location = new System.Drawing.Point(191, 36);
             this.btnSearch.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
@@ -353,8 +368,8 @@
             // 
             // groupBox2
             // 
-            this.groupBox2.BackColor = System.Drawing.Color.Transparent;
-            this.groupBox2.BackgroundImage = global::DabAgent.Properties.Resources.addBG;
+            this.groupBox2.BackColor = System.Drawing.SystemColors.Control;
+            this.groupBox2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("groupBox2.BackgroundImage")));
             this.groupBox2.Controls.Add(this.nRICTextBox);
             this.groupBox2.Controls.Add(this.countryTextBox);
             this.groupBox2.Controls.Add(this.btnUpdate);
@@ -396,6 +411,9 @@
             // 
             // btnUpdate
             // 
+            this.btnUpdate.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnUpdate.BackgroundImage")));
+            this.btnUpdate.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnUpdate.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnUpdate.ForeColor = System.Drawing.Color.Black;
             this.btnUpdate.Location = new System.Drawing.Point(244, 275);
             this.btnUpdate.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
