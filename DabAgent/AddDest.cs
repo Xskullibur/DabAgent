@@ -19,17 +19,8 @@ namespace DabAgent
 
         private void holidayTBBindingNavigatorSaveItem_Click(object sender, EventArgs e)
         {
-            this.Validate();
-            this.bsDest.EndEdit();
-            this.tam.UpdateAll(this.ds);
-
-        }
-
-        private void AddDest_Load(object sender, EventArgs e)
-        {
-            // TODO: This line of code loads data into the 'dabAgencyDataSet.HolidayTB' table. You can move, or remove it, as needed.
-            this.taDest.Fill(this.ds.HolidayTB);
-
+            bsDest.EndEdit();
+            tam.UpdateAll(ds);
         }
 
         private void btnAddCust_Click(object sender, EventArgs e)
@@ -37,13 +28,6 @@ namespace DabAgent
             try
             {
                 bsDest.EndEdit();
-            }
-            catch (ArgumentException)
-            {
-                MessageBox.Show("Holiday ID Does Not Exist!");
-            }
-            try
-            {
                 taDest.Update(ds.HolidayTB);
                 MessageBox.Show("Record Added!");
                 this.Close();
@@ -52,11 +36,21 @@ namespace DabAgent
             {
                 MessageBox.Show("Please Fill in All Fields Before Adding...");
             }
+            catch (System.Data.SqlClient.SqlException)
+            {
+                MessageBox.Show("Holiday Destination Already Exist!");
+            }
         }
 
         private void CancelBtn_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void AddDest_Load(object sender, EventArgs e)
+        {
+            bsDest.AddNew();
+            bsDest.MoveLast();
         }
     }
 }

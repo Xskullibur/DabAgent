@@ -72,6 +72,7 @@ namespace DabAgent
             else
             {
                 MessageBox.Show("No Records of (" + SearchTxt.Text + ") Not Found!");
+                taDest.Fill(ds.HolidayTB);
             }
         }
 

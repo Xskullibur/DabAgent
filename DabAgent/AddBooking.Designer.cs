@@ -68,70 +68,77 @@
             // nRICLabel
             // 
             nRICLabel.AutoSize = true;
-            nRICLabel.Font = new System.Drawing.Font("Candara", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            nRICLabel.Location = new System.Drawing.Point(40, 33);
+            nRICLabel.Font = new System.Drawing.Font("Candara", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            nRICLabel.ForeColor = System.Drawing.Color.WhiteSmoke;
+            nRICLabel.Location = new System.Drawing.Point(26, 31);
             nRICLabel.Name = "nRICLabel";
-            nRICLabel.Size = new System.Drawing.Size(47, 19);
+            nRICLabel.Size = new System.Drawing.Size(53, 22);
             nRICLabel.TabIndex = 4;
             nRICLabel.Text = "NRIC:";
             // 
             // travelDateLabel
             // 
             travelDateLabel.AutoSize = true;
-            travelDateLabel.Font = new System.Drawing.Font("Candara", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            travelDateLabel.Location = new System.Drawing.Point(40, 83);
+            travelDateLabel.Font = new System.Drawing.Font("Candara", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            travelDateLabel.ForeColor = System.Drawing.Color.WhiteSmoke;
+            travelDateLabel.Location = new System.Drawing.Point(26, 81);
             travelDateLabel.Name = "travelDateLabel";
-            travelDateLabel.Size = new System.Drawing.Size(89, 19);
+            travelDateLabel.Size = new System.Drawing.Size(103, 22);
             travelDateLabel.TabIndex = 6;
             travelDateLabel.Text = "Travel Date:";
             // 
             // paxLabel
             // 
             paxLabel.AutoSize = true;
-            paxLabel.Font = new System.Drawing.Font("Candara", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            paxLabel.Location = new System.Drawing.Point(40, 179);
+            paxLabel.Font = new System.Drawing.Font("Candara", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            paxLabel.ForeColor = System.Drawing.Color.WhiteSmoke;
+            paxLabel.Location = new System.Drawing.Point(26, 177);
             paxLabel.Name = "paxLabel";
-            paxLabel.Size = new System.Drawing.Size(38, 19);
+            paxLabel.Size = new System.Drawing.Size(43, 22);
             paxLabel.TabIndex = 8;
             paxLabel.Text = "Pax:";
             // 
             // costPxLabel
             // 
             costPxLabel.AutoSize = true;
-            costPxLabel.Font = new System.Drawing.Font("Cambria", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            costPxLabel.Location = new System.Drawing.Point(42, 152);
+            costPxLabel.Font = new System.Drawing.Font("Cambria", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            costPxLabel.ForeColor = System.Drawing.Color.WhiteSmoke;
+            costPxLabel.Location = new System.Drawing.Point(53, 150);
             costPxLabel.Name = "costPxLabel";
-            costPxLabel.Size = new System.Drawing.Size(66, 19);
+            costPxLabel.Size = new System.Drawing.Size(74, 21);
             costPxLabel.TabIndex = 16;
             costPxLabel.Text = "Cost Px:";
             // 
             // departureLabel
             // 
             departureLabel.AutoSize = true;
-            departureLabel.Font = new System.Drawing.Font("Cambria", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            departureLabel.Location = new System.Drawing.Point(42, 54);
+            departureLabel.Font = new System.Drawing.Font("Cambria", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            departureLabel.ForeColor = System.Drawing.Color.WhiteSmoke;
+            departureLabel.Location = new System.Drawing.Point(53, 52);
             departureLabel.Name = "departureLabel";
-            departureLabel.Size = new System.Drawing.Size(89, 19);
+            departureLabel.Size = new System.Drawing.Size(103, 21);
             departureLabel.TabIndex = 25;
             departureLabel.Text = "Departure:";
             // 
             // arrivalLabel
             // 
             arrivalLabel.AutoSize = true;
-            arrivalLabel.Font = new System.Drawing.Font("Cambria", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            arrivalLabel.Location = new System.Drawing.Point(42, 103);
+            arrivalLabel.Font = new System.Drawing.Font("Cambria", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            arrivalLabel.ForeColor = System.Drawing.Color.WhiteSmoke;
+            arrivalLabel.Location = new System.Drawing.Point(53, 101);
             arrivalLabel.Name = "arrivalLabel";
-            arrivalLabel.Size = new System.Drawing.Size(64, 19);
+            arrivalLabel.Size = new System.Drawing.Size(75, 21);
             arrivalLabel.TabIndex = 26;
             arrivalLabel.Text = "Arrival:";
             // 
             // bookingDateLabel
             // 
             bookingDateLabel.AutoSize = true;
-            bookingDateLabel.Font = new System.Drawing.Font("Candara", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            bookingDateLabel.Location = new System.Drawing.Point(40, 129);
+            bookingDateLabel.Font = new System.Drawing.Font("Candara", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            bookingDateLabel.ForeColor = System.Drawing.Color.WhiteSmoke;
+            bookingDateLabel.Location = new System.Drawing.Point(26, 127);
             bookingDateLabel.Name = "bookingDateLabel";
-            bookingDateLabel.Size = new System.Drawing.Size(106, 19);
+            bookingDateLabel.Size = new System.Drawing.Size(120, 22);
             bookingDateLabel.TabIndex = 9;
             bookingDateLabel.Text = "Booking Date:";
             // 
@@ -148,6 +155,7 @@
             // PersonalTab
             // 
             this.PersonalTab.AutoScroll = true;
+            this.PersonalTab.BackgroundImage = global::DabAgent.Properties.Resources.addBG;
             this.PersonalTab.Controls.Add(bookingDateLabel);
             this.PersonalTab.Controls.Add(this.bookingDateComboBox);
             this.PersonalTab.Controls.Add(nRICLabel);
@@ -211,6 +219,7 @@
             // 
             // FlightTab
             // 
+            this.FlightTab.BackgroundImage = global::DabAgent.Properties.Resources.addBG;
             this.FlightTab.Controls.Add(arrivalLabel);
             this.FlightTab.Controls.Add(this.arrivalComboBox);
             this.FlightTab.Controls.Add(departureLabel);

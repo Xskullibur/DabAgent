@@ -66,12 +66,13 @@
             this.dataGridViewTextBoxColumn4});
             this.holidayTBDataGridView.DataSource = this.bsDest;
             this.holidayTBDataGridView.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.holidayTBDataGridView.Location = new System.Drawing.Point(0, 44);
+            this.holidayTBDataGridView.Location = new System.Drawing.Point(0, 68);
+            this.holidayTBDataGridView.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.holidayTBDataGridView.MultiSelect = false;
             this.holidayTBDataGridView.Name = "holidayTBDataGridView";
             this.holidayTBDataGridView.ReadOnly = true;
             this.holidayTBDataGridView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.holidayTBDataGridView.Size = new System.Drawing.Size(461, 234);
+            this.holidayTBDataGridView.Size = new System.Drawing.Size(692, 359);
             this.holidayTBDataGridView.TabIndex = 1;
             this.holidayTBDataGridView.CellMouseDoubleClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.holidayTBDataGridView_CellMouseDoubleClick);
             // 
@@ -117,12 +118,12 @@
             // 
             this.label1.BackColor = System.Drawing.Color.DodgerBlue;
             this.label1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.label1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.label1.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.label1.Location = new System.Drawing.Point(0, 0);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(461, 44);
+            this.label1.Size = new System.Drawing.Size(692, 68);
             this.label1.TabIndex = 2;
             this.label1.Text = "Holiday Destination";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -136,31 +137,29 @@
             this.panel1.Controls.Add(this.EditBtn);
             this.panel1.Controls.Add(this.AddBtn);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel1.Location = new System.Drawing.Point(0, 278);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel1.Location = new System.Drawing.Point(0, 427);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(461, 42);
+            this.panel1.Size = new System.Drawing.Size(692, 65);
             this.panel1.TabIndex = 3;
             // 
             // SearchTxt
             // 
             this.SearchTxt.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.SearchTxt.Location = new System.Drawing.Point(8, 13);
-            this.SearchTxt.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.SearchTxt.Location = new System.Drawing.Point(12, 19);
             this.SearchTxt.Name = "SearchTxt";
-            this.SearchTxt.Size = new System.Drawing.Size(109, 20);
+            this.SearchTxt.Size = new System.Drawing.Size(162, 26);
             this.SearchTxt.TabIndex = 4;
             // 
             // SearchBtn
             // 
             this.SearchBtn.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.SearchBtn.BackColor = System.Drawing.SystemColors.Control;
-            this.SearchBtn.Location = new System.Drawing.Point(119, 8);
-            this.SearchBtn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.SearchBtn.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.SearchBtn.Location = new System.Drawing.Point(178, 12);
             this.SearchBtn.Name = "SearchBtn";
-            this.SearchBtn.Size = new System.Drawing.Size(81, 26);
+            this.SearchBtn.Size = new System.Drawing.Size(122, 40);
             this.SearchBtn.TabIndex = 3;
-            this.SearchBtn.Text = "Search";
+            this.SearchBtn.Text = "City Search";
             this.SearchBtn.UseVisualStyleBackColor = false;
             this.SearchBtn.Click += new System.EventHandler(this.SearchBtn_Click);
             // 
@@ -168,10 +167,10 @@
             // 
             this.DeleteBtn.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.DeleteBtn.BackColor = System.Drawing.SystemColors.Control;
-            this.DeleteBtn.Location = new System.Drawing.Point(305, 8);
-            this.DeleteBtn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.DeleteBtn.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.DeleteBtn.Location = new System.Drawing.Point(458, 12);
             this.DeleteBtn.Name = "DeleteBtn";
-            this.DeleteBtn.Size = new System.Drawing.Size(72, 26);
+            this.DeleteBtn.Size = new System.Drawing.Size(108, 40);
             this.DeleteBtn.TabIndex = 2;
             this.DeleteBtn.Text = "Delete";
             this.DeleteBtn.UseVisualStyleBackColor = false;
@@ -181,10 +180,10 @@
             // 
             this.EditBtn.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.EditBtn.BackColor = System.Drawing.SystemColors.Control;
-            this.EditBtn.Location = new System.Drawing.Point(381, 8);
-            this.EditBtn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.EditBtn.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.EditBtn.Location = new System.Drawing.Point(572, 12);
             this.EditBtn.Name = "EditBtn";
-            this.EditBtn.Size = new System.Drawing.Size(72, 26);
+            this.EditBtn.Size = new System.Drawing.Size(108, 40);
             this.EditBtn.TabIndex = 1;
             this.EditBtn.Text = "Edit";
             this.EditBtn.UseVisualStyleBackColor = false;
@@ -194,10 +193,10 @@
             // 
             this.AddBtn.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.AddBtn.BackColor = System.Drawing.SystemColors.Control;
-            this.AddBtn.Location = new System.Drawing.Point(229, 8);
-            this.AddBtn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.AddBtn.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.AddBtn.Location = new System.Drawing.Point(344, 12);
             this.AddBtn.Name = "AddBtn";
-            this.AddBtn.Size = new System.Drawing.Size(72, 26);
+            this.AddBtn.Size = new System.Drawing.Size(108, 40);
             this.AddBtn.TabIndex = 0;
             this.AddBtn.Text = "Add";
             this.AddBtn.UseVisualStyleBackColor = false;
@@ -207,10 +206,10 @@
             // 
             this.AllBtn.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.AllBtn.BackColor = System.Drawing.SystemColors.Control;
-            this.AllBtn.Location = new System.Drawing.Point(372, 8);
-            this.AllBtn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.AllBtn.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.AllBtn.Location = new System.Drawing.Point(558, 12);
             this.AllBtn.Name = "AllBtn";
-            this.AllBtn.Size = new System.Drawing.Size(81, 26);
+            this.AllBtn.Size = new System.Drawing.Size(122, 40);
             this.AllBtn.TabIndex = 5;
             this.AllBtn.Text = "View All";
             this.AllBtn.UseVisualStyleBackColor = false;
@@ -230,16 +229,18 @@
             // 
             // HolidayDest
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(461, 320);
+            this.ClientSize = new System.Drawing.Size(692, 492);
             this.Controls.Add(this.AllBtn);
             this.Controls.Add(this.holidayTBDataGridView);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.panel1);
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "HolidayDest";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Load += new System.EventHandler(this.HolidayDest_Load);
             ((System.ComponentModel.ISupportInitialize)(this.holidayTBDataGridView)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bsDest)).EndInit();
