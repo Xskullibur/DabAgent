@@ -28,7 +28,7 @@ namespace DabAgent
         private void CustAdd_Load(object sender, EventArgs e)
         {
             date_of_BirthDateTimePicker.Format = DateTimePickerFormat.Custom;
-            date_of_BirthDateTimePicker.CustomFormat = "dd MMMM yyyy";
+            date_of_BirthDateTimePicker.CustomFormat = "    dd MMMM yyyy";
 
             customerBS.AddNew();
         }

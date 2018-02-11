@@ -155,7 +155,7 @@
             // PersonalTab
             // 
             this.PersonalTab.AutoScroll = true;
-            this.PersonalTab.BackgroundImage = global::DabAgent.Properties.Resources.addBG;
+            this.PersonalTab.BackgroundImage = global::DabAgent.Properties.Resources._555915;
             this.PersonalTab.Controls.Add(bookingDateLabel);
             this.PersonalTab.Controls.Add(this.bookingDateComboBox);
             this.PersonalTab.Controls.Add(nRICLabel);
@@ -310,6 +310,11 @@
             // 
             // SaveBtn
             // 
+            this.SaveBtn.BackgroundImage = global::DabAgent.Properties.Resources._113445;
+            this.SaveBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.SaveBtn.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.SaveBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SaveBtn.ForeColor = System.Drawing.Color.Black;
             this.SaveBtn.Location = new System.Drawing.Point(442, 294);
             this.SaveBtn.Name = "SaveBtn";
             this.SaveBtn.Size = new System.Drawing.Size(104, 42);
