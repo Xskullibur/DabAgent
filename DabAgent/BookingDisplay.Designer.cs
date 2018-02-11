@@ -544,6 +544,7 @@
             // CustomerbindingNavigator1
             // 
             this.CustomerbindingNavigator1.AddNewItem = null;
+            this.CustomerbindingNavigator1.BackgroundImage = global::DabAgent.Properties.Resources.addBG;
             this.CustomerbindingNavigator1.BindingSource = this.bsCustomer;
             this.CustomerbindingNavigator1.CountItem = this.bindingNavigatorCountItem1;
             this.CustomerbindingNavigator1.DeleteItem = null;
