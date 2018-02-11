@@ -219,7 +219,7 @@
             // 
             // FlightTab
             // 
-            this.FlightTab.BackgroundImage = global::DabAgent.Properties.Resources.addBG;
+            this.FlightTab.BackgroundImage = global::DabAgent.Properties.Resources._555915;
             this.FlightTab.Controls.Add(arrivalLabel);
             this.FlightTab.Controls.Add(this.arrivalComboBox);
             this.FlightTab.Controls.Add(departureLabel);
