@@ -27,7 +27,6 @@ namespace DabAgent
 
         private void BookingDisplay_Load(object sender, EventArgs e)
         {
-            taCusomter.Fill(ds.CustomerTB);
             NameLbl.Text = "Search Results of: " + ic;
 
             if (taBooking.FillBySearchNRIC(ds.BookingTB, ic) != 0)
