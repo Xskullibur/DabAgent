@@ -31,7 +31,7 @@ namespace DabAgent
                 MessageBox.Show("Customer with NRIC " + nRICTextBox.Text + " Does Not Exist!");
             }
             catch (NoNullAllowedException)
-            {
+            { 
                 MessageBox.Show("Please Fill in All Fields Before Adding...");
             }
         }
