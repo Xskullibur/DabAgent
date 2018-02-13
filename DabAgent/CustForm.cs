@@ -42,8 +42,7 @@ namespace DabAgent
         {
             if (customerTA.FillBySearchNric(dabAgencyDS.CustomerTB, txtSearch.Text) != 0)
             {
-                customerTA.FillBySearchNric(dabAgencyDS.CustomerTB, txtSearch.
-                    Text); 
+                customerTA.FillBySearchNric(dabAgencyDS.CustomerTB, txtSearch.Text); 
             }
             else
             {
