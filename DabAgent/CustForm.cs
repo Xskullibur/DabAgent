@@ -58,9 +58,16 @@ namespace DabAgent
 
             if (custclass.IsNRICValid())
             {
-                customerBS.EndEdit();
-                customerTA.Update(dabAgencyDS.CustomerTB);
-                MessageBox.Show("Updated Successfully!!!");
+                try
+                {
+                    customerBS.EndEdit();
+                    customerTA.Update(dabAgencyDS.CustomerTB);
+                    MessageBox.Show("Updated Successfully!!!");
+                }
+                catch (System.Data.ConstraintException)
+                {
+                    MessageBox.Show("NRIC Already Exist!");
+                }
             }
             else
             {
